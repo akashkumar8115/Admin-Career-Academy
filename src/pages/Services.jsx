@@ -41,8 +41,8 @@ import { motion } from 'framer-motion'
 
 const Services = () => {
     return (
-        <div className="pt-24 min-h-screen bg-gradient-to-b from-white to-green-shade-50 mt-28">
-            <div className="w-11/12 lg:w-10/12 mx-auto">
+        <div className="pt-28 min-h-screen bg-gradient-to-b from-white to-green-shade-50 mt-28 pb-10">
+            <div className="w-11/12 lg:w-10/12 mx-auto mb-16">
                 <motion.h1
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}

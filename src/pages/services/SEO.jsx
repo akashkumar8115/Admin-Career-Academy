@@ -2,7 +2,7 @@ import React from 'react'
 
 const SEO = () => {
     return (
-        <div className="pt-24 min-h-screen bg-gradient-to-b from-white to-green-shade-50 mt-28">
+        <div className="pt-24 min-h-screen bg-gradient-to-b from-white to-green-shade-50 mt-28 pb-12">
             <div className="w-11/12 lg:w-10/12 mx-auto">
                 <h1 className="text-4xl font-bold text-center mb-8">Search Engine Optimization</h1>
 

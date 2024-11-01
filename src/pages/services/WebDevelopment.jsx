@@ -55,7 +55,7 @@ const WebDevelopment = () => {
     ]
 
     return (
-        <div className="pt-24 min-h-screen bg-gradient-to-b from-white to-green-shade-50 mt-28">
+        <div className="pt-24 min-h-screen bg-gradient-to-b from-white to-green-shade-50 mt-28 pb-28">
             <div className="w-11/12 lg:w-10/12 mx-auto">
                 <div className="relative h-[300px] mb-12 rounded-xl overflow-hidden">
                     <img

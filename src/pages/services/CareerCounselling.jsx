@@ -4,7 +4,7 @@ import CounsellingImg from '../../assets/services/career-counselling.jpg'
 
 const CareerCounselling = () => {
     return (
-        <div className="pt-24 min-h-screen bg-gradient-to-b from-white to-violet-100 mt-28">
+        <div className="pt-24 min-h-screen bg-gradient-to-b from-white to-violet-100 mt-28 pb-12">
             <div className="w-11/12 lg:w-10/12 mx-auto">
                 <div className="relative h-[300px] mb-12 rounded-xl overflow-hidden">
                     <img 
