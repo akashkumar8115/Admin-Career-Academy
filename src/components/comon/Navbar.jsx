@@ -12,33 +12,38 @@ const navlink = [
         title: "Home",
         path: "/",
     },
-
     {
         id: 2,
+        title: "Internships/Jobs",
+        path: "/internships-jobs",
+    },
+
+    {
+        id: 3,
         title: "About us",
         path: "/about",
     },
 
     {
-        id: 3,
+        id: 4,
         title: "Services",
         path: "/services",
     },
 
     {
-        id: 4,
+        id: 5,
         title: "Our Clients",
         path: "/clients",
     },
 
     {
-        id: 5,
+        id: 6,
         title: "Blogs",
         path: "/blogs",
     },
 
     {
-        id: 6,
+        id: 7,
         title: "Contact us",
         path: "/contact-us",
     },

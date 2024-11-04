@@ -33,7 +33,7 @@ const Contact = () => {
             <div className="w-11/12 lg:w-10/12 mx-auto">
                 <h1 className="text-4xl font-bold text-center mb-12">Contact Us</h1>
 
-                <div className="max-w-2xl mx-auto">
+                <div className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-lg">
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <div>
                             <label className="block mb-2 font-semibold">Name</label>
@@ -42,6 +42,7 @@ const Contact = () => {
                                 className="w-full p-3 border rounded-lg"
                                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                                 required
+                                placeholder='Enter your name'
                             />
                         </div>
 
@@ -52,6 +53,7 @@ const Contact = () => {
                                 className="w-full p-3 border rounded-lg"
                                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                                 required
+                                placeholder='Enter your email'
                             />
                         </div>
 
@@ -62,6 +64,7 @@ const Contact = () => {
                                 className="w-full p-3 border rounded-lg"
                                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                                 required
+                                placeholder='Typpe your messages here'
                             />
                         </div>
                         {/* Add more form fields */}

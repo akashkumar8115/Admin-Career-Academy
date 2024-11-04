@@ -4,7 +4,7 @@ import ClientBanner from '../assets/clients/client-banner.jpg'
 import Client1 from '../assets/clients/client1.jpg'
 import Client2 from '../assets/clients/client2.jpg'
 import Client3 from '../assets/clients/client3.jpg'
-
+import Client4 from '../assets/clients/client3.jpg'
 const Clients = () => {
     const testimonials = [
         {

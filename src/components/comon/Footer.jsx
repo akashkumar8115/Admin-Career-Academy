@@ -77,23 +77,23 @@ const Footer = () => {
           <h2 className='text-xl font-semibold'>Newsletter</h2>
 
           <div className='flex flex-col items-center lg:items-start gap-y-5 text-base '>
-            
+
             <p className='xl:text-base text-sm leading-6  text-center lg:text-left'>
-            Signup our newsletter to get update information, news or insight
+              Signup our newsletter to get update information, news or insight
             </p>
 
             <input type="text" placeholder='Enter Your Email' className='py-2 px-4 rounded-lg w-full outline-none' />
 
             <button className='px-6 py-2 rounded-lg bg-green-500 text-white transition-all duration-300 hover:bg-violet-50  text-sm'>Sign Up</button>
-        
-          </div>
+
+          </div> <br />
 
         </div>
-
-
-
       </div>
-
+      <div className='w-11/12 lg:w-10/12 mx-auto py-8'>
+        <p>©Coptright 2024. All Rights Reserved.</p>
+        <a href="https://www.linkedin.com/in/akash-kumar-54073a209/" target="_blank" rel="noopener noreferrer" className='text-center text-black-300 cursor-pointer hover:text-violet-40'>Created By Akash kumar</a>
+      </div>
 
     </section>
   )
