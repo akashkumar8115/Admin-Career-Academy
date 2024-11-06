@@ -1,101 +1,128 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import { FaLinkedin, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa'
+import { IoLocationSharp, IoMail, IoCall } from 'react-icons/io5'
 import logo from '../../assets/logo.png'
-import { IoLocationSharp } from "react-icons/io5";
-import { serviceData } from '../../data/footer';
-import { companyData } from '../../data/footer';
-import { Link } from 'react-router-dom';
+
+const quickLinks = [
+  { title: "Home", path: "/" },
+  { title: "About Us", path: "/about" },
+  { title: "Services", path: "/services" },
+  { title: "Career Guidance", path: "/services/career-guidance" },
+  { title: "Contact", path: "/contact-us" }
+]
+
+const services = [
+  { title: "Career Counselling", path: "/services/career-counselling" },
+  { title: "College Selection", path: "/services/colleges" },
+  { title: "PG/Hostel Details", path: "/services/pg-hostel-details" },
+  { title: "Internships & Jobs", path: "/internships-jobs" },
+  { title: "Placement Support", path: "/services/placement-stats" }
+]
+
+const resources = [
+  { title: "Blog", path: "/blogs" },
+  { title: "Career Roadmap", path: "/services/career-roadmap" },
+  { title: "Success Stories", path: "/clients" },
+  { title: "Course Comparison", path: "/services/course-comparison" },
+  { title: "Campus Life", path: "/services/campus-life" }
+]
 
 const Footer = () => {
   return (
-    <section className='w-full sm:py-24 py-16  bg-black-300 '>
+      <footer className="bg-gradient-to-b from-white to-green-shade-50 pt-16 pb-8">
+          <div className="w-11/12 lg:w-10/12 mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                  {/* Company Info */}
+                  <div className="space-y-6">
+                      <img src={logo} alt="ACA Logo" className="w-32" />
+                      <p className="text-black-600 leading-relaxed">
+                          Empowering careers through expert guidance and innovative solutions since 2021.
+                      </p>
+                      <div className="flex gap-4">
+                          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" 
+                             className="text-violet-50 hover:text-violet-100 transition-colors">
+                              <FaLinkedin size={24} />
+                          </a>
+                          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                             className="text-violet-50 hover:text-violet-100 transition-colors">
+                              <FaTwitter size={24} />
+                          </a>
+                          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                             className="text-violet-50 hover:text-violet-100 transition-colors">
+                              <FaInstagram size={24} />
+                          </a>
+                          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"
+                             className="text-violet-50 hover:text-violet-100 transition-colors">
+                              <FaYoutube size={24} />
+                          </a>
+                      </div>
+                  </div>
 
-      {/* ---------- container -------- */}
+                  {/* Quick Links */}
+                  <div>
+                      <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+                      <ul className="space-y-3">
+                          {quickLinks.map((link, index) => (
+                              <li key={index}>
+                                  <Link to={link.path} className="text-black-600 hover:text-violet-50 transition-colors">
+                                      {link.title}
+                                  </Link>
+                              </li>
+                          ))}
+                      </ul>
+                  </div>
 
-      <div className='w-11/12 lg:w-10/12 mx-auto  grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-x-6 xs:gap-y-16 gap-y-8 '>
+                  {/* Services */}
+                  <div>
+                      <h3 className="text-lg font-semibold mb-4">Our Services</h3>
+                      <ul className="space-y-3">
+                          {services.map((service, index) => (
+                              <li key={index}>
+                                  <Link to={service.path} className="text-black-600 hover:text-violet-50 transition-colors">
+                                      {service.title}
+                                  </Link>
+                              </li>
+                          ))}
+                      </ul>
+                  </div>
 
-        {/* -------- 1st section -------- */}
+                  {/* Contact Info */}
+                  <div>
+                      <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+                      <div className="space-y-4">
+                          <p className="flex items-center gap-3 text-black-600">
+                              <IoLocationSharp className="text-violet-50" />
+                              Sector 17, Chandigarh, India
+                          </p>
+                          <p className="flex items-center gap-3 text-black-600">
+                              <IoMail className="text-violet-50" />
+                              info@acadmin.com
+                          </p>
+                          <p className="flex items-center gap-3 text-black-600">
+                              <IoCall className="text-violet-50" />
+                              +91 98765 43210
+                          </p>
+                      </div>
+                  </div>
+              </div>
 
-        <div className=' flex flex-col items-center lg:items-start gap-y-6 '>
-
-          <div className='flex flex-col items-center lg:items-start gap-y-4'>
-            <img src={logo} alt="logo" className='w-32' />
-            <p className='text-sm leading-6 xl:tracking-wider text-center lg:text-left'>At Admin Career Academy, we specialize in delivering counselling, state-of-the-art web development and comprehensive IT services.</p>
+              {/* Bottom Section */}
+              <div className="pt-8 border-t border-gray-200">
+                  <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+                      <p className="text-black-600">© 2024 ACA Pvt. Ltd. All rights reserved.</p>
+                      <div className="flex gap-6">
+                          <Link to="/privacy-policy" className="text-black-600 hover:text-violet-50 transition-colors">
+                              Privacy Policy
+                          </Link>
+                          <Link to="/terms" className="text-black-600 hover:text-violet-50 transition-colors">
+                              Terms of Service
+                          </Link>
+                      </div>
+                  </div>
+              </div>
           </div>
-
-          <p className='flex items-center font-semibold'>
-            <span className='text-xl '><IoLocationSharp /></span>
-            New Delhi, India
-          </p>
-
-
-        </div>
-
-        {/* -------- 2nd section -------- */}
-
-        <div className='flex flex-col gap-y-4 items-center lg:items-start xl:pl-4'>
-
-          <h2 className='text-xl font-semibold '>Services</h2>
-
-          <div className='flex flex-col items-center lg:items-start gap-y-3 xl:text-base text-sm'>
-            {
-              serviceData.map((item) => (
-                <Link key={item.id} to={item.path} className='text-black-900 transtion-all duration-200 hover:text-violet-50 w-max'>
-                  {item.title}
-                </Link>
-              ))
-            }
-
-
-          </div>
-
-        </div>
-
-        {/* -------- 3rd section -------- */}
-
-        <div className='flex flex-col items-center lg:items-start gap-y-4  '>
-
-          <h2 className='text-xl font-semibold'>Company</h2>
-
-          <div className='flex flex-col items-center lg:items-start gap-y-3 xl:text-base text-sm '>
-            {
-              companyData.map((item) => (
-                <Link key={item.id} to={item.path} className='text-black-900 transtion-all duration-200 hover:text-violet-50 w-max' >
-                  {item.title}
-                </Link>
-              ))
-            }
-
-
-          </div>
-
-        </div>
-
-        {/* -------- 4th section -------- */}
-
-        <div className='flex flex-col items-center lg:items-start gap-y-4  '>
-
-          <h2 className='text-xl font-semibold'>Newsletter</h2>
-
-          <div className='flex flex-col items-center lg:items-start gap-y-5 text-base '>
-
-            <p className='xl:text-base text-sm leading-6  text-center lg:text-left'>
-              Signup our newsletter to get update information, news or insight
-            </p>
-
-            <input type="text" placeholder='Enter Your Email' className='py-2 px-4 rounded-lg w-full outline-none' />
-
-            <button className='px-6 py-2 rounded-lg bg-green-500 text-white transition-all duration-300 hover:bg-violet-50  text-sm'>Sign Up</button>
-
-          </div> <br />
-
-        </div>
-      </div>
-      <div className='w-11/12 lg:w-10/12 mx-auto py-8'>
-        <p>©Coptright 2024. All Rights Reserved.</p>
-        <a href="https://www.linkedin.com/in/akash-kumar-54073a209/" target="_blank" rel="noopener noreferrer" className='text-center text-black-300 cursor-pointer hover:text-violet-40'>Created By Akash kumar</a>
-      </div>
-
-    </section>
+      </footer>
   )
 }
 

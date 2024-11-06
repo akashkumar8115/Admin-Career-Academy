@@ -18,9 +18,15 @@ export const servicesData = [
     {
         id: 1,
         title: "Career Counselling",
-        description: "Expert guidance for your career path",
+        description: "Expert guidance for your career path with personalized counseling sessions",
         image: CounsellingImg,
-        path: "/services/career-counselling"
+        path: "/services/career-counselling",
+        features: [
+            "One-on-one counseling sessions",
+            "Personality assessment",
+            "Career path planning",
+            "Industry insights"
+        ]
     },
     {
         id: 2,
