@@ -51,6 +51,28 @@ import SEO from "./pages/services/SEO";
 import GraphicDesign from "./pages/services/GraphicDesign";
 import ContentWriting from "./pages/services/ContentWriting";
 
+// career Routes
+import CollegeList from "./pages/services/CollegeList.jsx";
+import CollegeDetails from "./pages/services/CollegeDetails.jsx";
+import HostelDetails from "./pages/services/HostelDetails.jsx";
+import PGHostelDetails from "./pages/services/PGHostelDetails";
+import HostelRules from "./pages/services/HostelRules";
+import CareerGuidance from "./pages/services/CareerGuidance.jsx";
+import CareerGuidanceDetails from "./pages/services/CareerGuidanceDetails.jsx";
+import ScholarshipDetails from "./pages/services/ScholarshipDetails";
+import AdmissionProcess from "./pages/services/AdmissionProcess";
+import PlacementStats from "./pages/services/PlacementStats";
+import CourseComparison from "./pages/services/CourseComparison";
+import CampusLife from "./pages/services/CampusLife";
+import CareerRoadmap from "./pages/services/CareerRoadmap";
+
+// Add these imports
+import PrivateRoute from './components/PrivateRoute';
+import Login from './pages/auth/Login';
+import Register from './pages/auth/Register';
+import ForgotPassword from './pages/auth/ForgotPassword';
+import Profile from './pages/auth/Profile';
+import UpdateProfile from './pages/auth/UpdateProfile';
 function App() {
   return (
     <div className="w-screen min-h-screen bg-gray-50 font-poppins overflow-x-hidden">
@@ -59,7 +81,20 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-
+          {/* Auth Routes */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/profile" element={
+            <PrivateRoute>
+              <Profile />
+            </PrivateRoute>
+          } />
+          <Route path="/update-profile" element={
+            <PrivateRoute>
+              <UpdateProfile />
+            </PrivateRoute>
+          } />
           {/* Career Routes */}
           <Route path="/internships-jobs" element={<InternshipsAndJobs />} />
           <Route path="/internships" element={<Internships />} />
@@ -75,6 +110,23 @@ function App() {
           <Route path="/services/seo" element={<SEO />} />
           <Route path="/services/graphic-design" element={<GraphicDesign />} />
           <Route path="/services/content-writing" element={<ContentWriting />} />
+          {/* career guidance */}
+          <Route path="/services/career-guidance" element={<CareerGuidance />} />
+          {/* <Route path="/services/career-guidance/:id" element={<CareerGuidanceDetails />} /> */}
+          <Route path="/services/colleges" element={<CollegeList />} />
+          <Route path="/services/colleges/:id" element={<CollegeDetails />} />
+          <Route path="/services/hostels/:id" element={<HostelDetails />} />
+          <Route path="/services/pg-hostel-details" element={<PGHostelDetails />} />
+          <Route path="/services/hostel-rules" element={<HostelRules />} />
+          {/* <Route path="/services/career-guidance/:id" element={<CareerGuidanceDetails />} /> */}
+          <Route path="/services/scholarship-details" element={<ScholarshipDetails />} />
+          <Route path="/services/admission-process" element={<AdmissionProcess />} />
+          <Route path="/services/placement-stats" element={<PlacementStats />} />
+          <Route path="/services/course-comparison" element={<CourseComparison />} />
+          <Route path="/services/campus-life" element={<CampusLife />} />
+          <Route path="/services/career-roadmap" element={<CareerRoadmap />} />
+
+
 
           {/* Other Routes */}
           <Route path="/clients" element={<Clients />} />

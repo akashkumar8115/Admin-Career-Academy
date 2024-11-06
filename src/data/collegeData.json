@@ -1,0 +1,294 @@
+{
+    "colleges": [
+        {
+            "id": 1,
+            "name": "Harvard University",
+            "location": "Cambridge, MA",
+            "founded": 1636,
+            "type": "Private",
+            "tuition": 54768,
+            "acceptance_rate": 4.6,
+            "enrollment": 31120,
+            "programs": [
+                "Business",
+                "Law",
+                "Medicine",
+                "Engineering",
+                "Arts & Sciences"
+            ],
+            "rankings": {
+                "national": 2,
+                "global": 1,
+                "research": 1
+            },
+            "facilities": [
+                "Research Labs",
+                "Libraries",
+                "Sports Complex",
+                "Student Center",
+                "Health Services"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Stanford University",
+            "location": "Stanford, CA",
+            "founded": 1885,
+            "type": "Private",
+            "tuition": 56169,
+            "acceptance_rate": 4.3,
+            "enrollment": 17249,
+            "programs": [
+                "Computer Science",
+                "Engineering",
+                "Business",
+                "Medicine",
+                "Humanities"
+            ],
+            "rankings": {
+                "national": 3,
+                "global": 2,
+                "research": 2
+            },
+            "facilities": [
+                "Innovation Hub",
+                "Research Centers",
+                "Athletic Facilities",
+                "Arts Center",
+                "Medical Center"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "MIT",
+            "location": "Cambridge, MA",
+            "founded": 1861,
+            "type": "Private",
+            "tuition": 55878,
+            "acceptance_rate": 7.3,
+            "enrollment": 11934,
+            "programs": [
+                "Engineering",
+                "Computer Science",
+                "Physics",
+                "Mathematics",
+                "Architecture"
+            ],
+            "rankings": {
+                "national": 1,
+                "global": 3,
+                "research": 1
+            },
+            "facilities": [
+                "Tech Labs",
+                "Innovation Center",
+                "Research Facilities",
+                "Media Lab",
+                "Nuclear Reactor"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Yale University",
+            "location": "New Haven, CT",
+            "founded": 1701,
+            "type": "Private",
+            "tuition": 57700,
+            "acceptance_rate": 6.1,
+            "enrollment": 13609,
+            "programs": [
+                "Law",
+                "Medicine",
+                "Arts",
+                "Drama",
+                "Environmental Studies"
+            ],
+            "rankings": {
+                "national": 4,
+                "global": 8,
+                "research": 5
+            },
+            "facilities": [
+                "Libraries",
+                "Museums",
+                "Theater",
+                "Research Centers",
+                "Sports Facilities"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "UC Berkeley",
+            "location": "Berkeley, CA",
+            "founded": 1868,
+            "type": "Public",
+            "tuition": 44007,
+            "acceptance_rate": 16.3,
+            "enrollment": 42501,
+            "programs": [
+                "Engineering",
+                "Business",
+                "Chemistry",
+                "Economics",
+                "Computer Science"
+            ],
+            "rankings": {
+                "national": 22,
+                "global": 4,
+                "research": 3
+            },
+            "facilities": [
+                "Research Labs",
+                "Libraries",
+                "Innovation Hub",
+                "Sports Complex",
+                "Student Union"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Princeton University",
+            "location": "Princeton, NJ",
+            "founded": 1746,
+            "type": "Private",
+            "tuition": 56010,
+            "acceptance_rate": 5.8,
+            "enrollment": 8374,
+            "programs": [
+                "Engineering",
+                "Public Policy",
+                "Economics",
+                "Physics",
+                "Architecture"
+            ],
+            "rankings": {
+                "national": 1,
+                "global": 6,
+                "research": 4
+            },
+            "facilities": [
+                "Research Centers",
+                "Art Museum",
+                "Libraries",
+                "Performance Halls",
+                "Athletic Facilities"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Columbia University",
+            "location": "New York, NY",
+            "founded": 1754,
+            "type": "Private",
+            "tuition": 61850,
+            "acceptance_rate": 5.4,
+            "enrollment": 31455,
+            "programs": [
+                "Journalism",
+                "Business",
+                "Law",
+                "Arts",
+                "International Affairs"
+            ],
+            "rankings": {
+                "national": 3,
+                "global": 7,
+                "research": 6
+            },
+            "facilities": [
+                "Libraries",
+                "Research Centers",
+                "Media Labs",
+                "Sports Center",
+                "Student Center"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "University of Chicago",
+            "location": "Chicago, IL",
+            "founded": 1890,
+            "type": "Private",
+            "tuition": 60552,
+            "acceptance_rate": 6.2,
+            "enrollment": 17452,
+            "programs": [
+                "Economics",
+                "Business",
+                "Law",
+                "Physics",
+                "Social Sciences"
+            ],
+            "rankings": {
+                "national": 6,
+                "global": 9,
+                "research": 7
+            },
+            "facilities": [
+                "Research Institutes",
+                "Libraries",
+                "Labs",
+                "Athletic Center",
+                "Student Housing"
+            ]
+        },
+        {
+            "id": 9,
+            "name": "California Institute of Technology",
+            "location": "Pasadena, CA",
+            "founded": 1891,
+            "type": "Private",
+            "tuition": 54600,
+            "acceptance_rate": 6.4,
+            "enrollment": 2237,
+            "programs": [
+                "Physics",
+                "Engineering",
+                "Chemistry",
+                "Biology",
+                "Mathematics"
+            ],
+            "rankings": {
+                "national": 9,
+                "global": 5,
+                "research": 8
+            },
+            "facilities": [
+                "Research Labs",
+                "Observatory",
+                "Seismology Lab",
+                "Computing Center",
+                "Library"
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Johns Hopkins University",
+            "location": "Baltimore, MD",
+            "founded": 1876,
+            "type": "Private",
+            "tuition": 57010,
+            "acceptance_rate": 11.1,
+            "enrollment": 26402,
+            "programs": [
+                "Medicine",
+                "Public Health",
+                "Engineering",
+                "International Studies",
+                "Music"
+            ],
+            "rankings": {
+                "national": 7,
+                "global": 10,
+                "research": 9
+            },
+            "facilities": [
+                "Medical Centers",
+                "Research Labs",
+                "Libraries",
+                "Performance Halls",
+                "Athletic Facilities"
+            ]
+        }
+    ]
+}
