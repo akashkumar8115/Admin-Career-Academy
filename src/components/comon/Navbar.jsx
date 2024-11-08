@@ -13,6 +13,23 @@ const navlink = [
     },
     {
         id: 2,
+        title: "About",
+        path: "#",
+        dropdown: [
+            { title: "About Company", path: "/about/about-company" },
+            { title: "Our Story", path: "/about/our-story" },
+            { title: "Our Team", path: "/about/our-team" },
+        ]
+    },
+  
+    {
+        id: 3,
+        title: "Services",
+        path: "/services",
+    },
+   
+    {
+        id: 4,
         title: "Career",
         path: "#",
         dropdown: [
@@ -22,7 +39,7 @@ const navlink = [
         ]
     },
     {
-        id: 3,
+        id: 5,
         title: "Education",
         path: "#",
         dropdown: [
@@ -32,7 +49,7 @@ const navlink = [
         ]
     },
     {
-        id: 4,
+        id: 6,
         title: "Accommodation",
         path: "#",
         dropdown: [
@@ -41,21 +58,13 @@ const navlink = [
             { title: "Campus Life", path: "/services/campus-life" },
         ]
     },
-    {
-        id: 5,
-        title: "Services",
-        path: "/services",
-    },
-    {
-        id: 6,
-        title: "About",
-        path: "/about",
-    },
+   
     {
         id: 7,
         title: "Contact",
         path: "/contact-us",
     },
+   
 ]
 
 const Navbar = () => {
@@ -67,7 +76,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='w-full fixed top-0 left-0 z-[9999] right-0 text-black py-2 bg-gradient-to-r from-white to-violet-50 shadow-lg'>
+        <nav className='w-full fixed top-0 left-0 z-[9999] right-0 text-black py-2 bg-gradient-to-r from-white to-green-200 shadow-lg'>
             <div className='w-11/12 lg:w-10/12 mx-auto flex justify-between items-center'>
                 <div className='py-3 px-3'>
                     <img src={logo} alt="logo" className='w-32' />

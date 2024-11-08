@@ -3,7 +3,7 @@ import { servicesData } from '../../data/services'
 
 const Services = () => {
   return (
-    <section className=' w-full sm:py-24 py-16  bg-green-100 '>
+    <section className=' w-full sm:py-24 py-16  bg-violet-100 '>
 
       <div className='w-11/12 lg:w-10/12 mx-auto flex flex-col gap-y-20' >
 

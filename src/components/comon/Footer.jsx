@@ -30,7 +30,7 @@ const resources = [
 
 const Footer = () => {
   return (
-      <footer className="bg-gradient-to-b from-white to-green-shade-50 pt-16 pb-8">
+      <footer className="bg-gradient-to-b from-white to-violet-100 pt-8 pb-8 border">
           <div className="w-11/12 lg:w-10/12 mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                   {/* Company Info */}
@@ -41,20 +41,20 @@ const Footer = () => {
                       </p>
                       <div className="flex gap-4">
                           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" 
-                             className="text-violet-50 hover:text-violet-100 transition-colors">
-                              <FaLinkedin size={24} />
+                             className="text-green-500 hover:text-violet-50 transition-colors">
+                              <FaLinkedin size={20} />
                           </a>
                           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-                             className="text-violet-50 hover:text-violet-100 transition-colors">
-                              <FaTwitter size={24} />
+                             className="text-green-500 hover:text-violet-50 transition-colors">
+                              <FaTwitter size={20} />
                           </a>
                           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
-                             className="text-violet-50 hover:text-violet-100 transition-colors">
-                              <FaInstagram size={24} />
+                             className="text-green-500 hover:text-violet-50 transition-colors">
+                              <FaInstagram size={20} />
                           </a>
                           <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"
-                             className="text-violet-50 hover:text-violet-100 transition-colors">
-                              <FaYoutube size={24} />
+                             className="text-green-500 hover:text-violet-50 transition-colors">
+                              <FaYoutube size={20} />
                           </a>
                       </div>
                   </div>

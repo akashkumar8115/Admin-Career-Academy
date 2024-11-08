@@ -10,6 +10,11 @@ import Contact from "./pages/Contact";
 import Footer from "./components/comon/Footer";
 import "./App.css"
 
+
+//About Routes
+
+import AboutCompany from "./pages/about/AboutCompany.jsx";
+
 // Career Routes
 import InternshipsAndJobs from "./pages/InternshipsAndJobs.jsx";
 import Internships from "./pages/Internships.jsx";
@@ -81,6 +86,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+
+          {/* --------- about route --------- */}
+
+          
+
+
           {/* Auth Routes */}
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
@@ -95,6 +106,11 @@ function App() {
               <UpdateProfile />
             </PrivateRoute>
           } />
+
+          {/* About Routes */}
+          <Route path="/about/about-company" element={<AboutCompany/>}/>
+
+
           {/* Career Routes */}
           <Route path="/internships-jobs" element={<InternshipsAndJobs />} />
           <Route path="/internships" element={<Internships />} />
