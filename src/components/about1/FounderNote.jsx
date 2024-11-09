@@ -22,7 +22,7 @@ const FounderNote = () => {
 
                     {/* ----------- left side ----------- */}
 
-                    <div className='xlg:w-[62%] xmd:w-[55%] flex flex-col gap-y-4 text-justify '>
+                    <div data-aos="fade-left" className='xlg:w-[62%] xmd:w-[55%] flex flex-col gap-y-4 text-justify '>
 
                         <p>
                             Beyond his technical achievements, Shadab is recognized
@@ -64,7 +64,7 @@ const FounderNote = () => {
                     {/* ------------ right side  ------------ */}
 
 
-                    <div className='xlg:w-[32%] xmd:w-[45%] flex items-center justify-center'>
+                    <div data-aos="fade-right" className='xlg:w-[32%] xmd:w-[45%] flex items-center justify-center'>
 
                         <img src={Note} alt="founder's note" className='xmd:w-full xmd:h-full xs:w-[80%] xs:h-[80%] object-contain' />
 

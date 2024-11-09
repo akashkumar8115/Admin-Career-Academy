@@ -4,6 +4,8 @@ import { IoMdClose } from "react-icons/io"
 import { Link } from 'react-router-dom'
 import { IoIosArrowDown } from "react-icons/io"
 import logo from '../../assets/logo.png'
+import { useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const navlink = [
     {
@@ -71,6 +73,12 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
     const [activeDropdown, setActiveDropdown] = useState(null)
 
+    const location = useLocation();
+
+    useEffect(()=> {
+         setActiveDropdown(null)
+    }, [location.pathname])
+
     const handleDropdown = (id) => {
         setActiveDropdown(activeDropdown === id ? null : id)
     }
@@ -97,7 +105,13 @@ const Navbar = () => {
 
                                 </button>
 
-                                <div className="absolute z-[999] left-0 right-0 mt-2 w-48 overflow-hidden transition-all duration-500 ease-in-out max-h-0 group-hover:max-h-[600px] bg-white shadow-lg ">
+                                <div className=' absolute z-[999] left-0 right-0 mt-4'>
+
+                             
+
+                                <div className={`   w-48 overflow-hidden transition-all duration-500 ease-in-out max-h-0 group-hover:max-h-[600px] bg-white shadow-lg
+
+                                     `}>
                                     {item.dropdown.map((dropItem, index) => (
                                         <Link
                                             key={index}
@@ -108,6 +122,8 @@ const Navbar = () => {
                                         </Link>
                                     ))}
                                 </div>
+                                </div>
+
                                 </div>
                             ) : (
                                 <Link to={item.path} className='py-1 px-3 transition-all h-full  duration-300 anime rounded-lg font-semibold'>

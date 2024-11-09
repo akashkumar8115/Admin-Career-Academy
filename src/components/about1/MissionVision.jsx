@@ -16,7 +16,7 @@ const MissionVision = () => {
 
                 </motion.div>
 
-                <div className="grid md:grid-cols-2 gap-8 ">
+                <div data-aos="fade-right"  className="grid md:grid-cols-2 gap-8 ">
                     <div className="bg-white p-8 rounded-xl shadow-lg">
                         <h2 className="text-2xl font-semibold">Our Mission</h2>
                         <p className="text-black-600 mt-2">
@@ -28,7 +28,7 @@ const MissionVision = () => {
                             workforce succes
                         </p>
                     </div>
-                    <div className="bg-white p-8 rounded-xl shadow-lg">
+                    <div data-aos="fade-left" className="bg-white p-8 rounded-xl shadow-lg">
                         <h2 className="text-2xl font-semibold">Our Vision</h2>
                         <p className="text-black-600 mt-2">
                             The vision of ACA Pvt.

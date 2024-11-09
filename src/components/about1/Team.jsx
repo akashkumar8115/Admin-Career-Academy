@@ -75,7 +75,9 @@ const Team = () => {
 
                     {
                         teamData.map((member) => (
-                            <div key={member.id} className='bg-violet-100  rounded-lg py-8 px-8 flex flex-col gap-y-6 items-center transition-all duration-300  hover:scale-105'>
+                            <div
+                            data-aos = {member.id % 2 === 0 ? "fade-up" : "fade-down"}
+                             key={member.id} className='bg-violet-100  rounded-lg py-8 px-8 flex flex-col gap-y-6 items-center transition-all duration-300  hover:scale-105'>
 
                             <div className='xxl:w-[220px] xxl:h-[220px] xs:w-[180px] xs:h-[180px] w-[200px] h-[200px] '>
     

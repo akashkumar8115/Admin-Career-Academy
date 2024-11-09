@@ -21,7 +21,7 @@ const Company = () => {
 
                     {/* --------------- left side ------------- */}
 
-                    <div className='xlg:w-[55%] xmd:w-[50%] flex flex-col gap-y-6 justify-center'>
+                    <div data-aos="fade-right" className='xlg:w-[55%] xmd:w-[50%] flex flex-col gap-y-6 justify-center'>
 
                         <h2 className='smd:text-3xl text-2xl xmd:text-left text-center font-semibold  text-green-600'>WHERE LEARNING MEETS
                             REAL-WORLD IMPACT!</h2>
@@ -42,7 +42,7 @@ const Company = () => {
 
                     {/* -------------- right side ------------------ */}
 
-                    <div className='xlg:w-[40%] xmd:w-[46%] flex items-center justify-center'>
+                    <div data-aos="fade-left" className='xlg:w-[40%] xmd:w-[46%] flex items-center justify-center'>
 
                         <img src={company} alt="company" className='xmd:w-full xmd:h-full xs:w-[80%] xs:h-[80%] object-cover' />
 

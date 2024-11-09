@@ -5,7 +5,7 @@ const Join = () => {
     return (
         <section className="py-24  bg-black-100 ">
 
-            <div className="w-11/12 lg:w-10/12 mx-auto flex flex-col gap-y-12">
+            <div data-aos="fade-left" className="w-11/12 lg:w-10/12 mx-auto flex flex-col gap-y-12">
 
                 <div className="text-center bg-white p-8 rounded-xl shadow-lg">
                     <h2 className="text-2xl font-semibold mb-4">Join Our Journey</h2>

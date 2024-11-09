@@ -17,11 +17,11 @@ const OurStoryHero = () => {
                 </div>
 
 
-                <div className='flex xmd:flex-row flex-col gap-x-8 gap-y-12 justify-between'>
+                <div  className='flex xmd:flex-row flex-col gap-x-8 gap-y-12 justify-between'>
 
                     {/* ----------- left side ----------- */}
 
-                    <div className='xlg:w-[62%] xmd:w-[55%] flex flex-col gap-y-4 text-justify '>
+                    <div data-aos="fade-right" className='xlg:w-[62%] xmd:w-[55%] flex flex-col gap-y-4 text-justify '>
 
                         <p>
                             ACA Pvt Ltd was founded in 2021 by an ambitious 19-
@@ -75,7 +75,7 @@ const OurStoryHero = () => {
                    {/* ------------ right side  ------------ */}
 
                     
-                        <div className='xlg:w-[32%] xmd:w-[45%] flex items-center justify-center'>
+                        <div data-aos="fade-left" className='xlg:w-[32%] xmd:w-[45%] flex items-center justify-center'>
 
                             <img src={story} alt="story" className='xmd:w-full xmd:h-full xs:w-[80%] xs:h-[80%] object-contain' />
 

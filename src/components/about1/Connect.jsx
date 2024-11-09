@@ -5,7 +5,7 @@ const Connect = () => {
     return (
         <section className="py-24 bg-black-200">
 
-            <div className="w-11/12 lg:w-10/12 mx-auto flex flex-col md:gap-y-16 gap-y-12 ">
+            <div data-aos="fade-left" className="w-11/12 lg:w-10/12 mx-auto flex flex-col md:gap-y-16 gap-y-12 ">
 
                 <div className="py-12 bg-green-100 rounded-xl shadow-lg text-center">
                     <h2 className="text-2xl font-semibold mb-6">Connect With Us</h2>

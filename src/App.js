@@ -1,5 +1,11 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 import Navbar from "./components/comon/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -81,6 +87,19 @@ import ForgotPassword from './pages/auth/ForgotPassword';
 import Profile from './pages/auth/Profile';
 import UpdateProfile from './pages/auth/UpdateProfile';
 function App() {
+
+  useEffect(() => {
+    // Initialize AOS animations
+    AOS.init({
+      once: true,
+      duration: 900,
+      easing: "ease-out-sine",
+      delay: 100,
+    });
+  }, []);
+
+  AOS.refresh();
+
   return (
     <div className="w-screen min-h-screen bg-gray-50 font-poppins overflow-x-hidden">
       <Navbar />
