@@ -14,6 +14,8 @@ import "./App.css"
 //About Routes
 
 import AboutCompany from "./pages/about/AboutCompany.jsx";
+import OurStory from "./pages/about/OurStory.jsx";
+import OurTeam from "./pages/about/OurTeam.jsx";
 
 // Career Routes
 import InternshipsAndJobs from "./pages/InternshipsAndJobs.jsx";
@@ -109,6 +111,8 @@ function App() {
 
           {/* About Routes */}
           <Route path="/about/about-company" element={<AboutCompany/>}/>
+          <Route path="/about/our-story" element={<OurStory/>}/>
+          <Route path="/about/our-team" element={<OurTeam/>}/>
 
 
           {/* Career Routes */}
