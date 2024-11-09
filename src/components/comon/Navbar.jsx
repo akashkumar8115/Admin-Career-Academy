@@ -82,36 +82,40 @@ const Navbar = () => {
                     <img src={logo} alt="logo" className='w-32' />
                 </div>
 
-                <div className='hidden smd:flex xl:gap-x-6 xmd:gap-x-4 gap-x-2'>
+                <div className='hidden smd:flex xl:gap-x-6 xmd:gap-x-4  items-center gap-x-2'>
                     {navlink.map((item) => (
                         <div key={item.id} className="relative group">
                             {item.dropdown ? (
+                                <div>
                                 <button 
                                     className='py-1 px-3 flex items-center gap-1 transition-all duration-300 anime rounded-lg font-semibold'
                                     onClick={() => handleDropdown(item.id)}
                                 >
                                     {item.title}
                                     <IoIosArrowDown className={`transition-transform duration-300 ${activeDropdown === item.id ? 'rotate-180' : ''}`} />
-                                </button>
-                            ) : (
-                                <Link to={item.path} className='py-1 px-3 transition-all duration-300 anime rounded-lg font-semibold'>
-                                    {item.title}
-                                </Link>
-                            )}
 
-                            {item.dropdown && activeDropdown === item.id && (
-                                <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2">
+
+                                </button>
+
+                                <div className="absolute z-[999] left-0 right-0 mt-2 w-48 overflow-hidden transition-all duration-500 ease-in-out max-h-0 group-hover:max-h-[600px] bg-white shadow-lg ">
                                     {item.dropdown.map((dropItem, index) => (
                                         <Link
                                             key={index}
                                             to={dropItem.path}
-                                            className="block px-4 py-2 hover:bg-violet-100 transition-colors"
+                                            className=" block px-4 py-4 hover:bg-violet-100 transition-colors"
                                         >
                                             {dropItem.title}
                                         </Link>
                                     ))}
                                 </div>
+                                </div>
+                            ) : (
+                                <Link to={item.path} className='py-1 px-3 transition-all h-full  duration-300 anime rounded-lg font-semibold'>
+                                    {item.title}
+                                </Link>
                             )}
+
+                          
                         </div>
                     ))}
                 </div>
