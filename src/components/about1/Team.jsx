@@ -5,7 +5,7 @@ import Manoj from '../../assets/abouts/Manoj.jpg'
 import Akash from '../../assets/abouts/akash.jpg'
 import Avinesh from '../../assets/abouts/Avinesh.jpg'
 import Deepti from '../../assets/abouts/Deepti.jpg'
-import Mushafiya from '../../assets/abouts/Mushafiya.jpg'
+import Mushafiya from '../../assets/abouts/Mush.jpg'
 
 
 const teamData = [

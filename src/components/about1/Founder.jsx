@@ -3,7 +3,7 @@ import founder from '../../assets/abouts/Shadab.jpg'
 
 const Founder = () => {
     return (
-        <section className="py-24  bg-violet-100 ">
+        <section className="py-24  bg-gradient-to-b from-white to-violet-100 ">
 
             <div className="w-11/12 lg:w-10/12 mx-auto flex flex-col md:gap-y-16 gap-y-12 ">
 

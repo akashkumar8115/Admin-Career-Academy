@@ -7,6 +7,7 @@ import MissionVisionDetails from '../../components/about1/MissionVisionDetails'
 import FounderJourney from '../../components/about1/FounderJourney'
 import ValueSection from '../../components/about1/ValueSection'
 import OurImapct from '../../components/about1/OurImapct'
+import FounderAchievements from '../../components/about1/FounderAchievements'
 
 const AboutCompany = () => {
     return (
@@ -17,6 +18,7 @@ const AboutCompany = () => {
             <ValueSection/>
             <Founder/>
             <FounderJourney/>
+            <FounderAchievements/>
             <OurImapct/>
             <Join/>
             <MissionVisionDetails/>

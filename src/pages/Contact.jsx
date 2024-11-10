@@ -59,9 +59,9 @@ const Contact = () => {
             icon: <IoMail className="text-2xl" />,
             title: "Email Us",
             details: [
-                "info@acadmin.com",
-                "careers@acadmin.com",
-                "support@acadmin.com"
+                "infoonaca@gmail.com",
+                "acapvtlt.in@gmail.com",
+                "acahiring24@gmail.com"
             ]
         },
         {
