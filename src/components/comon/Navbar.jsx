@@ -84,7 +84,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='w-full fixed top-0 left-0 z-[9999] right-0 text-black py-2 bg-gradient-to-r from-white to-green-200 shadow-lg'>
+        <nav className='w-full fixed top-0 left-0 z-[9999] right-0 text-black py-2 bg-gradient-to-r from-white to-violet-50 shadow-lg'>
             <div className='w-11/12 lg:w-10/12 mx-auto flex justify-between items-center'>
                 <div className='py-3 px-3'>
                     <img src={logo} alt="logo" className='w-32' />
@@ -116,7 +116,7 @@ const Navbar = () => {
                                         <Link
                                             key={index}
                                             to={dropItem.path}
-                                            className=" block px-4 py-4 hover:bg-violet-100 transition-colors"
+                                            className=" block px-4 py-4 hover:bg-green-100 transition-colors"
                                         >
                                             {dropItem.title}
                                         </Link>

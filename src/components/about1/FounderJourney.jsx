@@ -5,7 +5,7 @@ const journeySteps = [
     {
         phase: "Early Education",
         details: [
-            "Jawahar Navodaya Vidyalaya, Kintampur, Badilapur (UP)",
+            "Jawahar Navodaya Vidyalaya, Kirtanpur, Bahraich (UP)",
             "Strong academic foundation",
             "Leadership roles in school activities"
         ]
