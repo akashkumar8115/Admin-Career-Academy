@@ -1,47 +1,54 @@
 import React from 'react'
-import Hero from '../../assets/hero.png'
+import Hero from '../../assets/career-counselling.jpg'
 import { Link } from 'react-router-dom'
+
 const HeroSection = () => {
   return (
-
-    <section className='w-full sm:py-24 py-16 mt-28 '>
-
-      {/* ---------- container -------- */}
-
-      <div className='w-11/12 lg:w-10/12 mx-auto  flex smd:flex-row flex-col justify-between xmd:gap-x-16 gap-x-10 gap-y-16'>
-
-        {/* ------------ left part --------- */}
-
-        <div className='  flex flex-col smd:gap-y-6 gap-y-8 smd:w-[55%]'>
-
-          <h1 className='xl:text-5xl text-4xl smd:text-left text-center font-semibold  xxl:w-[80%] xl:w-[90%] xl:leading-[60px] leading-[52px]'>Where Technology Meets Understanding!</h1>
-
-          <h2 className='xl:text-3xl text-2xl smd:text-left text-center font-semibold  text-green-600'>
-            Tailored Support for Every Journey...
+    <section className='w-full min-h-screen flex items-center'>
+      <div className='w-11/12 lg:w-10/12 mx-auto flex smd:flex-row flex-col justify-between items-center xmd:gap-x-16 gap-x-10 gap-y-16'>
+        <div className='flex flex-col smd:gap-y-8 gap-y-6 smd:w-[55%]'>
+          <h1 className='xl:text-6xl text-5xl smd:text-left text-center font-bold xl:leading-[70px] leading-[60px] text-gray-800'>
+            Transform Your Future with Expert Guidance
+          </h1>
+          <h2 className='xl:text-3xl text-2xl smd:text-left text-center font-semibold text-green-600'>
+            Your Success Journey Starts Here
           </h2>
-
-          <p className='smd:text-left text-center'>Empower yourself with the right tools for success. Our counseling services are designed to guide you through personal challenges, while our IT solutions equip you with the technology needed to elevate your business. Together, we can achieve your goals.</p>
-
-          <div className='flex  smd:justify-start justify-center' >
-            <Link to="/login" className=''>
-              <button className='flex w-max py-3 px-5 transition-all duration-300  bg-violet-50 hover:bg-green-500 rounded-lg text-white'>Let's Get Started</button>
+          <p className='smd:text-left text-center text-lg text-gray-600 leading-relaxed'>
+            We're dedicated to empowering students and professionals with cutting-edge career guidance, educational resources, and industry insights. Join thousands of successful individuals who've transformed their careers with our expert guidance.
+          </p>
+          <div className='flex gap-4 smd:justify-start justify-center'>
+            <Link to="/get-started" className=''>
+              <button className='py-4 px-8 text-lg font-semibold transition-all duration-300 bg-violet-600 hover:bg-green-500 rounded-lg text-black shadow-lg hover:shadow-xl'>
+                Start Your Journey
+              </button>
+            </Link>
+            <Link to="/services" className=''>
+              <button className='py-4 px-8 text-lg font-semibold transition-all duration-300 border-2 border-violet-600 hover:border-green-500 rounded-lg text-violet-600 hover:text-green-500'>
+                Explore Services
+              </button>
             </Link>
           </div>
-
+          <div className='mt-8 flex gap-8 items-center'>
+            <div className='text-center'>
+              <h3 className='text-3xl font-bold text-violet-600'>5000+</h3>
+              <p className='text-gray-600'>Students Guided</p>
+            </div>
+            <div className='text-center'>
+              <h3 className='text-3xl font-bold text-violet-600'>95%</h3>
+              <p className='text-gray-600'>Success Rate</p>
+            </div>
+            <div className='text-center'>
+              <h3 className='text-3xl font-bold text-violet-600'>50+</h3>
+              <p className='text-gray-600'>Expert Mentors</p>
+            </div>
+          </div>
         </div>
 
-
-        {/* --------- right part ----------- */}
-
-        <div className='smd:w-[40%]'>
-
-          <img src={Hero} alt="hero-img" className='smd:w-full smd:h-full xs:w-[80%] xs:h-[80%] mx-auto object-contain' />
-
+        <div className='smd:w-[45%] relative'>
+          <div className='absolute -z-10 w-full h-full bg-gradient-to-r from-violet-200 to-green-200 rounded-full blur-3xl opacity-30'></div>
+          <img src={Hero} alt="Career Guidance" className='w-full h-full object-contain animate-float' />
         </div>
-
       </div>
-
-
     </section>
   )
 }

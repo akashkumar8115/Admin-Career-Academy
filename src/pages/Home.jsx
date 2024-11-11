@@ -1,23 +1,40 @@
 import React from 'react'
+import Banner from '../components/home/Banner.jsx'
 import HeroSection from '../components/home/HeroSection'
-import Help from '../components/home/Help'
+import Stats from '../components/home/Stats'
 import Services from '../components/home/Services'
-import Mission from '../components/home/Mission'
 import Academic from '../components/home/Academic'
+import Partners from '../components/home/Partners'
+import Testimonials from '../components/home/Testimonials'
 import Blog from '../components/home/Blog'
 import FAQ from '../components/home/FAQ'
-
+import UpcomingEvents from '../components/home/UpcomingEvents.jsx'
+import ContactCTA from './ContactCTA.jsx'
+import NewsletterSignup from '../components/home/NewsletterSignup'
+import SuccessStories from '../components/home/SuccessStories.jsx'
+import Mission from '../components/home/Mission'
+import Features from '../components/home/Features'
 
 const Home = () => {
     return (
-        <div>
+        <div className='bg-white'>
+            <Banner />
             <HeroSection />
-            <Help />
             <Services />
-            <Mission/>
-            <Academic/>
-            <Blog/>
-            <FAQ/>
+            <Stats />
+            <Academic />
+            <Partners />
+            <Blog />
+            <div className='bg-gray-50'>
+            </div>
+            <Testimonials />
+
+            {/* <SuccessStories /> */}
+            <UpcomingEvents />
+
+            <FAQ />
+            <NewsletterSignup/>
+            {/* <ContactCTA /> */}
         </div>
     )
 }
