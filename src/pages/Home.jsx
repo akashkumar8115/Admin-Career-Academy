@@ -9,8 +9,8 @@ import Testimonials from '../components/home/Testimonials'
 import Blog from '../components/home/Blog'
 import FAQ from '../components/home/FAQ'
 import UpcomingEvents from '../components/home/UpcomingEvents.jsx'
-import ContactCTA from './ContactCTA.jsx'
 import NewsletterSignup from '../components/home/NewsletterSignup'
+import ContactCTA from './ContactCTA.jsx'
 import SuccessStories from '../components/home/SuccessStories.jsx'
 import Mission from '../components/home/Mission'
 import Features from '../components/home/Features'
@@ -28,10 +28,8 @@ const Home = () => {
             <div className='bg-gray-50'>
             </div>
             <Testimonials />
-
             {/* <SuccessStories /> */}
             <UpcomingEvents />
-
             <FAQ />
             <NewsletterSignup/>
             {/* <ContactCTA /> */}

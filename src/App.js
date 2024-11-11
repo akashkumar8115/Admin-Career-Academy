@@ -89,7 +89,7 @@ import AboutCompany from "./pages/about/AboutCompany.jsx";
 import OurStory from "./pages/about/OurStory.jsx";
 import OurTeam from "./pages/about/OurTeam.jsx";
 import Member from "./components/about1/Member.jsx";
-
+import NotFound from './pages/NotFound';
 function App() {
   const location = useLocation();
 
@@ -167,19 +167,17 @@ function App() {
           <Route path="/services/course-comparison" element={<CourseComparison />} />
           <Route path="/services/campus-life" element={<CampusLife />} />
           <Route path="/services/career-roadmap" element={<CareerRoadmap />} />
-
-
-
           {/* Other Routes */}
           <Route path="/clients" element={<Clients />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/contact-us" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <ScrollTop />
-
       <WhatsAppButton />
       <Footer />
+
     </div>
   );
 }

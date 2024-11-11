@@ -1,5 +1,5 @@
 import React from 'react'
-import founderImage from '../../assets/abouts/founder.png'
+import founderImage from '../../assets/abouts/Shadab.jpg'
 
 const FounderProfile = () => {
     return (

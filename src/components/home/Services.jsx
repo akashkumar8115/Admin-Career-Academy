@@ -54,7 +54,7 @@ const Services = () => {
                     <h2 className='text-xl font-bold mb-3'>{service.title}</h2>
                     <p className='text-gray-600 mb-4'>{service.description}</p>
                     <Link to={service.path}>
-                      <button className='w-full py-3 bg-violet-600 text-white rounded-lg hover:bg-violet-700 transition-colors'>
+                      <button className='w-full py-3 bg-green-600 text-black rounded-lg hover:bg-violet-700 transition-colors'>
                         Learn More
                       </button>
                     </Link>

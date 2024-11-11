@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { bannerData } from '../../data/banner'
 import { FaArrowRight, FaArrowLeft, FaClock, FaStar, FaUsers } from 'react-icons/fa'
@@ -6,7 +7,7 @@ import { FaArrowRight, FaArrowLeft, FaClock, FaStar, FaUsers } from 'react-icons
 const Banner = () => {
     const scrollRef = useRef(null)
     const [scrollDirection, setScrollDirection] = useState('right')
-    const scrollAmount = window.innerWidth * 0.8
+    const scrollAmount = window.innerWidth * 1
 
     useEffect(() => {
         const container = scrollRef.current
@@ -30,7 +31,7 @@ const Banner = () => {
             }
         }
 
-        scrollInterval = setInterval(autoScroll, 5000) // Adjust timing as needed
+        scrollInterval = setInterval(autoScroll, 4000) // Adjust timing as needed
 
         return () => clearInterval(scrollInterval)
     }, [scrollDirection])
@@ -47,11 +48,9 @@ const Banner = () => {
     }
 
     return (
-        <section className='h-[60vh] w-full relative overflow-hidden pt-20 pb-20'>
+        <section className='h-[60vh] w-full relative overflow-hidden pt-28 pb-20'>
             <div className='absolute inset-0 bg-dots-pattern opacity-5'></div>
-
             <div className='h-full w-full relative'>
-
                 <div className='relative h-full flex items-center pt-20'>
                     <button
                         className='absolute left-8 z-20 bg-white/90 hover:bg-white p-4 rounded-full shadow-lg hover:scale-110 transition-all duration-300'
@@ -97,9 +96,11 @@ const Banner = () => {
                                             </span>
                                         </div>
                                         <div className='flex justify-between items-center'>
-                                            <button className='bg-violet-600 hover:bg-violet-700 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105'>
-                                                {item.buttonText}
-                                            </button>
+                                            <Link to={item.path} className='flex items-center gap-2'>
+                                                <button className='bg-violet-600 hover:bg-violet-700 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105'>
+                                                    {item.buttonText}
+                                                </button>
+                                            </Link>
                                             <span className='text-2xl font-bold text-white'>{item.price}</span>
                                         </div>
                                     </div>
