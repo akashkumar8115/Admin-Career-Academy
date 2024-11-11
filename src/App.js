@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 import { useEffect } from "react";
 import AOS from "aos";
@@ -14,6 +15,7 @@ import Clients from "./pages/Clients";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import Footer from "./components/comon/Footer";
+import ScrollTop from "./components/comon/ScrollTop.jsx";
 import "./App.css"
 
 
@@ -87,7 +89,15 @@ import Register from './pages/auth/Register';
 import ForgotPassword from './pages/auth/ForgotPassword';
 import Profile from './pages/auth/Profile';
 import UpdateProfile from './pages/auth/UpdateProfile';
+
 function App() {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 10 });
+  }, [location.pathname]);
+
 
   useEffect(() => {
     // Initialize AOS animations
@@ -111,7 +121,7 @@ function App() {
 
           {/* --------- about route --------- */}
 
-          
+
 
 
           {/* Auth Routes */}
@@ -130,10 +140,10 @@ function App() {
           } />
 
           {/* About Routes */}
-          <Route path="/about/about-company" element={<AboutCompany/>}/>
-          <Route path="/about/our-story" element={<OurStory/>}/>
-          <Route path="/about/our-team" element={<OurTeam/>}/>
-          <Route path="/about/our-team/:memberName"  element={<Member/>}/>
+          <Route path="/about/about-company" element={<AboutCompany />} />
+          <Route path="/about/our-story" element={<OurStory />} />
+          <Route path="/about/our-team" element={<OurTeam />} />
+          <Route path="/about/our-team/:memberName" element={<Member />} />
 
 
           {/* Career Routes */}
@@ -175,6 +185,8 @@ function App() {
           <Route path="/contact-us" element={<Contact />} />
         </Routes>
       </main>
+
+      <ScrollTop/>
       <Footer />
     </div>
   );

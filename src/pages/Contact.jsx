@@ -49,14 +49,16 @@ const Contact = () => {
         {
             icon: <IoLocationSharp className="text-2xl" />,
             title: "Visit Us",
+            state: "address",
             details: [
                 "ACA Pvt. Ltd.",
-                "Sector 17, Near PU Campus",
-                "Chandigarh, 160017, India"
+                "Aliganj Sector(K)",
+                "Lucknow, 126024, India"
             ]
         },
         {
             icon: <IoMail className="text-2xl" />,
+            state: "email",
             title: "Email Us",
             details: [
                 "infoonaca@gmail.com",
@@ -67,14 +69,16 @@ const Contact = () => {
         {
             icon: <IoCall className="text-2xl" />,
             title: "Call Us",
+            state: "call",
             details: [
-                "+91 98765 43210",
-                "+91 98765 43211",
-                "Toll Free: 1800 123 4567"
+                "+91-9876543210",
+                "+91-9876543211",
+                "1800-123-4567"
             ]
         },
         {
             icon: <IoTime className="text-2xl" />,
+            state: "working",
             title: "Working Hours",
             details: [
                 "Monday - Friday: 9:00 AM - 6:00 PM",
@@ -213,13 +217,15 @@ const Contact = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1 }}
-                            className="bg-white p-6 rounded-xl shadow-lg"
+                            className="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 "
                         >
                             <div className="text-violet-50 mb-4">{info.icon}</div>
                             <h3 className="text-xl font-semibold mb-3">{info.title}</h3>
                             <ul className="space-y-2">
                                 {info.details.map((detail, idx) => (
-                                    <li key={idx} className="text-black-600">{detail}</li>
+                                    <li key={idx} className="text-black-600">{
+                                        info.state === "email" ? (<a className='hover:text-green-700 transition-all duration-300' href={`mailto:${detail}`}>{detail}</a>) : info.state === "call" ? (<a className='hover:text-green-700 transition-all duration-300' href={`tel:${detail.split("-").join("")}`}>{detail.split("-").join(" ")}</a>): (<p>{detail}</p>)
+                                    }</li>
                                 ))}
                             </ul>
                         </motion.div>

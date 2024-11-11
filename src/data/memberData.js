@@ -70,7 +70,7 @@ export const memberData = [
         id : 3,
         name: "Akash Kumar",
         role: "Full Stack Developer | Technical Head",
-        bio: "I am a dedicated full-stack developer and currently the Technical Head for [mention team/organization if applicable], where I lead a team on innovative tech projects. With expertise in React, Node.js, MongoDB, and Express.js, I specialize in creating dynamic, user-centered web applications. Currently, I am pursuing an integrated BTech + MTech degree in Electronics and Communication Engineering at NIT Hamirpur.",
+        bio: "I am a dedicated full-stack developer and currently the Technical Head for ACA Pvt.Ltd, where I lead a team on innovative tech projects. With expertise in React, Node.js, MongoDB, and Express.js, I specialize in creating dynamic, user-centered web applications. Currently, I am pursuing an integrated BTech + MTech degree in Electronics and Communication Engineering at NIT Hamirpur.",
         skills: [
             "Frontend - React.js" , "Backend - Node.js , Express.js" , "Database - MongoDB , MySQL" ,"C" , "C++" , "Javascript", "Python" , "Leadership" , "Team Management" , "Project Coordination" , "Technical Guidance"
         ],
@@ -127,9 +127,13 @@ export const memberData = [
         name: "Avinesh Pratap Singh",
         role: "SDE",
         bio: "",
-        skills: "",
+        skills: [
+
+        ],
         education: "",
-        socialLinks: "",
+        socialLinks: [
+
+        ],
         quote: "",
         photo: Avinesh,
     },
