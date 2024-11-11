@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/comon/Navbar";
+import InitialLoader from './components/loader/InitialLoader'
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -73,9 +74,11 @@ import Register from './pages/auth/Register';
 import ForgotPassword from './pages/auth/ForgotPassword';
 import Profile from './pages/auth/Profile';
 import UpdateProfile from './pages/auth/UpdateProfile';
+import WhatsAppButton from "./components/common/WhatsAppButton";
 function App() {
   return (
-    <div className="w-screen min-h-screen bg-gray-50 font-poppins overflow-x-hidden">
+    <div className="w-screen min-h-screen font-poppins overflow-x-hidden">
+      <InitialLoader />
       <Navbar />
       <main className="min-h-screen">
         <Routes>
@@ -134,6 +137,7 @@ function App() {
           <Route path="/contact-us" element={<Contact />} />
         </Routes>
       </main>
+      <WhatsAppButton />
       <Footer />
     </div>
   );

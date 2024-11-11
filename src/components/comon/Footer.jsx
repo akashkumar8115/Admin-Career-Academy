@@ -118,7 +118,13 @@ const Footer = () => {
                             <Link to="/terms" className="text-black-600 hover:text-violet-50 transition-colors">
                                 Terms of Service
                             </Link>
+                            <Link to="/cookie-policy" className="text-black-600 hover:text-violet-50 transition-colors">
+                                Cookie Policy
+                            </Link>
                         </div>
+                        {/* <div>
+                            <a href="http://" target="_blank" rel="noopener noreferrer" className='flex items-center gap-2 text-transparent'> <p className='text-gray-100 flex items-center gap-2'>...</p></a>
+                        </div> */}
                     </div>
                 </div>
             </div>

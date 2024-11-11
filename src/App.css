@@ -11,7 +11,7 @@ nav{
 }
 /*  */
 
-.lg\:py-4{
+/* .lg\:py-4{
     border: 1px solid rgb(0, 0, 0);
     border-bottom:1px solid transparent;
 }
@@ -19,4 +19,4 @@ nav{
 .lg\:py-4:hover{
     border-bottom: 1px solid rgb(0, 0, 0);
     transition: 0.3s;
-}
+} */

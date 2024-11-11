@@ -77,15 +77,15 @@ const Banner = () => {
                                     <img
                                         src={item.image}
                                         alt={item.title}
-                                        className='w-[100vw] h-full object-cover transform group-hover:scale-110 transition-all duration-700'
+                                        className='w-[100%] h-full object-cover transform group-hover:scale-110 transition-all duration-700'
                                     />
                                     <div className='absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex flex-col justify-end p-8'>
                                         <span className='inline-block px-4 py-1 bg-violet-600 text-white rounded-full text-sm font-semibold mb-4'>
                                             {item.category}
                                         </span>
                                         <h3 className='text-3xl font-bold text-white mb-3'>{item.title}</h3>
-                                        <p className='text-gray-200 text-lg mb-6'>{item.description}</p>
-                                        <div className='flex items-center gap-6 mb-6 text-gray-300 text-sm'>
+                                        <p className='text-gray-200 text-green-200 mb-6'>{item.description}</p>
+                                        <div className='flex items-center gap-6 mb-6 text-green-300 text-sm'>
                                             <span className='flex items-center gap-2'>
                                                 <FaClock /> {item.duration}
                                             </span>
