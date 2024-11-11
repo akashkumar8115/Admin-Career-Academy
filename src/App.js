@@ -1,5 +1,12 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import ScrollTop from "./components/comon/ScrollTop.jsx";
+
 import Navbar from "./components/comon/Navbar";
 import InitialLoader from './components/loader/InitialLoader'
 import Home from "./pages/Home";
@@ -75,7 +82,33 @@ import ForgotPassword from './pages/auth/ForgotPassword';
 import Profile from './pages/auth/Profile';
 import UpdateProfile from './pages/auth/UpdateProfile';
 import WhatsAppButton from "./components/common/WhatsAppButton";
+
+//About Routes
+
+import AboutCompany from "./pages/about/AboutCompany.jsx";
+import OurStory from "./pages/about/OurStory.jsx";
+import OurTeam from "./pages/about/OurTeam.jsx";
+import Member from "./components/about1/Member.jsx";
+
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 10 });
+  }, [location.pathname]);
+
+
+  useEffect(() => {
+    // Initialize AOS animations
+    AOS.init({
+      once: true,
+      duration: 900,
+      easing: "ease-out-sine",
+      delay: 100,
+    });
+  }, []);
+
+  AOS.refresh();
   return (
     <div className="w-screen min-h-screen font-poppins overflow-x-hidden">
       <InitialLoader />
@@ -83,7 +116,6 @@ function App() {
       <main className="min-h-screen">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
           {/* Auth Routes */}
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
@@ -98,6 +130,13 @@ function App() {
               <UpdateProfile />
             </PrivateRoute>
           } />
+          {/* About Routes */}
+          <Route path="/about" element={<About />} />
+          <Route path="/about/about-company" element={<AboutCompany />} />
+          <Route path="/about/our-story" element={<OurStory />} />
+          <Route path="/about/our-team" element={<OurTeam />} />
+          <Route path="/about/our-team/:memberName" element={<Member />} />
+
           {/* Career Routes */}
           <Route path="/internships-jobs" element={<InternshipsAndJobs />} />
           <Route path="/internships" element={<Internships />} />
@@ -137,6 +176,8 @@ function App() {
           <Route path="/contact-us" element={<Contact />} />
         </Routes>
       </main>
+      <ScrollTop />
+
       <WhatsAppButton />
       <Footer />
     </div>

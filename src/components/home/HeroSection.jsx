@@ -17,7 +17,7 @@ const HeroSection = () => {
             We're dedicated to empowering students and professionals with cutting-edge career guidance, educational resources, and industry insights. Join thousands of successful individuals who've transformed their careers with our expert guidance.
           </p>
           <div className='flex gap-4 smd:justify-start justify-center'>
-            <Link to="/get-started" className=''>
+            <Link to="/register" className=''>
               <button className='py-4 px-8 text-lg font-semibold transition-all duration-300 bg-violet-600 hover:bg-green-500 rounded-lg text-black shadow-lg hover:shadow-xl'>
                 Start Your Journey
               </button>

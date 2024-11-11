@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { RiMenu2Fill } from "react-icons/ri"
 import { IoMdClose } from "react-icons/io"
@@ -51,6 +51,11 @@ const navlink = [
         id: 6,
         title: "About",
         path: "/about",
+        dropdown: [
+            { title: "About Company", path: "/about/about-company" },
+            { title: "Our Story", path: "/about/our-story" },
+            { title: "Our Team", path: "/about/our-team" },
+        ]
     },
     {
         id: 7,
@@ -62,6 +67,12 @@ const navlink = [
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
     const [activeDropdown, setActiveDropdown] = useState(null)
+    const location = useLocation();
+
+    useEffect(() => {
+        setActiveDropdown(null)
+    }, [location.pathname])
+
 
     const handleDropdown = (id) => {
         setActiveDropdown(activeDropdown === id ? null : id)
@@ -87,7 +98,6 @@ const Navbar = () => {
                 <nav className='w-full fixed top-0 left-0 z-[9999] right-0 text-black py-2 bg-white shadow-lg'>
                     <div className='w-11/12 lg:w-10/12 mx-auto flex justify-between items-center'>
                         <div className='py-3 px-3 flex items-center justify-between'>
-                            {/* <img src={logo} alt="logo" className='w-32' /> */}
                             <motion.div
                                 initial={{ x: '40vw', y: '45vh', scale: 2.5 }}
                                 animate={isLoaded ? { x: 0, y: 0, scale: 1 } : {}}
@@ -96,14 +106,14 @@ const Navbar = () => {
                                 <Link to='/' className='text-2xl font-bold'>
                                     <img
                                         src={logo} // Add your logo path here
-                                        // alt="Career Academy"
+                                        alt="Career Academy"
                                         className="h-12"
                                     />
                                 </Link>
                             </motion.div>
                         </div>
 
-                        <div className='hidden smd:flex xl:gap-x-6 xmd:gap-x-4 gap-x-2'>
+                        {/* <div className='hidden smd:flex xl:gap-x-6 xmd:gap-x-4 gap-x-2'>
                             {navlink.map((item) => (
                                 <div key={item.id} className="relative group">
                                     {item.dropdown ? (
@@ -135,8 +145,52 @@ const Navbar = () => {
                                     )}
                                 </div>
                             ))}
-                        </div>
+                        </div> */}
 
+                        <div className='hidden smd:flex xl:gap-x-6 xmd:gap-x-4  items-center gap-x-2'>
+                            {navlink.map((item) => (
+                                <div key={item.id} className="relative group">
+                                    {item.dropdown ? (
+                                        <div>
+                                            <button
+                                                className='py-1 px-3 flex items-center gap-1 transition-all duration-300 anime rounded-lg font-semibold'
+                                                onClick={() => handleDropdown(item.id)}
+                                            >
+                                                {item.title}
+                                                <IoIosArrowDown className={`transition-transform duration-300 ${activeDropdown === item.id ? 'rotate-180' : ''}`} />
+
+                                            </button>
+
+                                            <div className=' absolute z-[999] left-0 right-0 mt-4'>
+
+
+
+                                                <div className={`   w-48 overflow-hidden transition-all duration-500 ease-in-out max-h-0 group-hover:max-h-[600px] bg-white shadow-lg
+
+                                    `}>
+                                                    {item.dropdown.map((dropItem, index) => (
+                                                        <Link
+                                                            key={index}
+                                                            to={dropItem.path}
+                                                            className=" block px-4 py-4 hover:bg-green-100 transition-colors"
+                                                        >
+                                                            {dropItem.title}
+                                                        </Link>
+                                                    ))}
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    ) : (
+                                        <Link to={item.path} className='py-1 px-3 transition-all h-full  duration-300 anime rounded-lg font-semibold'>
+                                            {item.title}
+                                        </Link>
+                                    )}
+
+
+                                </div>
+                            ))}
+                        </div>
                         <div className='text-2xl smd:hidden flex'>
                             {!isOpen ? (
                                 <RiMenu2Fill onClick={() => setIsOpen(true)} className='cursor-pointer' />
