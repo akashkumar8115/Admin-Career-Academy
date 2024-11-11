@@ -22,6 +22,7 @@ import "./App.css"
 import AboutCompany from "./pages/about/AboutCompany.jsx";
 import OurStory from "./pages/about/OurStory.jsx";
 import OurTeam from "./pages/about/OurTeam.jsx";
+import Member from "./components/about1/Member.jsx";
 
 // Career Routes
 import InternshipsAndJobs from "./pages/InternshipsAndJobs.jsx";
@@ -103,7 +104,7 @@ function App() {
   return (
     <div className="w-screen min-h-screen bg-gray-50 font-poppins overflow-x-hidden">
       <Navbar />
-      <main className="min-h-screen">
+      <main >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -132,6 +133,7 @@ function App() {
           <Route path="/about/about-company" element={<AboutCompany/>}/>
           <Route path="/about/our-story" element={<OurStory/>}/>
           <Route path="/about/our-team" element={<OurTeam/>}/>
+          <Route path="/about/our-team/:memberName"  element={<Member/>}/>
 
 
           {/* Career Routes */}

@@ -4,21 +4,43 @@ import Manoj from '../assets/abouts/Manoj.jpg'
 import Akash from '../assets/abouts/akash.jpg'
 import Avinesh from '../assets/abouts/Avinesh.jpg'
 import Deepti from '../assets/abouts/Deepti.jpg'
-import Mushafiya from '../assets/abouts/Mushafiya.jpg'
+import Mushafiya from '../assets/abouts/Mush.jpg'
+import { FaLinkedin } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaLink } from "react-icons/fa6";
 
 
 export const memberData = [
     {
         id : 1,
-        name: "Mohd Shadab Ansari ",
-        role: "Founder of ACA Pvt. Ltd. | Electronics Engineer | Content Creator, leadership and Project management, strategy making & planner",
+        name: "Mohd Shadab Ansari",
+        role: "Founder of ACA Pvt. Ltd. ",
         bio: "Mohd Shadab Ansari is the ambitious founder of ACA Pvt. Ltd., a company he launched in 2021 during his first year of college to provide career-building opportunities for students and young professionals. Mohd is an Electronics Engineer passionate about creating innovative platforms to support skill development, job training, and career guidance. His goal is to create a system that drives real change in education and professional development.",
         skills: [
             "Electronics Engineering", "Content Creation" ,"Leadership & Project Management", "Platform Development" , "Career Guidance and Mentorship" , "Strategy & data analyst" , "Writer" , "Public speaker"
         ],
         education: "BTech in Electronics and Communication Engineering Panjab University, Chandigarh",
         socialLinks: [
-
+           {
+            id : "a" ,
+            title : "linkedIn",
+            url : "https://www.linkedin.com/in/mohd-shadab-ansari-952549226/",
+            icon : FaLinkedin,
+           },
+           {
+            id : "b" ,
+            title : "youtube",
+            url : "https://youtube.com/@admincareeracademy99",
+            icon : FaYoutube,
+           },
+           {
+            id : "c" ,
+            title : "instagram",
+            url : "https://www.instagram.com/__official.shadab_07/profilecard",
+            icon : FaInstagram,
+           },
         ],
         quote: "Building platforms that create opportunities and shape futures",
         photo: Shadab,
@@ -26,13 +48,21 @@ export const memberData = [
     {
         id : 2,
         name: "Manish Yadav",
-        role: "Co-founder of ACA",
+        role: "Co founder of ACA",
         bio: "During graduation I decided to become an entrepreneur. In my final year of college, I joined ACA Pvt. Ltd. Company with my college friend Where we started providing career guidance to students. During that I also started my own music label company which is currently running successfully. And at this time i am getting financial support from there. Now I am the Co Founder of ACA Pvt Ltd and am working on the vision of expanding it.",
         skills: [
             "Vision and Strategic Thinking" , "Financial Acumen" , "Product and Market Knowledge" , "Adaptability and Problem Solving" , "Operational Efficiency" , "Networking and Relationship Building"
         ],
         education: "BE in Electronic and Communication Engineering Panjab University Chandigarh",
-        socialLinks: "",
+        socialLinks: [
+            {
+                id : "a" ,
+                title : "linkedIn",
+                url : "https://www.linkedin.com/in/manishyadav01",
+                icon : FaLinkedin,
+               },
+              
+        ],
         quote: "Building a business is about turning ideas into reality, learning from every challenge, and working together to create something meaningful.",
         photo: Manish,
     },
@@ -45,20 +75,49 @@ export const memberData = [
             "Frontend - React.js" , "Backend - Node.js , Express.js" , "Database - MongoDB , MySQL" ,"C" , "C++" , "Javascript", "Python" , "Leadership" , "Team Management" , "Project Coordination" , "Technical Guidance"
         ],
         education: " Integrated BTech + MTech in Electronics and Communication Engineering National Institute of Technology (NIT) Hamirpur",
-        socialLinks: "",
+        socialLinks: [
+            {
+             id : "a" ,
+             title : "linkedIn",
+             url : "https://www.linkedin.com/in/akash-kumar-54073a209/",
+             icon : FaLinkedin,
+            },
+            {
+             id : "b" ,
+             title : "github",
+             url : "https://github.com/akashkumar8115",
+             icon : FaGithub,
+            },
+            {
+                id : "c" ,
+                title : "Portfolio",
+                url : "https://akash8115.netlify.app/",
+                icon : FaLink,
+               },
+         
+         ],
         quote: "Lead by example, inspire through action.",
         photo: Akash,
     },
     {
         id : 4,
-        name: "Deepti Mishra ",
+        name: "Deepti Mishra",
         role: "HR",
         bio: "Dedicated and keen learner enhancing skills specifically in HR field and on board to grab new skills effectively",
         skills: [
             "Proficient communication skills" , "creative mindset" , "organizational skills and adaptability" , "engaging ideas for favourable outputs " , "soft skills that industry demands",
         ],
         education: "Currently doing BBA from Kashi Institute of Management and Science  , varanasi ",
-        socialLinks: "",
+        socialLinks: [
+            {
+             id : "a" ,
+             title : "linkedIn",
+             url : "https://www.linkedin.com/in/deepti-mishra-5b9075293",
+             icon : FaLinkedin,
+            },
+          
+         
+         ],
         quote: "Freedom isn’t about escaping the world; it’s about shaping it on your terms.",
         photo: Deepti,
     },
@@ -77,14 +136,23 @@ export const memberData = [
 
     {
         id :6 ,
-        name: "Manoj Mishra ",
-        role: "",
+        name: "Manoj Mishra",
+        role: "Project Manager",
         bio: "",
         skills: [
             "Business Developement" , "Management" , "Marketing Strategy" , "Sales Management" , "SMM" , "Time Management" , "Team Management" , "Small Business Growth" , "Brand Development" , "New Business Development" , "Startup Management" , "Administrative Assistance"
         ],
         education: " Graduate ",
-        socialLinks: "",
+        socialLinks: [
+            {
+             id : "a" ,
+             title : "linkedIn",
+             url : "https://www.linkedin.com/in/manojsmm",
+             icon : FaLinkedin,
+            },
+       
+         
+         ],
         quote: "",
         photo: Manoj
     },
@@ -97,7 +165,21 @@ export const memberData = [
             "Frontend - React.js" , "Backend - Node.js , Express.js" , "Database - MongoDB" ,  "Leadership" , "Team Management" 
         ],
         education: "Currently doing Bachelor in Computer Application (BCA) from Chandigarh University",
-        socialLinks: "",
+        socialLinks: [
+            {
+             id : "a" ,
+             title : "linkedIn",
+             url : "https://www.linkedin.com/in/khan-mushafiya-67b86b289/",
+             icon : FaLinkedin,
+            },
+            {
+             id : "b" ,
+             title : "github",
+             url : "https://github.com/kmushafiya003",
+             icon : FaGithub,
+            },
+        
+         ],
         quote: "The only way to do great work is to love what you do.",
         photo: Mushafiya,
     },
