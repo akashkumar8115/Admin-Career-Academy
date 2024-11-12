@@ -6,7 +6,7 @@ import InternshipType from '../components/internshipJob/InternshipType';
 
 const InternshipsAndJobs = () => {
     return (
-        <div>
+        <div className='flex flex-col gap-y-16 xs:gap-y-0'>
 
             <div className="bg-gradient-to-br from-gray-50 to-blue-100 ">
                 <motion.div
@@ -16,7 +16,7 @@ const InternshipsAndJobs = () => {
                     className="container mx-auto px-4"
                 >
                     <div className="flex flex-col md:flex-row items-center min-h-screen">
-                        <div className="w-full md:w-1/2 text-center md:text-left p-8">
+                        <div className="w-full md:w-1/2 text-center md:text-left p-8 ">
                             <motion.h1
                                 initial={{ x: -100 }}
                                 animate={{ x: 0 }}
@@ -59,9 +59,11 @@ const InternshipsAndJobs = () => {
                     </div>
                 </motion.div>
             </div>
+
+            
             <InternshipType/>
       
-            <div className="h-screen w-full flex items-center bg-gradient-to-br from-gray-50 to-blue-100">
+            <div className="w-full flex items-center bg-gradient-to-br from-gray-50 to-blue-100">
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -74,7 +76,7 @@ const InternshipsAndJobs = () => {
                                 initial={{ x: -100 }}
                                 animate={{ x: 0 }}
                                 transition={{ delay: 0.2 }}
-                                className="text-5xl font-bold text-gray-800 mb-6"
+                                className="text-5xl font-bold text-gray-800 "
                             >
                                 Start Your Career Journey
                             </motion.h1>
@@ -82,7 +84,7 @@ const InternshipsAndJobs = () => {
                                 initial={{ x: -100 }}
                                 animate={{ x: 0 }}
                                 transition={{ delay: 0.4 }}
-                                className="text-xl text-gray-600 mb-8"
+                                className="text-xl text-gray-600"
                             >
                                 Discover exciting internship opportunities that will help you gain valuable experience and kickstart your career.
                             </motion.p>
