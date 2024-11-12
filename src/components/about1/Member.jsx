@@ -23,7 +23,7 @@ const Member = () => {
 
                 <div className='xmd:w-[35%]  flex flex-col gap-y-6  '>
 
-                    {/* ----------- photo name and email --------- */}
+                    {/* ----------- photo name  --------- */}
 
                     <div className='flex flex-col items-center gap-y-3'>
 
@@ -43,7 +43,12 @@ const Member = () => {
 
                     </div>
 
-                    <div className='grid xs:grid-cols-2 grid-cols-1  gap-x-4 gap-y-6 text-sm'>
+                    <div className={`grid 
+                      gap-x-4 gap-y-6 text-sm
+                      ${
+                        memberInfo[0].skills.length > 1 ? "xs:grid-cols-2 grid-cols-1 " : "grid-cols-1"
+                      }
+                      `}>
                         {
                             memberInfo[0].skills.map((skill) => (
                                 <p className='bg-green-100 rounded-full flex items-center justify-center text-center xmd:py-2 py-3 px-4 '>
@@ -107,10 +112,12 @@ const Member = () => {
 
                 </div>
 
-
-                <p className='text-black-500 italic xxl:text-lg text-base mt-4'>
-                    "{memberInfo[0].quote}"
-                </p>
+                {
+                    memberInfo[0].quote.length !== 0 && (   <p className='text-black-500 italic xxl:text-lg text-base mt-4'>
+                        "{memberInfo[0].quote}"
+                    </p>)
+                }
+             
 
                 </div>
 

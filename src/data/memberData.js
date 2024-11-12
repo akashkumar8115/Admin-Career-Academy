@@ -125,14 +125,19 @@ export const memberData = [
     {
         id: 5,
         name: "Avinesh Pratap Singh",
-        role: "SDE",
-        bio: "",
+        role: "Senior Software Engineer",
+        bio: "I'm a Software Engineer At Arista Networks with a B.Tech in Computer Science from IIT Dhanbad. I specialize in system design and performance optimization. I am currently enhancing load balancing for tunnelled packets at Arista Networks. My work has led to a 70% performance boost in MPLS/GTP load balancing.I’ve spearheaded impactful projects, such as an energy-efficient FANET protocol for UAVs and a scalable medicine label parser using AWS and Kubernetes. My blockchain-enabled loyalty system, FlipCoin, integrates Smart Contracts for e-commerce rewards.With a strong track record in competitive programming (Codeforces Expert, CodeChef 5★), I also mentor students in coding and interview prep. Let's connect for opportunities and collaborations!",
         skills: [
-
+"Core System software Development"
         ],
-        education: "",
+        education: "B.Tech in Computer Science and Engineering from IIT Dhanbad",
         socialLinks: [
-
+            {
+                id: "a",
+                title: "linkedIn",
+                url: "https://www.linkedin.com/in/pratapavinesh/",
+                icon: FaLinkedin,
+            },
         ],
         quote: "",
         photo: Avinesh,
