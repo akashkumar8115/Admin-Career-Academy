@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import Loading from '../components/Loading';
+import Loading from '../components/loader/Loading';
 import { Helmet } from 'react-helmet';
 import ApiData from "../data/api.json";
 

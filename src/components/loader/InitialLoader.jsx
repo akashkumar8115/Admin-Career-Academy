@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import Logo from '../../assets/logo.png'
+import Logo from '../../assets/home/logo.png'
 const InitialLoader = () => {
     const [isLoading, setIsLoading] = useState(true)
 

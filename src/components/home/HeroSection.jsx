@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from '../../assets/career-counselling.jpg'
+import Hero from '../../assets/home/career-counselling.jpg'
 import { Link } from 'react-router-dom'
 
 const HeroSection = () => {

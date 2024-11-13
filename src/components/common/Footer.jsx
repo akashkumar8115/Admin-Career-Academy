@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaLinkedin, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa'
 import { IoLocationSharp, IoMail, IoCall } from 'react-icons/io5'
-import logo from '../../assets/logo.png'
+import logo from '../../assets/home/logo.png'
 import "../styles/footer.css"
 const quickLinks = [
     { title: "Home", path: "/" },
