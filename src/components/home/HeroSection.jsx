@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const HeroSection = () => {
   return (
-    <section className='w-full min-h-screen flex items-center pt-20'>
+    <section className='w-full min-h-screen flex items-center pt-20 mb-16'>
       <div className='w-11/12 lg:w-10/12 mx-auto flex smd:flex-row flex-col justify-between items-center xmd:gap-x-16 gap-x-10 gap-y-16'>
         <div className='flex flex-col smd:gap-y-8 gap-y-6 smd:w-[55%]'>
           <h1 className='xl:text-6xl text-5xl smd:text-left text-center font-bold xl:leading-[70px] leading-[60px] text-gray-800'>

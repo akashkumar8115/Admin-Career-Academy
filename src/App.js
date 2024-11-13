@@ -22,6 +22,7 @@ import "./App.css"
 import InternshipsAndJobs from "./pages/InternshipsAndJobs.jsx";
 import Internships from "./pages/Internships.jsx";
 import InternshipsDetail from "./pages/InternshipsDetail.jsx";
+import Courses from "./components/internshipJob/Courses.jsx";
 // import Intern from "./pages/Internships.jsx";
 // import InternshipJobs from "./pages/Internships";
 // import Internship from "./pages/InternshipsAndJobs.jsx";
@@ -113,7 +114,7 @@ function App() {
     <div className="w-screen min-h-screen font-poppins overflow-x-hidden">
       <InitialLoader />
       <Navbar />
-      <main className="min-h-screen">
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           {/* Auth Routes */}
@@ -139,6 +140,11 @@ function App() {
 
           {/* Career Routes */}
           <Route path="/internships-jobs" element={<InternshipsAndJobs />} />
+          <Route path="/internships-jobs/:type" element={<Courses />} />
+
+
+
+
           <Route path="/internships" element={<Internships />} />
           <Route path="/internships/:id" element={<InternshipsDetail />} />
           <Route path="/jobs" element={<Jobs />} />
