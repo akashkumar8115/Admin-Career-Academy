@@ -14,49 +14,73 @@ const navlink = [
     },
     {
         id: 2,
-        title: "Career",
-        path: "#",
-        dropdown: [
-            { title: "Internships/Jobs", path: "/internships-jobs" },
-            { title: "Career Guidance", path: "/services/career-guidance" },
-            { title: "Career Roadmap", path: "/services/career-roadmap" },
-        ]
-    },
-    {
-        id: 3,
-        title: "Education",
-        path: "#",
-        dropdown: [
-            { title: "College List", path: "/services/colleges" },
-            { title: "Course Comparison", path: "/services/course-comparison" },
-            { title: "Placement Stats", path: "/services/placement-stats" },
-        ]
-    },
-    {
-        id: 4,
-        title: "Accommodation",
-        path: "#",
-        dropdown: [
-            { title: "PG/Hostel Details", path: "/services/pg-hostel-details" },
-            { title: "Hostel Rules", path: "/services/hostel-rules" },
-            { title: "Campus Life", path: "/services/campus-life" },
-        ]
-    },
-    {
-        id: 5,
-        title: "Services",
-        path: "/services",
-    },
-    {
-        id: 6,
         title: "About",
         path: "/about",
         dropdown: [
             { title: "About Company", path: "/about/about-company" },
             { title: "Our Story", path: "/about/our-story" },
             { title: "Our Team", path: "/about/our-team" },
+            { title: "Our Partners", path: "/about/our-partners" },
+            { title: "Our Blog", path: "/about/our-blog" },
+            { title: "Student Success Stories & Testimonials", path: "/about/student-success-stories" },
         ]
     },
+    {
+        id: 3,
+        title: "Services",
+        path: "/services",
+        dropdown: [
+            { title: "Counselling Sessions", path: "/services/counselling-sessions" },
+            { title: "Internships & Jobs", path: "/services/internships-jobs" },
+            { title: "IT/Tech based Services", path: "/services/it-tech-based-services" },
+            { title: "Career Guidance program", path: "/services/career-guidance-program" },
+            { title: "ACA Scholarship Program", path: "/services/aca-scholarship-program" },
+        ]
+    },
+    {
+        id: 4,
+        title: "Career",
+        path: "#",
+        dropdown: [
+            { title: "Internships &Jobs", path: "/services/internships-jobs" },
+            { title: "Career Roadmap", path: "/services/career-roadmap" },
+            { title: "Competitive Exams", path: "/services/competitive-exams" },
+            { title: "Scholarships", path: "/services/scholarships" },
+            { title: "Entrepreneurship", path: "/services/entrepreneurship" },
+        ]
+    },
+
+    {
+        id: 5,
+        title: "Education",
+        path: "#",
+        dropdown: [
+            { title: "Courses & Degrees", path: "/services/courses-degrees" },
+            { title: "Study Abroad", path: "/services/study-abroad" },
+            { title: "Entrance Exams", path: "/services/entrance-exams" },
+            { title: "Scholarships & Financial Aid", path: "/services/scholarships-financial-aid" },
+            { title: "College List", path: "/services/colleges" },
+            { title: "Course Comparison", path: "/services/course-comparison" },
+            { title: "Placement Stats", path: "/services/placement-stats" },
+        ]
+    },
+    {
+        id: 6,
+        title: "Accommodation",
+        path: "#",
+        dropdown: [
+            { title: "On-Campus Housing", path: "/services/on-campus-housing" },
+            { title: "Off-Campus Housing", path: "/services/off-campus-housing" },
+            { title: "Student Housing Communities", path: "/services/student-housing-communities" },
+            { title: "Budgeting Tips", path: "/services/budgeting-tips" },
+            { title: "Safety Tips", path: "/services/safety-tips" },
+            { title: "PG/Hostel Details", path: "/services/pg-hostel-details" },
+            { title: "Hostel Rules", path: "/services/hostel-rules" },
+            { title: "Campus Life", path: "/services/campus-life" },
+        ]
+    },
+
+
     {
         id: 7,
         title: "Contact",
