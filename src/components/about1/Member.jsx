@@ -45,9 +45,8 @@ const Member = () => {
 
                     <div className={`grid 
                       gap-x-4 gap-y-6 text-sm
-                      ${
-                        memberInfo[0].skills.length > 1 ? "xs:grid-cols-2 grid-cols-1 " : "grid-cols-1"
-                      }
+                      ${memberInfo[0].skills.length > 1 ? "xs:grid-cols-2 grid-cols-1 " : "grid-cols-1"
+                        }
                       `}>
                         {
                             memberInfo[0].skills.map((skill) => (
@@ -65,59 +64,64 @@ const Member = () => {
 
                 {/* ---------- right side  ------------- */}
 
-                <div className='xmd:w-[60%]  py-6 px-6  flex flex-col justify-between'>
-                    
-              
-
-                <div className=' flex flex-col gap-y-6'>
-
-                    <h2 className='text-2xl font-semibold'>{`About ${memberInfo[0].name}`}</h2>
-
-                    <p className='text-black-500 italic xl:text-base text-sm'>" {memberInfo[0].bio} "</p>
+                <div className='xmd:w-[60%]  py-6 px-6  flex items-center  '>
 
 
 
-                    <p className='flex gap-x-2 '>
-                        <span className='font-semibold xs:text-lg  text-base'>Role: </span>
-                        <span className='mt-1 xs:text-base text-sm'>{memberInfo[0].role}</span>
-                    </p>
+                    <div className=' flex flex-col gap-y-6'>
 
-                    <p className='flex gap-x-2 '>
-                        <span className='font-semibold xs:text-lg  text-base'>Education: </span>
-                        <span className='mt-1 xs:text-base text-sm'>{memberInfo[0].education}</span>
-                    </p>
+                        <h2 className='text-2xl font-semibold'>{`About ${memberInfo[0].name}`}</h2>
 
-                    <div  className='flex flex-col gap-y-4'>
+                        <p className='text-black-500 italic xl:text-base text-sm'>" {memberInfo[0].bio} "</p>
 
-                        <h2 className='font-semibold xs:text-lg tetx-base'>Connect with me : </h2>
 
-                        <div className='flex flex-col gap-y-3'>
 
-                            {
-                                memberInfo[0].socialLinks.map((link) => (
-                                    <div className='flex gap-x-4 '>
+                        <p className='flex gap-x-2 '>
+                            <span className='font-semibold xs:text-lg  text-base'>Role: </span>
+                            <span className='mt-1 xs:text-base text-sm'>{memberInfo[0].role}</span>
+                        </p>
 
-                                        <p className='capitalize'>{link.title}: </p>
-                                        <a href={link.url} className='text-violet-50 hover:text-green-500 xs:text-base text-sm '> {link.url}</a>
+                        <p className='flex gap-x-2 '>
+                            <span className='font-semibold xs:text-lg  text-base'>Education: </span>
+                            <span className='mt-1 xs:text-base text-sm'>{memberInfo[0].education}</span>
+                        </p>
 
-                                    </div>
-                                ))
-                            }
+                        {
+                            memberInfo[0].socialLinks.length > 0 &&
 
-                        </div>
+                            <div className='flex flex-col gap-y-4'>
+
+                                <h2 className='font-semibold xs:text-lg tetx-base'>Connect with me : </h2>
+
+                                <div className='flex flex-col gap-y-3'>
+
+                                    {
+                                        memberInfo[0].socialLinks.map((link) => (
+                                            <div className='flex gap-x-4 '>
+
+                                                <p className='capitalize'>{link.title}: </p>
+                                                <a href={link.url} className='text-violet-50 hover:text-green-500 xs:text-base text-sm '> {link.url}</a>
+
+                                            </div>
+                                        ))
+                                    }
+
+                                </div>
+                            </div>
+                        }
+
+{
+                        memberInfo[0].quote.length !== 0 && (<p className='text-black-500 italic xxl:text-lg text-base mt-8'>
+                            "{memberInfo[0].quote}"
+                        </p>)
+                    }
+
+
+
                     </div>
-                    
-    
 
+                 
 
-                </div>
-
-                {
-                    memberInfo[0].quote.length !== 0 && (   <p className='text-black-500 italic xxl:text-lg text-base mt-4'>
-                        "{memberInfo[0].quote}"
-                    </p>)
-                }
-             
 
                 </div>
 

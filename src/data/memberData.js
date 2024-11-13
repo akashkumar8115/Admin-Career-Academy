@@ -55,12 +55,12 @@ export const memberData = [
         ],
         education: "BE in Electronic and Communication Engineering Panjab University Chandigarh",
         socialLinks: [
-            {
-                id: "a",
-                title: "linkedIn",
-                url: "https://www.linkedin.com/in/manishyadav01",
-                icon: FaLinkedin,
-            },
+            // {
+            //     id: "a",
+            //     title: "linkedIn",
+            //     url: "https://www.linkedin.com/in/manishyadav01",
+            //     icon: FaLinkedin,
+            // },
 
         ],
         quote: "Building a business is about turning ideas into reality, learning from every challenge, and working together to create something meaningful.",
@@ -76,24 +76,24 @@ export const memberData = [
         ],
         education: " Integrated BTech + MTech in Electronics and Communication Engineering National Institute of Technology (NIT) Hamirpur",
         socialLinks: [
-            {
-                id: "a",
-                title: "linkedIn",
-                url: "https://www.linkedin.com/in/akash-kumar-54073a209/",
-                icon: FaLinkedin,
-            },
-            {
-                id: "b",
-                title: "github",
-                url: "https://github.com/akashkumar8115",
-                icon: FaGithub,
-            },
-            {
-                id: "c",
-                title: "Portfolio",
-                url: "https://akash8115.netlify.app/",
-                icon: FaLink,
-            },
+            // {
+            //     id: "a",
+            //     title: "linkedIn",
+            //     url: "https://www.linkedin.com/in/akash-kumar-54073a209/",
+            //     icon: FaLinkedin,
+            // },
+            // {
+            //     id: "b",
+            //     title: "github",
+            //     url: "https://github.com/akashkumar8115",
+            //     icon: FaGithub,
+            // },
+            // {
+            //     id: "c",
+            //     title: "Portfolio",
+            //     url: "https://akash8115.netlify.app/",
+            //     icon: FaLink,
+            // },
 
         ],
         quote: "Lead by example, inspire through action.",
@@ -109,12 +109,12 @@ export const memberData = [
         ],
         education: "Currently doing BBA from Kashi Institute of Management and Science  , varanasi ",
         socialLinks: [
-            {
-                id: "a",
-                title: "linkedIn",
-                url: "https://www.linkedin.com/in/deepti-mishra-5b9075293",
-                icon: FaLinkedin,
-            },
+            // {
+            //     id: "a",
+            //     title: "linkedIn",
+            //     url: "https://www.linkedin.com/in/deepti-mishra-5b9075293",
+            //     icon: FaLinkedin,
+            // },
 
 
         ],
@@ -132,12 +132,12 @@ export const memberData = [
         ],
         education: "B.Tech in Computer Science and Engineering from IIT Dhanbad",
         socialLinks: [
-            {
-                id: "a",
-                title: "linkedIn",
-                url: "https://www.linkedin.com/in/pratapavinesh/",
-                icon: FaLinkedin,
-            },
+            // {
+            //     id: "a",
+            //     title: "linkedIn",
+            //     url: "https://www.linkedin.com/in/pratapavinesh/",
+            //     icon: FaLinkedin,
+            // },
         ],
         quote: "",
         photo: Avinesh,
@@ -153,12 +153,12 @@ export const memberData = [
         ],
         education: " Graduate ",
         socialLinks: [
-            {
-                id: "a",
-                title: "linkedIn",
-                url: "https://www.linkedin.com/in/manojsmm",
-                icon: FaLinkedin,
-            },
+            // {
+            //     id: "a",
+            //     title: "linkedIn",
+            //     url: "https://www.linkedin.com/in/manojsmm",
+            //     icon: FaLinkedin,
+            // },
 
 
         ],
@@ -175,18 +175,18 @@ export const memberData = [
         ],
         education: "Currently doing Bachelor in Computer Application (BCA) from Chandigarh University",
         socialLinks: [
-            {
-                id: "a",
-                title: "linkedIn",
-                url: "https://www.linkedin.com/in/khan-mushafiya-67b86b289/",
-                icon: FaLinkedin,
-            },
-            {
-                id: "b",
-                title: "github",
-                url: "https://github.com/kmushafiya003",
-                icon: FaGithub,
-            },
+            // {
+            //     id: "a",
+            //     title: "linkedIn",
+            //     url: "https://www.linkedin.com/in/khan-mushafiya-67b86b289/",
+            //     icon: FaLinkedin,
+            // },
+            // {
+            //     id: "b",
+            //     title: "github",
+            //     url: "https://github.com/kmushafiya003",
+            //     icon: FaGithub,
+            // },
 
         ],
         quote: "The only way to do great work is to love what you do.",
