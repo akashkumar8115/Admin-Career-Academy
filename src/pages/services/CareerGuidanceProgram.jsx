@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import SkillDevelopment from '../../components/career-guidance/SkillDevelopment';
 import MentorshipProgram from '../../components/career-guidance/MentorshipProgram';
 import { FaBrain, FaChartLine, FaUsers, FaGraduationCap } from 'react-icons/fa';
+import CareerServices from '../../components/career-guidance/CareerServices';
 
 const CareerGuidanceProgram = () => {
     const stats = [
@@ -77,6 +78,7 @@ const CareerGuidanceProgram = () => {
             <CareerPlanning /> */}
 
             {/* mushaya ji added you file  */}
+            <CareerServices/>
 
 
 

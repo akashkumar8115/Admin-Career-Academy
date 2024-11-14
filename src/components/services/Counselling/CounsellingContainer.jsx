@@ -11,9 +11,9 @@ const CounsellingContainer = () => {
 
                {/* --------- college counselling ------- */}
 
-               <div className='flex flex-col gap-y-12'>
+               <div >
 
-                <h2 className='text-2xl font-semibold'>College Counselling</h2>
+               
                 <CollegeCounselling/>
 
                </div>
