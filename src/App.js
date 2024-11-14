@@ -98,6 +98,9 @@ import OurTeam from "./pages/about/OurTeam.jsx";
 import Member from "./components/about1/Member.jsx";
 import NotFound from './pages/NotFound';
 import Counselling from "./pages/services/Counselling.jsx";
+import Our_Blog from './pages/about/Our_Blog.jsx';
+import BlogFullArticle from './pages/about/BlogFullArticle.jsx';
+
 function App() {
   const location = useLocation();
 
