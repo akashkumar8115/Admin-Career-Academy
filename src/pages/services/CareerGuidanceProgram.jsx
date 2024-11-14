@@ -1,9 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import SelfAssessment from '../../components/career-guidance/SelfAssessment';
 import SkillDevelopment from '../../components/career-guidance/SkillDevelopment';
-import CareerPlanning from '../../components/career-guidance/CareerPlanning';
 import MentorshipProgram from '../../components/career-guidance/MentorshipProgram';
 import { FaBrain, FaChartLine, FaUsers, FaGraduationCap } from 'react-icons/fa';
 
@@ -74,9 +72,17 @@ const CareerGuidanceProgram = () => {
             </section>
 
             {/* Main Content */}
-            <SelfAssessment />
+            {/* <SelfAssessment />
             <SkillDevelopment />
-            <CareerPlanning />
+            <CareerPlanning /> */}
+
+            {/* mushaya ji added you file  */}
+
+
+
+
+
+
             <MentorshipProgram />
         </div>
     );
