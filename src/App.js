@@ -27,29 +27,13 @@ import Courses from "./components/internshipJob/Courses.jsx";
 // import InternshipJobs from "./pages/Internships";
 // import Internship from "./pages/InternshipsAndJobs.jsx";
 import Jobs from "./pages/Jobs";
-import JobDetail from "./pages/JobDetail";
+import JobDetail from "./pages/services/JobDetail.jsx";
+import JobsApplcation from "./pages/services/JobsApplcation.jsx";
+import InternshipsApplcation from "./pages/services/InternshipsApplcation.jsx";
 
 
 // Application Routes
-// import JobList from "./pages/JobList";
-// import JobSearch from "./pages/JobSearch";
-// import JobFilter from "./pages/JobFilter";
-// import JobSort from "./pages/JobSort";
-// import JobApply from "./pages/JobApply";
-// import JobApplication from "./pages/JobApplication";
-// import JobApplicationSuccess from "./pages/JobApplicationSuccess";
-// import JobApplicationFailure from "./pages/JobApplicationFailure";
-// import JobApplicationCancel from "./pages/JobApplicationCancel";
-// import JobApplicationError from "./pages/JobApplicationError";
-// import JobApplicationPending from "./pages/JobApplicationPending";
-// import JobApplicationExpired from "./pages/JobApplicationExpired";
-// import JobApplicationRejected from "./pages/JobApplicationRejected";
-// import JobApplicationAccepted from "./pages/JobApplicationAccepted";
-// import JobApplicationCompleted from "./pages/JobApplicationCompleted";
-// import JobApplicationCancelled from "./pages/JobApplicationCancelled";
-// import JobApplicationOnHold from "./pages/JobApplicationOnHold";
-// import JobApplicationInReview from "./pages/JobApplicationInReview";
-// import JobApplicationInProgress from "./pages/JobApplicationInProgress";
+
 
 
 // Services Routes
@@ -60,7 +44,7 @@ import SEO from "./pages/services/SEO";
 import GraphicDesign from "./pages/services/GraphicDesign";
 import ContentWriting from "./pages/services/ContentWriting";
 
-// career Routes
+//collage career Routes
 import CollegeList from "./pages/services/CollegeList.jsx";
 import CollegeDetails from "./pages/services/CollegeDetails.jsx";
 import HostelDetails from "./pages/services/HostelDetails.jsx";
@@ -74,6 +58,7 @@ import PlacementStats from "./pages/services/PlacementStats";
 import CourseComparison from "./pages/services/CourseComparison";
 import CampusLife from "./pages/services/CampusLife";
 import CareerRoadmap from "./pages/services/CareerRoadmap";
+
 // tech service
 import IT_Tech_Based from "./pages/services/IT_Tech_Based.jsx";
 import Aca_Scholarship_program from "./pages/services/Aca_Schorarship_program.jsx";
@@ -113,9 +98,9 @@ function App() {
     // Initialize AOS animations
     AOS.init({
       once: true,
-      duration: 900,
-      easing: "ease-out-sine",
-      delay: 100,
+      duration: 90,  // Set duration to 0 for instant animation
+      easing: "ease-in-out cubic-bezier(0.4, 0, 0.2, 1)", // Add easing for smoother animation
+      delay: 40, // Add delay for smoother animation
     });
   }, []);
 
@@ -155,12 +140,15 @@ function App() {
           <Route path="/services/internships-jobs/:type" element={<Courses />} />
           <Route path="/services/internships" element={<Internships />} />
           <Route path="/services/internships/:id" element={<InternshipsDetail />} />
+          <Route path="/services/internships-application" element={<InternshipsApplcation />} />
           <Route path="/services/jobs" element={<Jobs />} />
-          {/* <Route path="job/:id" element={<JobDetail />} /> */}
+          <Route path="/services/job/:id" element={<JobDetail />} />
+          <Route path="/services/jobs-application" element={<JobsApplcation />} />
+
 
           {/* Services Routes */}
           <Route path="/services" element={<Services />} />
-          <Route path="/services/counselling-sessions" element={<Counselling/>}/>
+          <Route path="/services/counselling-sessions" element={<Counselling />} />
           <Route path="/services/career-counselling" element={<CareerCounselling />} />
           <Route path="/services/web-development" element={<WebDevelopment />} />
           <Route path="/services/digital-marketing" element={<DigitalMarketing />} />

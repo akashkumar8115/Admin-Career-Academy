@@ -63,7 +63,7 @@ const Jobs = () => {
                                         type="text"
                                         placeholder="Search jobs..."
                                         onChange={(e) => setSearchTerm(e.target.value)}
-                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
                                     />
                                     <span className="absolute right-3 top-3 text-gray-400">
                                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -76,7 +76,7 @@ const Jobs = () => {
                                         type="text"
                                         placeholder="Location..."
                                         onChange={(e) => setFilterLocation(e.target.value)}
-                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
                                     />
                                 </div>
                                 <select
@@ -86,7 +86,7 @@ const Jobs = () => {
                                     {categories.map(category => (
                                         <option key={category} value={category}>
                                             {category === 'all' ? 'All Categories' : category}
-                                            {/* {category.charAt(0).toUpperCase() + category.slice(1)} */}
+                                            {category.charAt(0).toUpperCase() + category.slice(1)}
                                         </option>
                                     ))}
                                 </select>
@@ -125,8 +125,8 @@ const Jobs = () => {
                                                 </p>
                                             </div>
                                             <Link
-                                                to={`/job/${job.id}`}
-                                                className="mt-6 block w-full text-center py-3 px-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg hover:from-blue-600 hover:to-blue-700 transition-colors duration-300"
+                                                to={`/services/job/${job.id}`}
+                                                className="mt-6 block w-full text-center py-3 px-4 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors duration-300"
                                             >
                                                 View Details
                                             </Link>

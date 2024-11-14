@@ -7,7 +7,7 @@ const HeroSection = () => {
     <section className='w-full min-h-screen flex items-center pt-20 mb-16'>
       <div className='w-11/12 lg:w-10/12 mx-auto flex smd:flex-row flex-col justify-between items-center xmd:gap-x-16 gap-x-10 gap-y-16'>
         <div className='flex flex-col smd:gap-y-8 gap-y-6 smd:w-[55%]'>
-          <h1 className='xl:text-6xl text-5xl smd:text-left text-center font-bold xl:leading-[70px] leading-[60px] text-gray-800'>
+          <h1 className='xl:text-4xl text-3xl smd:text-left text-center font-bold xl:leading-[70px] leading-[60px] text-gray-800'>
             Transform Your Future with Expert Guidance
           </h1>
           <h2 className='xl:text-3xl text-2xl smd:text-left text-center font-semibold text-green-600'>

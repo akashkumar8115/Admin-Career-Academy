@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import ApiData from "../data/api.json";
+import ApiData from "../../data/api.json";
 
 const JobDetail = () => {
     const { id } = useParams();
@@ -30,9 +30,9 @@ const JobDetail = () => {
                 transition={{ duration: 0.5 }}
             >
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-8 relative">
-                        <button 
-                            className="absolute right-4 top-4 bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-blue-50 transition-colors duration-300"
+                    <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-black p-8 relative">
+                        <button
+                            className="absolute right-4 top-4 bg-green-300 px-6 py-2 rounded-full hover:bg-green-400 transition-colors duration-300"
                             onClick={() => navigate(-1)}
                         >
                             Back
@@ -97,8 +97,10 @@ const JobDetail = () => {
                                             <span>Posted: {new Date(job.postedDate).toLocaleDateString()}</span>
                                         </div>
                                     </div>
-                                    <button className="w-full mt-6 bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 px-4 rounded-lg hover:from-blue-600 hover:to-blue-700 transition-colors duration-300 font-semibold">
-                                        Apply Now
+                                    <button className="w-full mt-6 bg-green-300 text-black py-3 px-4 rounded-lg hover:bg-green-400 transition-colors duration-300 font-semibold">
+                                        <Link to="/services/jobs-application">
+                                            Apply Now
+                                        </Link>
                                     </button>
                                 </div>
                             </div>

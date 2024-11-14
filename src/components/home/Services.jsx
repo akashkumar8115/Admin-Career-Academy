@@ -25,15 +25,15 @@ const Services = () => {
       <div className='w-11/12 lg:w-10/12 mx-auto flex flex-col gap-y-32'>
         {/* Services Section */}
         <div>
-          <div className='flex flex-col gap-y-4 items-center mb-16'>
+          <div className='flex flex-col gap-y-4 items-center'>
             {/* <span className='text-violet-600 font-semibold tracking-wide uppercase'>Our Services</span> */}
             <h1 className='text-4xl md:text-5xl font-bold text-center'>Comprehensive Career Solutions</h1>
             <p className='text-gray-600 text-center max-w-2xl'>Empowering your professional journey with tailored services</p>
           </div>
 
-          <div className='scroll-container relative'>
+          <div className='scroll-container relative w-[100%] mx-auto relative'>
             <button
-              className='scroll-btn left bg-violet-600'
+              className='scroll-btn left bg-violet-600 z-5 absolute'
               onClick={() => scroll('left', servicesRef)}
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -43,7 +43,7 @@ const Services = () => {
 
             <div
               ref={servicesRef}
-              className='flex overflow-x-auto gap-8 scroll-smooth hide-scrollbar'
+              className='flex overflow-x-auto gap-8 scroll-smooth hide-scrollbar w-full'
             >
               {servicesData.map((service) => (
                 <div key={service.id} className='flex-none w-[350px] service-card'>
@@ -64,7 +64,7 @@ const Services = () => {
             </div>
 
             <button
-              className='scroll-btn right bg-violet-600'
+              className='scroll-btn right bg-violet-600 z-5 absolute'
               onClick={() => scroll('right', servicesRef)}
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
