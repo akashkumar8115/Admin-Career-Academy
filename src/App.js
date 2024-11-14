@@ -5,9 +5,9 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ScrollTop from "./components/comon/ScrollTop.jsx";
+import ScrollTop from "./components/common/ScrollTop.jsx";
 
-import Navbar from "./components/comon/Navbar";
+import Navbar from "./components/common/Navbar.jsx";
 import InitialLoader from './components/loader/InitialLoader'
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -15,7 +15,7 @@ import Services from "./pages/Services";
 import Clients from "./pages/Clients";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
-import Footer from "./components/comon/Footer";
+import Footer from "./components/common/Footer.jsx";
 import "./App.css"
 
 // Career Routes
@@ -74,6 +74,10 @@ import PlacementStats from "./pages/services/PlacementStats";
 import CourseComparison from "./pages/services/CourseComparison";
 import CampusLife from "./pages/services/CampusLife";
 import CareerRoadmap from "./pages/services/CareerRoadmap";
+// tech service
+import IT_Tech_Based from "./pages/services/IT_Tech_Based.jsx";
+import Aca_Scholarship_program from "./pages/services/Aca_Schorarship_program.jsx";
+import CareerGuidanceProgram from "./pages/services/CareerGuidanceProgram.jsx";
 
 
 
@@ -140,18 +144,16 @@ function App() {
           <Route path="/about/our-story" element={<OurStory />} />
           <Route path="/about/our-team" element={<OurTeam />} />
           <Route path="/about/our-team/:memberName" element={<Member />} />
+          <Route path="/about/our-blog" element={<Our_Blog />} />
+          <Route path="/about/our-blog/:id" element={<BlogFullArticle />} />
 
           {/* Career Routes */}
-          <Route path="/internships-jobs" element={<InternshipsAndJobs />} />
-          <Route path="/internships-jobs/:type" element={<Courses />} />
-
-
-
-
-          <Route path="/internships" element={<Internships />} />
-          <Route path="/internships/:id" element={<InternshipsDetail />} />
-          <Route path="/jobs" element={<Jobs />} />
-          <Route path="/job/:id" element={<JobDetail />} />
+          <Route path="/services/internships-jobs" element={<InternshipsAndJobs />} />
+          <Route path="/services/internships-jobs/:type" element={<Courses />} />
+          <Route path="/services/internships" element={<Internships />} />
+          <Route path="/services/internships/:id" element={<InternshipsDetail />} />
+          <Route path="/services/jobs" element={<Jobs />} />
+          {/* <Route path="job/:id" element={<JobDetail />} /> */}
 
           {/* Services Routes */}
           <Route path="/services" element={<Services />} />
@@ -177,6 +179,11 @@ function App() {
           <Route path="/services/course-comparison" element={<CourseComparison />} />
           <Route path="/services/campus-life" element={<CampusLife />} />
           <Route path="/services/career-roadmap" element={<CareerRoadmap />} />
+
+          {/* tech service */}
+          <Route path="services/it-tech-based-services" element={<IT_Tech_Based />} />
+          <Route path="services/aca-scholarship-program" element={<Aca_Scholarship_program />} />
+          <Route path="services/career-guidance-program" element={<CareerGuidanceProgram />} />
           {/* Other Routes */}
           <Route path="/clients" element={<Clients />} />
           <Route path="/blogs" element={<Blogs />} />

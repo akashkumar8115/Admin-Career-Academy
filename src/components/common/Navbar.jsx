@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { RiMenu2Fill } from "react-icons/ri"
 import { IoMdClose } from "react-icons/io"
 import { IoIosArrowDown } from "react-icons/io"
-import logo from '../../assets/logo.png'
+import logo from '../../assets/home/logo.png'
 
 const navlink = [
     {
@@ -35,21 +35,9 @@ const navlink = [
             { title: "IT/Tech based Services", path: "/services/it-tech-based-services" },
             { title: "Career Guidance program", path: "/services/career-guidance-program" },
             { title: "ACA Scholarship Program", path: "/services/aca-scholarship-program" },
+            { title: "Partnership & Collaborations", path: "/services/partnership-collaborations" },
         ]
     },
-    {
-        id: 4,
-        title: "Career",
-        path: "#",
-        dropdown: [
-            { title: "Internships &Jobs", path: "/services/internships-jobs" },
-            { title: "Career Roadmap", path: "/services/career-roadmap" },
-            { title: "Competitive Exams", path: "/services/competitive-exams" },
-            { title: "Scholarships", path: "/services/scholarships" },
-            { title: "Entrepreneurship", path: "/services/entrepreneurship" },
-        ]
-    },
-
     {
         id: 5,
         title: "Education",
@@ -189,7 +177,7 @@ const Navbar = () => {
 
 
 
-                                                <div className={`   w-48 overflow-hidden transition-all duration-500 ease-in-out max-h-0 group-hover:max-h-[600px] bg-white shadow-lg
+                                                <div className={`   w-60 overflow-hidden transition-all duration-500 ease-in-out max-h-0 group-hover:max-h-[600px] bg-white shadow-lg
 
                                     `}>
                                                     {item.dropdown.map((dropItem, index) => (

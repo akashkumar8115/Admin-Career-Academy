@@ -39,7 +39,7 @@ const InternshipsAndJobs = () => {
                                 transition={{ delay: 0.6 }}
                             >
                                 <Link
-                                    to="/internships"
+                                    to="/services/internships"
                                     className="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-black rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
                                 >
                                     Explore Internships
@@ -60,9 +60,7 @@ const InternshipsAndJobs = () => {
                 </motion.div>
             </div>
 
-            
-            <InternshipType/>
-      
+            <InternshipType />
             <div className="w-full flex items-center bg-gradient-to-br from-gray-50 to-blue-100">
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -94,7 +92,7 @@ const InternshipsAndJobs = () => {
                                 transition={{ delay: 0.6 }}
                             >
                                 <Link
-                                    to="/jobs"
+                                    to="/services/jobs"
                                     className="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-black rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
                                 >
                                     Explore jobs
@@ -114,7 +112,7 @@ const InternshipsAndJobs = () => {
                     </div>
                 </motion.div>
             </div>
-       
+
         </div>
     );
 };
