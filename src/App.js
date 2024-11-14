@@ -79,6 +79,8 @@ import IT_Tech_Based from "./pages/services/IT_Tech_Based.jsx";
 import Aca_Scholarship_program from "./pages/services/Aca_Schorarship_program.jsx";
 import CareerGuidanceProgram from "./pages/services/CareerGuidanceProgram.jsx";
 
+
+
 // Add these imports
 import PrivateRoute from './components/PrivateRoute';
 import Login from './pages/auth/Login';
@@ -95,11 +97,9 @@ import OurStory from "./pages/about/OurStory.jsx";
 import OurTeam from "./pages/about/OurTeam.jsx";
 import Member from "./components/about1/Member.jsx";
 import NotFound from './pages/NotFound';
-import Our_Blog from "./pages/about/Our_Blog.jsx";
-import BlogFullArticle from "./pages/about/BlogFullArticle.jsx";
-
-
-
+import Counselling from "./pages/services/Counselling.jsx";
+import Our_Blog from './pages/about/Our_Blog.jsx';
+import BlogFullArticle from './pages/about/BlogFullArticle.jsx';
 
 function App() {
   const location = useLocation();
@@ -160,6 +160,7 @@ function App() {
 
           {/* Services Routes */}
           <Route path="/services" element={<Services />} />
+          <Route path="/services/counselling-sessions" element={<Counselling/>}/>
           <Route path="/services/career-counselling" element={<CareerCounselling />} />
           <Route path="/services/web-development" element={<WebDevelopment />} />
           <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
