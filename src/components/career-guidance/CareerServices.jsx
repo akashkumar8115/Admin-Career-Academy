@@ -1,24 +1,22 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { counsellingData } from '../../../data/counselling';
+import { careerServiceData } from '../../data/career-service';
 
+const CareerServices = () => {
 
-
-const CollegeCounselling = () => {
     const [showAll, setShowAll] = useState(false);
 
     // Display only the first 6 cards initially, or all if `showAll` is true
-    const visibleData = showAll ? counsellingData : counsellingData.slice(0, 4);
+    const visibleData = showAll ? careerServiceData : careerServiceData.slice(0, 4);
 
-    return (
 
-        <section>
-            <div className="md:p-8 flex flex-col gap-y-12">
+  return (
+    <section>
+            <div className="lg:w-10/12 w-11/12 mx-auto md:p-8 flex flex-col gap-y-12">
 
                 <div className='flex justify-between items-center '>
-                    <h2 className=" md:text-3xl sm:text-2xl text-xl font-semibold ">College Counselling</h2>
+                    <h2 className=" md:text-3xl sm:text-2xl text-xl font-semibold ">Our Services</h2>
 
                     
                         <motion.button
@@ -43,7 +41,7 @@ const CollegeCounselling = () => {
                                 transition={{ duration: 0.5 }}
                                 viewport={{ once: true }}
                             >
-                                <Link to={`/counselling/${item.id}`}>
+                                <Link to={`/career-service/${item.id}`}>
                                     <div
                                         className="relative flex items-center justify-center h-40 p-6 text-center transition duration-300 transform bg-center bg-cover rounded-lg sm:p-8 sm:h-48 md:h-56 hover:scale-105 hover:shadow-lg border text-white"
                                         style={{
@@ -65,7 +63,7 @@ const CollegeCounselling = () => {
 
             </div>
         </section>
-    );
-};
+  )
+}
 
-export default CollegeCounselling;
+export default CareerServices

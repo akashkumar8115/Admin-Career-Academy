@@ -6,6 +6,7 @@ import SkillDevelopment from '../../components/career-guidance/SkillDevelopment'
 import CareerPlanning from '../../components/career-guidance/CareerPlanning';
 import MentorshipProgram from '../../components/career-guidance/MentorshipProgram';
 import { FaBrain, FaChartLine, FaUsers, FaGraduationCap } from 'react-icons/fa';
+import CareerServices from '../../components/career-guidance/CareerServices';
 
 const CareerGuidanceProgram = () => {
     const stats = [
@@ -74,6 +75,7 @@ const CareerGuidanceProgram = () => {
             </section>
 
             {/* Main Content */}
+            <CareerServices/>
             <SelfAssessment />
             <SkillDevelopment />
             <CareerPlanning />
