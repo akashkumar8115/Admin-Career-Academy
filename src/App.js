@@ -75,6 +75,8 @@ import CourseComparison from "./pages/services/CourseComparison";
 import CampusLife from "./pages/services/CampusLife";
 import CareerRoadmap from "./pages/services/CareerRoadmap";
 
+
+
 // Add these imports
 import PrivateRoute from './components/PrivateRoute';
 import Login from './pages/auth/Login';
@@ -91,6 +93,7 @@ import OurStory from "./pages/about/OurStory.jsx";
 import OurTeam from "./pages/about/OurTeam.jsx";
 import Member from "./components/about1/Member.jsx";
 import NotFound from './pages/NotFound';
+import Counselling from "./pages/services/Counselling.jsx";
 function App() {
   const location = useLocation();
 
@@ -152,6 +155,7 @@ function App() {
 
           {/* Services Routes */}
           <Route path="/services" element={<Services />} />
+          <Route path="/services/counselling-sessions" element={<Counselling/>}/>
           <Route path="/services/career-counselling" element={<CareerCounselling />} />
           <Route path="/services/web-development" element={<WebDevelopment />} />
           <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
