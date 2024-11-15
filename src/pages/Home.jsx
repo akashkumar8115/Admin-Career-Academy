@@ -25,10 +25,8 @@ const Home = () => {
             <Academic />
             <Partners />
             <Blog />
-            <div className='bg-gray-50'>
-            </div>
-            <Testimonials />
-            {/* <SuccessStories /> */}
+            <SuccessStories />
+            {/* <Testimonials /> */}
             <UpcomingEvents />
             <FAQ />
             <NewsletterSignup/>

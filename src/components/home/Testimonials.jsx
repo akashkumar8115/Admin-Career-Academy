@@ -31,7 +31,7 @@ const Testimonials = () => {
             <div className='w-11/12 lg:w-10/12 mx-auto'>
                 <div className='text-center mb-16'>
                     {/* <span className='text-violet-600 font-semibold tracking-wide uppercase'>Testimonials</span> */}
-                    <h2 className='text-4xl md:text-5xl font-bold mt-4'>Success Stories</h2>
+                    {/* <h2 className='text-4xl md:text-5xl font-bold mt-4'>Success Stories</h2> */}
                 </div>
 
                 <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8'>

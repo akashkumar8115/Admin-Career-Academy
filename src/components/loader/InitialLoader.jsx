@@ -7,7 +7,7 @@ const InitialLoader = () => {
     useEffect(() => {
         setTimeout(() => {
             setIsLoading(false)
-        }, 1350)
+        }, 2200)
     }, [])
 
     return (
