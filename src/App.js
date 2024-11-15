@@ -70,6 +70,10 @@ import ForgotPassword from './pages/auth/ForgotPassword';
 import Profile from './pages/auth/Profile';
 import UpdateProfile from './pages/auth/UpdateProfile';
 import WhatsAppButton from "./components/common/WhatsAppButton";
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsOfService from './pages/TermsOfService'
+import CookiePolicy from './pages/CookiePolicy'
+
 
 //About Routes
 import AboutCompany from "./pages/about/AboutCompany.jsx";
@@ -147,6 +151,7 @@ function App() {
           <Route path="/about/our-team" element={<OurTeam />} />
           <Route path="/about/our-team/:memberName" element={<Member />} />
           <Route path="/about/blogs" element={<Our_Blog />} />
+          <Route path="/blogs" element={<Our_Blog />} />
           <Route path="/about/our-blog/:id" element={<BlogFullArticle />} />
 
           {/* Career Routes */}
@@ -217,6 +222,9 @@ function App() {
           {/* Other Routes */}
           <Route path="/clients" element={<Clients />} />
           <Route path="/contact-us" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/cookie-policy" element={<CookiePolicy />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
