@@ -65,7 +65,7 @@ const Aca_Schorarship_program = () => {
             {/* Stats Section */}
             <section className="py-16 px-4 -mt-20">
                 <div className="max-w-7xl mx-auto">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-8">
                         {stats.map((stat, index) => (
                             <motion.div
                                 key={index}
