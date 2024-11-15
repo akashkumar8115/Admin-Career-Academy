@@ -43,7 +43,7 @@ const CollegeCounselling = () => {
                                 transition={{ duration: 0.5 }}
                                 viewport={{ once: true }}
                             >
-                                <Link to={`/counselling/${item.id}`}>
+                                <Link to={`/register`}>
                                     <div
                                         className="relative flex items-center justify-center h-40 p-6 text-center transition duration-300 transform bg-center bg-cover rounded-lg sm:p-8 sm:h-48 md:h-56 hover:scale-105 hover:shadow-lg border text-white"
                                         style={{

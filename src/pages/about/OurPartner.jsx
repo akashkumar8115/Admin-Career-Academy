@@ -3,8 +3,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import { partnerData } from '../data/partner';
-import partner from '../assets/partner.jpg'
+import { partnerData } from '../../data/partner';
+import partner from '../../assets/partner.jpg'
 
 const OurPartner = () => {
 
@@ -61,7 +61,7 @@ const OurPartner = () => {
             <div className='lg:w-10/12 w-11/12 mx-auto flex flex-col gap-y-16 '>
 
                 <div className=" flex xmd:flex-row flex-col items-center gap-8 justify-between ">
-                    <div className="xmd:w-[55%]">
+                    <div data-aos="fade-right" className="xmd:w-[55%]">
                         <h2 className="xlg:text-5xl md:text-4xl text-3xl font-bold text-green-500 xmd:text-left text-center mb-4">Our Partners</h2>
                         <h3 className="mb-4 text-xl font-semibold text-black-900 xmd:text-left text-center">
                             We believe in the power of collaboration.
@@ -71,7 +71,7 @@ const OurPartner = () => {
                         </p>
                     </div>
 
-                    <div className="flex justify-center xmd:w-[40%] w-[80%]">
+                    <div data-aos="fade-left" className="flex justify-center xmd:w-[40%] w-[80%]">
                         <img
                             src={partner}
                             alt="Our Partner"
@@ -81,7 +81,7 @@ const OurPartner = () => {
                 </div>
 
                 <div className="relative py-8 ">
-                    <h1 className='xmd:text-4xl text-3xl font-semibold text-center mb-16'>Our Trusted Partners</h1>
+                    <h1 data-aos="fade-left" className='xmd:text-4xl text-3xl font-semibold text-center mb-16'>Our Trusted Partners</h1>
                     <button
                         className="absolute xl:top-64 xmd:top-56 smd:top-48 xs:top-60 top-[200px] left-5 z-10 -translate-y-1/2 text-white  bg-green-500 hover:text-white-100 p-2 shadow-lg hover:bg-violet-50  transition-transform duration-300 transform rounded-full hover:scale-110 hover:shadow-lg hover:shadow-gray-600 xmd:text-2xl text-base "
                         onClick={prevSlide}
@@ -97,7 +97,7 @@ const OurPartner = () => {
 
                     <Slider {...settings} ref={sliderRef} className="">
                         {partnerData.map((partner) => (
-                            <div key={partner.id} className="px-6  w-[200px] h-[200px] ">
+                            <div data-aos="fade-down" key={partner.id} className="px-6  w-[200px] h-[200px] ">
                           
                                     <img
                                         src={partner.image}

@@ -43,6 +43,7 @@ import DigitalMarketing from "./pages/services/DigitalMarketing";
 import SEO from "./pages/services/SEO";
 import GraphicDesign from "./pages/services/GraphicDesign";
 import ContentWriting from "./pages/services/ContentWriting";
+import PartnerAndCollab from "./pages/services/PartnerAndCollab.jsx";
 
 //collage career Routes
 // import Counselling from "./pages/services/Counselling";
@@ -84,7 +85,7 @@ import NotFound from './pages/NotFound';
 import Counselling from "./pages/services/Counselling.jsx";
 import Our_Blog from './pages/about/Our_Blog.jsx';
 import BlogFullArticle from './pages/about/BlogFullArticle.jsx';
-import OurPartner from "./pages/OurPartner.jsx";
+import OurPartner from "./pages/about/OurPartner.jsx";
 
 // Education Routes
 import CollegeList from "./components/education/CollegeList.jsx";
@@ -187,6 +188,7 @@ function App() {
           <Route path="/services/course-comparison" element={<CourseComparison />} />
           <Route path="/services/campus-life" element={<CampusLife />} />
           <Route path="/services/career-roadmap" element={<CareerRoadmap />} />
+          <Route path="/services/partnership-collaborations" element={<PartnerAndCollab/>}/>
 
           {/* tech service */}
           <Route path="services/it-tech-based-services" element={<IT_Tech_Based />} />

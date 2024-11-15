@@ -45,7 +45,7 @@ const CounselStats = () => {
 
          {
             statData.map((item)=> (
-                <div key={item.id} style={{backgroundColor : item.color}} className={`h-[200px] xmd:w-full md:w-[90%] w-full flex flex-col gap-y-6 items-center justify-center rounded-lg trantion-all duration-300 hover:translate-y-[-10px] hover:shadow-lg
+                <div data-aos={item.id % 2 === 0 ? "fade-up" : "fade-down"} key={item.id} style={{backgroundColor : item.color}} className={`h-[200px] xmd:w-full md:w-[90%] w-full flex flex-col gap-y-6 items-center justify-center rounded-lg trantion-all duration-300 hover:translate-y-[-10px] hover:shadow-lg
                `}>
 
                     <p className='xs:text-5xl text-3xl '>{item.icon}</p>

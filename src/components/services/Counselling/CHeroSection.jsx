@@ -11,7 +11,7 @@ const CHeroSection = () => {
 
     {/* ---------- left side ----------- */}
 
-    <div className='xxl:w-[55%] xmd:w-[54%] flex flex-col gap-y-8   justify-center '>
+    <div data-aos="fade-left" className='xxl:w-[55%] xmd:w-[54%] flex flex-col gap-y-8   justify-center '>
 
         <h1 className='xlg:text-[40px] text-3xl xmd:text-left text-center font-semibold xlg:leading-[52px] leading-[46px]'>Shape Your Future with Expert Guidance</h1>
 
@@ -21,7 +21,7 @@ const CHeroSection = () => {
 
     {/* --------- right side ------------ */}
 
-    <div className='xxl:w-[40%] xmd:w-[45%] xsm:w-[80%] w-[95%] '>
+    <div data-aos="fade-right" className='xxl:w-[40%] xmd:w-[45%] xsm:w-[80%] w-[95%] '>
 
         <img src={counsellingImg} alt="counselling" className='w-full h-full object-contain aspect-square' />
 
