@@ -93,15 +93,13 @@ const Member = () => {
 
                                 <h2 className='font-semibold xs:text-lg tetx-base'>Connect with me : </h2>
 
-                                <div className='flex flex-col gap-y-3'>
+                                <div className='flex flex-row gap-y-3'>
 
                                     {
                                         memberInfo[0].socialLinks.map((link) => (
-                                            <div className='flex gap-x-4 '>
-
+                                            <div className='flex gap-x-4 flex-wrap justify-center justify-items-center m-1'>
                                                 <p className='capitalize'>{link.title}: </p>
-                                                <a href={link.url} className='text-violet-50 hover:text-green-500 xs:text-base text-sm '> {link.url}</a>
-
+                                                <a href={link.url} className='text-violet-50 hover:text-green-500 xs:text-base text-sm m-1'> {link.icon}</a>
                                             </div>
                                         ))
                                     }
@@ -110,17 +108,17 @@ const Member = () => {
                             </div>
                         }
 
-{
-                        memberInfo[0].quote.length !== 0 && (<p className='text-black-500 italic xxl:text-lg text-base mt-8'>
-                            "{memberInfo[0].quote}"
-                        </p>)
-                    }
+                        {
+                            memberInfo[0].quote.length !== 0 && (<p className='text-black-500 italic xxl:text-lg text-base mt-8'>
+                                "{memberInfo[0].quote}"
+                            </p>)
+                        }
 
 
 
                     </div>
 
-                 
+
 
 
                 </div>

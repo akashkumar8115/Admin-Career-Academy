@@ -120,8 +120,8 @@ const Internships = () => {
                                             </p>
                                         </div>
                                         <Link
-                                            to={`services/internships/${internship.id}`}
-                                            className="mt-6 block w-full text-center py-3 px-4 bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-lg hover:from-purple-600 hover:to-purple-700 transition-colors duration-300"
+                                            to={`/services/internships/${internship.id}`}
+                                            className="mt-6 block w-full text-center py-3 px-4 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors duration-300"
                                         >
                                             View Details
                                         </Link>

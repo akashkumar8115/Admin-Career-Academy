@@ -19,10 +19,10 @@ const WhatsAppButton = () => {
                 rel="noopener noreferrer"
                 className="relative group"
             >
-                <div className="absolute -inset-2 bg-gradient-to-r from-green-400 to-green-500 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
-                <button className="relative flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-5 rounded-full shadow-lg transition-all duration-300">
+                <div className="absolute -inset-2 bg-gradient-to-r from-green-400 to-green-500 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-300 hover:opacity-100"></div>
+                <button className="relative flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-4 rounded-full shadow-lg transition-all duration-300">
                     <FaWhatsapp className="text-2xl" />
-                    <span className="hidden md:block">Chat with us</span>
+                    <span className="hidden md:block text-white opacity-100">Chat with us</span>
                 </button>
                 <div className="absolute bottom-full left-0 mb-2 w-48 p-2 bg-white rounded-lg shadow-lg text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     Click to chat with our counselor

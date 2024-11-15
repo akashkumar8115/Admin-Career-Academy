@@ -40,7 +40,7 @@ const InternshipsDetail = () => {
         return (
             <div className="text-center py-20 pt-32">
                 <h2 className="text-2xl font-bold">Internship not found</h2>
-                <Link to="/internships" className="mt-3 inline-block px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
+                <Link to="/services/internships" className="mt-3 inline-block px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
                     Back to Listings
                 </Link>
             </div>
@@ -94,14 +94,14 @@ const InternshipsDetail = () => {
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <Link
-                        to={`/apply/${id}`}
-                        className="w-full sm:w-auto px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 text-center"
+                        to="/services/internships-application"
+                        className="w-full sm:w-auto px-6 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 text-center"
                     >
                         Apply Now
                     </Link>
                     <Link
-                        to="/internships"
-                        className="w-full sm:w-auto px-6 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-600 text-center"
+                        to="/services/internships"
+                        className="w-full sm:w-auto px-6 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 text-center"
                     >
                         Back to Listings
                     </Link>

@@ -10,10 +10,10 @@ import ScrollTop from "./components/common/ScrollTop.jsx";
 import Navbar from "./components/common/Navbar.jsx";
 import InitialLoader from './components/loader/InitialLoader'
 import Home from "./pages/Home";
+import SearchResults from './components/search/SearchResults';
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Clients from "./pages/Clients";
-import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import Footer from "./components/common/Footer.jsx";
 import "./App.css"
@@ -27,29 +27,13 @@ import Courses from "./components/internshipJob/Courses.jsx";
 // import InternshipJobs from "./pages/Internships";
 // import Internship from "./pages/InternshipsAndJobs.jsx";
 import Jobs from "./pages/Jobs";
-import JobDetail from "./pages/JobDetail";
+import JobDetail from "./pages/services/JobDetail.jsx";
+import JobsApplcation from "./pages/services/JobsApplcation.jsx";
+import InternshipsApplcation from "./pages/services/InternshipsApplcation.jsx";
 
 
 // Application Routes
-// import JobList from "./pages/JobList";
-// import JobSearch from "./pages/JobSearch";
-// import JobFilter from "./pages/JobFilter";
-// import JobSort from "./pages/JobSort";
-// import JobApply from "./pages/JobApply";
-// import JobApplication from "./pages/JobApplication";
-// import JobApplicationSuccess from "./pages/JobApplicationSuccess";
-// import JobApplicationFailure from "./pages/JobApplicationFailure";
-// import JobApplicationCancel from "./pages/JobApplicationCancel";
-// import JobApplicationError from "./pages/JobApplicationError";
-// import JobApplicationPending from "./pages/JobApplicationPending";
-// import JobApplicationExpired from "./pages/JobApplicationExpired";
-// import JobApplicationRejected from "./pages/JobApplicationRejected";
-// import JobApplicationAccepted from "./pages/JobApplicationAccepted";
-// import JobApplicationCompleted from "./pages/JobApplicationCompleted";
-// import JobApplicationCancelled from "./pages/JobApplicationCancelled";
-// import JobApplicationOnHold from "./pages/JobApplicationOnHold";
-// import JobApplicationInReview from "./pages/JobApplicationInReview";
-// import JobApplicationInProgress from "./pages/JobApplicationInProgress";
+
 
 
 // Services Routes
@@ -60,20 +44,17 @@ import SEO from "./pages/services/SEO";
 import GraphicDesign from "./pages/services/GraphicDesign";
 import ContentWriting from "./pages/services/ContentWriting";
 
-// career Routes
-import CollegeList from "./pages/services/CollegeList.jsx";
-import CollegeDetails from "./pages/services/CollegeDetails.jsx";
-import HostelDetails from "./pages/services/HostelDetails.jsx";
-import PGHostelDetails from "./pages/services/PGHostelDetails";
-import HostelRules from "./pages/services/HostelRules";
+//collage career Routes
+// import Counselling from "./pages/services/Counselling";
 import CareerGuidance from "./pages/services/CareerGuidance.jsx";
 import CareerGuidanceDetails from "./pages/services/CareerGuidanceDetails.jsx";
 import ScholarshipDetails from "./pages/services/ScholarshipDetails";
 import AdmissionProcess from "./pages/services/AdmissionProcess";
-import PlacementStats from "./pages/services/PlacementStats";
+import PlacementStats from "./components/education/PlacementStats.jsx";
 import CourseComparison from "./pages/services/CourseComparison";
-import CampusLife from "./pages/services/CampusLife";
+// import CampusLife from "./pages/services/CampusLife";
 import CareerRoadmap from "./pages/services/CareerRoadmap";
+
 // tech service
 import IT_Tech_Based from "./pages/services/IT_Tech_Based.jsx";
 import Aca_Scholarship_program from "./pages/services/Aca_Schorarship_program.jsx";
@@ -89,9 +70,12 @@ import ForgotPassword from './pages/auth/ForgotPassword';
 import Profile from './pages/auth/Profile';
 import UpdateProfile from './pages/auth/UpdateProfile';
 import WhatsAppButton from "./components/common/WhatsAppButton";
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsOfService from './pages/TermsOfService'
+import CookiePolicy from './pages/CookiePolicy'
+
 
 //About Routes
-
 import AboutCompany from "./pages/about/AboutCompany.jsx";
 import OurStory from "./pages/about/OurStory.jsx";
 import OurTeam from "./pages/about/OurTeam.jsx";
@@ -101,6 +85,24 @@ import Counselling from "./pages/services/Counselling.jsx";
 import Our_Blog from './pages/about/Our_Blog.jsx';
 import BlogFullArticle from './pages/about/BlogFullArticle.jsx';
 import OurPartner from "./pages/OurPartner.jsx";
+
+// Education Routes
+import CollegeList from "./components/education/CollegeList.jsx";
+import CollegeDetails from "./components/education/CollegeDetails.jsx";
+import CourseDegrees from "./components/education/CourseDegrees.jsx";
+import StudyAbroad from "./components/education/StudyAbroad.jsx";
+import EntranceExams from "./components/education/EntranceExams.jsx";
+import ScholarshipsFinancialAid from "./components/education/scholarshipsFinancialAid.jsx";
+
+// Accommodation Routes
+import OnCampusHousing from "./components/accommodation/OnCampusHousing.jsx";
+import OffCampusHousing from "./components/accommodation/OffCampusHousing.jsx";
+import StudentHousingCommunities from "./components/accommodation/StudentHousingCommunities.jsx";
+import BudgetingTips from "./components/accommodation/BudgetingTips.jsx";
+import SafetyTips from "./components/accommodation/SafetyTips.jsx";
+import PGHostelDetails from "./components/accommodation/PGHostelDetails.jsx";
+import HostelRules from "./components/accommodation/HostelRules.jsx";
+import CampusLife from "./components/accommodation/CampusLife.jsx";
 
 function App() {
   const location = useLocation();
@@ -114,9 +116,9 @@ function App() {
     // Initialize AOS animations
     AOS.init({
       once: true,
-      duration: 900,
-      easing: "ease-out-sine",
-      delay: 100,
+      duration: 1500,  // Set duration to 0 for instant animation
+      easing: "ease-in-out cubic-bezier(0.4, 0, 0.2, 1)", // Add easing for smoother animation
+      delay: 100, // Add delay for smoother animation
     });
   }, []);
 
@@ -128,6 +130,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/search" element={<SearchResults />} />
           {/* Auth Routes */}
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
@@ -148,7 +151,8 @@ function App() {
           <Route path="/about/our-story" element={<OurStory />} />
           <Route path="/about/our-team" element={<OurTeam />} />
           <Route path="/about/our-team/:memberName" element={<Member />} />
-          <Route path="/about/our-blog" element={<Our_Blog />} />
+          <Route path="/about/blogs" element={<Our_Blog />} />
+          <Route path="/blogs" element={<Our_Blog />} />
           <Route path="/about/our-blog/:id" element={<BlogFullArticle />} />
           <Route path="/about/our-partners" element={<OurPartner/>}/>
 
@@ -157,12 +161,15 @@ function App() {
           <Route path="/services/internships-jobs/:type" element={<Courses />} />
           <Route path="/services/internships" element={<Internships />} />
           <Route path="/services/internships/:id" element={<InternshipsDetail />} />
+          <Route path="/services/internships-application" element={<InternshipsApplcation />} />
           <Route path="/services/jobs" element={<Jobs />} />
-          {/* <Route path="job/:id" element={<JobDetail />} /> */}
+          <Route path="/services/job/:id" element={<JobDetail />} />
+          <Route path="/services/jobs-application" element={<JobsApplcation />} />
+
 
           {/* Services Routes */}
           <Route path="/services" element={<Services />} />
-          <Route path="/services/counselling-sessions" element={<Counselling/>}/>
+          <Route path="/services/counselling-sessions" element={<Counselling />} />
           <Route path="/services/career-counselling" element={<CareerCounselling />} />
           <Route path="/services/web-development" element={<WebDevelopment />} />
           <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
@@ -172,11 +179,7 @@ function App() {
           {/* career guidance */}
           <Route path="/services/career-guidance" element={<CareerGuidance />} />
           {/* <Route path="/services/career-guidance/:id" element={<CareerGuidanceDetails />} /> */}
-          <Route path="/services/colleges" element={<CollegeList />} />
-          <Route path="/services/colleges/:id" element={<CollegeDetails />} />
-          <Route path="/services/hostels/:id" element={<HostelDetails />} />
-          <Route path="/services/pg-hostel-details" element={<PGHostelDetails />} />
-          <Route path="/services/hostel-rules" element={<HostelRules />} />
+
           {/* <Route path="/services/career-guidance/:id" element={<CareerGuidanceDetails />} /> */}
           <Route path="/services/scholarship-details" element={<ScholarshipDetails />} />
           <Route path="/services/admission-process" element={<AdmissionProcess />} />
@@ -189,10 +192,41 @@ function App() {
           <Route path="services/it-tech-based-services" element={<IT_Tech_Based />} />
           <Route path="services/aca-scholarship-program" element={<Aca_Scholarship_program />} />
           <Route path="services/career-guidance-program" element={<CareerGuidanceProgram />} />
+
+          {/* Education Routes */}
+          <Route path="/education/colleges" element={<CollegeList />} />
+          <Route path="/education/colleges/:id" element={<CollegeDetails />} />
+          {/* <Route path="/education/hostels/:id" element={<HostelDetails />} /> */}
+          <Route path="/education/pg-hostel-details" element={<PGHostelDetails />} />
+          <Route path="/education/hostel-rules" element={<HostelRules />} />
+          <Route path="/education/placement-stats" element={<PlacementStats />} />
+          <Route path="/education/course-comparison" element={<CourseComparison />} />
+          <Route path="/education/courses-degrees" element={<CourseDegrees />} />
+          <Route path="/education/study-abroad" element={<StudyAbroad />} />
+          <Route path="/education/admission-process" element={<AdmissionProcess />} />
+          <Route path="/education/entrance-exams" element={<EntranceExams />} />
+          <Route path="/education/scholarships-financial-aid" element={<ScholarshipsFinancialAid />} />
+
+          {/* Accommodation Routes */}
+          <Route path="/accommodation/on-campus-housing" element={<OnCampusHousing />} />
+          <Route path="/accommodation/off-campus-housing" element={<OffCampusHousing />} />
+          <Route path="/accommodation/student-housing-communities" element={<StudentHousingCommunities />} />
+          <Route path="/accommodation/budgeting-tips" element={<BudgetingTips />} />
+          <Route path="/accommodation/safety-tips" element={<SafetyTips />} />
+          <Route path="/accommodation/pg-hostel-details" element={<PGHostelDetails />} />
+          <Route path="/accommodation/hostel-rules" element={<HostelRules />} />
+          <Route path="/accommodation/campus-life" element={<CampusLife />} />
+
+
+     
+
+
           {/* Other Routes */}
           <Route path="/clients" element={<Clients />} />
-          <Route path="/blogs" element={<Blogs />} />
           <Route path="/contact-us" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/cookie-policy" element={<CookiePolicy />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

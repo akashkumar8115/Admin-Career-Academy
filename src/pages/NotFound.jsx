@@ -57,7 +57,7 @@ const NotFound = () => {
                 <div className="mt-12 space-y-4">
                     <h3 className="text-xl font-semibold">You might be interested in:</h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        {['Services', 'About', 'Contact-us', 'Blog'].map((item, index) => (
+                        {['Services', 'About', 'Contact-us', 'Blogs'].map((item, index) => (
                             <motion.div
                                 key={index}
                                 whileHover={{ scale: 1.05 }}

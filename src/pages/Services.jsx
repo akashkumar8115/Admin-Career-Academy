@@ -13,7 +13,7 @@ import ServiceFeatures from '../components/services/ServiceFeatures';
 import ServiceComparison from '../components/services/ServiceComparison';
 const Services = () => {
     return (
-        <div className="pt-28 min-h-screen bg-gradient-to-b from-white to-violet-100 mt-28 pb-16">
+        <div className="pt-22 min-h-screen bg-gradient-to-b from-white to-violet-100 mt-28 pb-16">
             <div className="w-11/12 lg:w-10/12 mx-auto">
                 {/* Hero Section */}
                 <motion.div

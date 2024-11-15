@@ -6,6 +6,15 @@ body{
 
 }
 
+.text-rad-500{
+    color: rgb(255, 15, 15);
+}
+.border-red-500{
+    color: rgb(222, 27, 27);
+}
+input{
+    outline: none;
+}
 nav{
     /* position: fixed; */
 }

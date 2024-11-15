@@ -48,7 +48,7 @@ const Banner = () => {
     }
 
     return (
-        <section className='h-[60vh] w-full relative overflow-hidden pt-28 pb-20'>
+        <section className='h-[72vh] w-full relative overflow-hidden pt-20 pb-24'>
             <div className='absolute inset-0 bg-dots-pattern opacity-5'></div>
             <div className='h-full w-full relative'>
                 <div className='relative h-full flex items-center pt-20'>
@@ -67,10 +67,10 @@ const Banner = () => {
                         {[...bannerData, ...bannerData].map((item, index) => (
                             <motion.div
                                 key={`${item.id}-${index}`}
-                                initial={{ opacity: 0.5, scale: 0.9 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
+                                initial={{ opacity: 0.5, scale: 0.8 }}
+                                whileInView={{ opacity: 1, scale: 0.9 }}
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                                className='flex-none mx-6 w-[600px] group'
+                                className="flex-none mx-6 md:w-[50vw] w-full group"
                             >
                                 <div className='relative h-[400px] rounded-3xl overflow-hidden shadow-2xl'>
                                     <img
