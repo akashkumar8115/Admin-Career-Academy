@@ -106,7 +106,7 @@ export const counsellingData = [
     },
     {
         id: 11,
-        title: "UITEE Counselling",
+        title: "VITEE Counselling",
         color: "#8aff9c",
         image : uitee,
         counsellingType : [

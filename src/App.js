@@ -100,6 +100,7 @@ import NotFound from './pages/NotFound';
 import Counselling from "./pages/services/Counselling.jsx";
 import Our_Blog from './pages/about/Our_Blog.jsx';
 import BlogFullArticle from './pages/about/BlogFullArticle.jsx';
+import OurPartner from "./pages/OurPartner.jsx";
 
 function App() {
   const location = useLocation();
@@ -149,6 +150,7 @@ function App() {
           <Route path="/about/our-team/:memberName" element={<Member />} />
           <Route path="/about/our-blog" element={<Our_Blog />} />
           <Route path="/about/our-blog/:id" element={<BlogFullArticle />} />
+          <Route path="/about/our-partners" element={<OurPartner/>}/>
 
           {/* Career Routes */}
           <Route path="/services/internships-jobs" element={<InternshipsAndJobs />} />
