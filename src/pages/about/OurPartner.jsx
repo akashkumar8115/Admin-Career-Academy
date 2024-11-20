@@ -102,7 +102,7 @@ const OurPartner = () => {
                                     <img
                                         src={partner.image}
                                         alt={partner.name}
-                                        className="w-full h-full object-contain  transition-transform duration-500 transform  "
+                                        className="w-full h-full object-contain aspect-square transition-transform duration-500 transform  "
                                         style={{
                                             animation: 'fadeIn 1s ease-in-out',
                                         }}
