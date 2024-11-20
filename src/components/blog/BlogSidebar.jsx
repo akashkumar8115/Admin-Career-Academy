@@ -37,10 +37,10 @@ const BlogSidebar = ({ popularPosts, categories, tags }) => {
                         <li key={category.name}>
                             <a
                                 href={`#${category.slug}`}
-                                className="flex justify-between items-center hover:text-blue-600 transition-colors"
+                                className="flex justify-between items-center hover:text-green-200 transition-colors"
                             >
                                 {category.name}
-                                <span className="bg-gray-100 px-2 py-1 rounded-full text-sm">
+                                <span className="bg-gray-100 px-2 py-1 rounded-full text-sm hover:bg-green-400 transition-colors">
                                     {category.count}
                                 </span>
                             </a>
@@ -57,7 +57,7 @@ const BlogSidebar = ({ popularPosts, categories, tags }) => {
                         <a
                             key={tag}
                             href={`#${tag}`}
-                            className="px-3 py-1 bg-gray-100 rounded-full text-sm hover:bg-blue-600 hover:text-white transition-colors"
+                            className="px-3 py-1 bg-gray-100 rounded-full text-sm hover:text-green-400 transition-colors"
                         >
                             {tag}
                         </a>

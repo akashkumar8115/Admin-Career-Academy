@@ -68,7 +68,7 @@ const Banner = () => {
                             <motion.div
                                 key={`${item.id}-${index}`}
                                 initial={{ opacity: 0.5, scale: 0.8 }}
-                                whileInView={{ opacity: 1, scale: 0.9 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                                 className="flex-none mx-6 md:w-[50vw] w-full group"
                             >

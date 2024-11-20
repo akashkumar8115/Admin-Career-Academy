@@ -86,6 +86,7 @@ import Counselling from "./pages/services/Counselling.jsx";
 import Our_Blog from './pages/about/Our_Blog.jsx';
 import BlogFullArticle from './pages/about/BlogFullArticle.jsx';
 import OurPartner from "./pages/about/OurPartner.jsx";
+import StudentSuccessStories from "./pages/about/StudentSuccessStories.jsx";
 
 // Education Routes
 import CollegeList from "./components/education/CollegeList.jsx";
@@ -155,7 +156,10 @@ function App() {
           <Route path="/about/blogs" element={<Our_Blog />} />
           <Route path="/blogs" element={<Our_Blog />} />
           <Route path="/about/our-blog/:id" element={<BlogFullArticle />} />
-          <Route path="/about/our-partners" element={<OurPartner/>}/>
+          <Route path="/about/our-partners" element={<OurPartner />} />
+          <Route path="/about/student-success-stories" element={<StudentSuccessStories />} />
+
+
 
           {/* Career Routes */}
           <Route path="/services/internships-jobs" element={<InternshipsAndJobs />} />
@@ -188,7 +192,7 @@ function App() {
           <Route path="/services/course-comparison" element={<CourseComparison />} />
           <Route path="/services/campus-life" element={<CampusLife />} />
           <Route path="/services/career-roadmap" element={<CareerRoadmap />} />
-          <Route path="/services/partnership-collaborations" element={<PartnerAndCollab/>}/>
+          <Route path="/services/partnership-collaborations" element={<PartnerAndCollab />} />
 
           {/* tech service */}
           <Route path="services/it-tech-based-services" element={<IT_Tech_Based />} />
@@ -220,7 +224,6 @@ function App() {
           <Route path="/accommodation/campus-life" element={<CampusLife />} />
 
 
-     
 
 
           {/* Other Routes */}
@@ -235,7 +238,6 @@ function App() {
       <ScrollTop />
       <WhatsAppButton />
       <Footer />
-
     </div>
   );
 }
