@@ -20,7 +20,7 @@ const Footer = () => {
                         </p>
                         <div className="flex gap-4">
                             {Object.entries(company.socialLinks).map(([platform, url]) => (
-                                <a 
+                                <a
                                     key={platform}
                                     href={url}
                                     target="_blank"
@@ -42,9 +42,9 @@ const Footer = () => {
                         <ul className="space-y-4">
                             {services.map((service) => (
                                 <li key={service.id}>
-                                    <Link 
+                                    <Link
                                         to={service.path}
-                                        className="text-gray-600 hover:text-violet-600 transition-colors flex items-center gap-2"
+                                        className="text-gray-600 hover:text-green-600 transition-colors flex items-center gap-2"
                                     >
                                         <span className="w-2 h-2 bg-violet-600 rounded-full"></span>
                                         {service.title}
@@ -60,22 +60,22 @@ const Footer = () => {
                         <ul className="space-y-4">
                             {quickLinks.map((link) => (
                                 <li key={link.id}>
-                                    <Link 
+                                    <Link
                                         to={link.path}
-                                        className="text-gray-600 hover:text-violet-600 transition-colors flex items-center gap-2"
+                                        className="text-gray-600 hover:text-green-600 transition-colors flex items-center gap-2"
                                     >
-                                        <span className="w-2 h-2 bg-violet-600 rounded-full"></span>
+                                        <span className="w-2 h-2 bg-violet-600 rounded-full hover:bg-green-600"></span>
                                         {link.title}
                                     </Link>
                                     {link.subLinks && (
                                         <ul className="ml-6 mt-2 space-y-2">
                                             {link.subLinks.map((subLink, index) => (
                                                 <li key={index}>
-                                                    <Link 
+                                                    <Link
                                                         to={subLink.path}
-                                                        className="text-gray-500 hover:text-violet-600 transition-colors text-sm"
+                                                        className="text-gray-500 hover:text-green-600 transition-colors text-sm"
                                                     >
-                                                        {subLink.title}
+                                                        <li> {subLink.title}</li>
                                                     </Link>
                                                 </li>
                                             ))}
@@ -115,9 +115,9 @@ const Footer = () => {
                         <p className="text-gray-600">© 2024 {company.name}. All rights reserved.</p>
                         <div className="flex flex-wrap justify-center gap-6">
                             {legal.map((item) => (
-                                <Link 
+                                <Link
                                     key={item.id}
-                                    to={item.path} 
+                                    to={item.path}
                                     className="text-gray-600 hover:text-violet-600 transition-colors"
                                 >
                                     {item.title}

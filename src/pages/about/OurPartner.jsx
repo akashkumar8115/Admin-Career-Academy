@@ -44,7 +44,6 @@ const OurPartner = () => {
                     slidesToShow: 2,
                 },
             },
-          
         ],
     };
 
@@ -86,28 +85,28 @@ const OurPartner = () => {
                         className="absolute xl:top-64 xmd:top-56 smd:top-48 xs:top-60 top-[200px] left-5 z-10 -translate-y-1/2 text-white  bg-green-500 hover:text-white-100 p-2 shadow-lg hover:bg-violet-50  transition-transform duration-300 transform rounded-full hover:scale-110 hover:shadow-lg hover:shadow-gray-600 xmd:text-2xl text-base "
                         onClick={prevSlide}
                     >
-                        <FaArrowLeft  />
+                        <FaArrowLeft />
                     </button>
                     <button
                         className="absolute xl:top-64 xmd:top-56 smd:top-48 xs:top-60 top-[200px] right-5 z-10 -translate-y-1/2 bg-green-500 text-white bg-white-100  p-2 shadow-lg hover:bg-violet-50 transition-transform duration-300 transform rounded-full hover:scale-110 hover:shadow-lg xmd:text-2xl text-base "
                         onClick={nextSlide}
                     >
-                        <FaArrowRight  />
+                        <FaArrowRight />
                     </button>
 
                     <Slider {...settings} ref={sliderRef} className="">
                         {partnerData.map((partner) => (
                             <div data-aos="fade-down" key={partner.id} className="px-6  w-[200px] h-[200px] ">
-                          
-                                    <img
-                                        src={partner.image}
-                                        alt={partner.name}
-                                        className="w-full h-full object-contain  transition-transform duration-500 transform  "
-                                        style={{
-                                            animation: 'fadeIn 1s ease-in-out',
-                                        }}
-                                    />
-                            
+
+                                <img
+                                    src={partner.image}
+                                    alt={partner.name}
+                                    className="w-full h-full object-contain transition-transform duration-500 transform hover:scale-110 aspect-square"
+                                    style={{
+                                        animation: 'fadeIn 1s ease-in-out',
+                                    }}
+                                />
+
                             </div>
                         ))}
                     </Slider>

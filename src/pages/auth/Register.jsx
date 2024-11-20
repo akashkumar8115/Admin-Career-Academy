@@ -34,7 +34,7 @@ const Register = () => {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white pt-32">
-            <div className="container mx-auto px-4 py-16">
+            <div className="container mx-auto px-2 py-10">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}

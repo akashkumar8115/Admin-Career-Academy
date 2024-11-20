@@ -103,7 +103,7 @@ export const footerData = {
     contact: {
         address: "123 Education Street, Knowledge City, 123456",
         email: "contact@admincareeracademy.com",
-        phone: "+1 234 567 8900",
+        phone: "+91 9120325950",
         supportHours: "Monday - Saturday: 9:00 AM - 6:00 PM"
     },
 
