@@ -48,7 +48,7 @@ import PartnerAndCollab from "./pages/services/PartnerAndCollab.jsx";
 //collage career Routes
 // import Counselling from "./pages/services/Counselling";
 import CareerGuidance from "./pages/services/CareerGuidance.jsx";
-import CareerGuidanceDetails from "./pages/services/CareerGuidanceDetails.jsx";
+// import CareerGuidanceDetails from "./pages/services/CareerGuidanceDetails.jsx";
 import ScholarshipDetails from "./pages/services/ScholarshipDetails";
 import AdmissionProcess from "./pages/services/AdmissionProcess";
 import PlacementStats from "./components/education/PlacementStats.jsx";
