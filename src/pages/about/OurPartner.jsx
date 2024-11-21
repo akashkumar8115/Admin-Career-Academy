@@ -97,16 +97,16 @@ const OurPartner = () => {
                     <Slider {...settings} ref={sliderRef} className="">
                         {partnerData.map((partner) => (
                             <div data-aos="fade-down" key={partner.id} className="px-6  w-[200px] h-[200px] ">
-
-                                <img
-                                    src={partner.image}
-                                    alt={partner.name}
-                                    className="w-full h-full object-contain transition-transform duration-500 transform hover:scale-110 aspect-square"
-                                    style={{
-                                        animation: 'fadeIn 1s ease-in-out',
-                                    }}
-                                />
-
+                          
+                                    <img
+                                        src={partner.image}
+                                        alt={partner.name}
+                                        className="w-full h-full object-contain aspect-square transition-transform duration-500 transform  "
+                                        style={{
+                                            animation: 'fadeIn 1s ease-in-out',
+                                        }}
+                                    />
+                            
                             </div>
                         ))}
                     </Slider>

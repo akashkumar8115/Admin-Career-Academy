@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGraduationCap, FaStore, FaBuilding, FaRocket } from 'react-icons/fa';
 // import { Link } from 'react-router-dom';
+import ItTechServices from './ItTechServices';
 
 const IT_Tech_Based = () => {
     const fadeInUp = {
@@ -103,7 +104,7 @@ const IT_Tech_Based = () => {
             <section className="py-16 px-4 md:px-8">
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-3xl font-bold text-center mb-12">Our Programs</h2>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <ProgramCard
                             title="Full Stack Development"
                             duration="6 months"
@@ -119,7 +120,8 @@ const IT_Tech_Based = () => {
                             duration="6 months"
                             features={["Python", "Statistical Analysis", "Big Data"]}
                         />
-                    </div>
+                    </div> */}
+                    <ItTechServices/>
                 </div>
             </section>
         </div>
