@@ -105,6 +105,25 @@ import SafetyTips from "./components/accommodation/SafetyTips.jsx";
 import PGHostelDetails from "./components/accommodation/PGHostelDetails.jsx";
 import HostelRules from "./components/accommodation/HostelRules.jsx";
 import CampusLife from "./components/accommodation/CampusLife.jsx";
+import ProgressTracker from './pages/ProgressTracker';
+
+
+// other routes
+import VirtualCampus from './components/3d/VirtualCampus';
+import AICareerRecommender from './components/career/AICareerRecommender';
+import LiveSupport from './components/chat/LiveSupport';
+import Achievements from './components/gamification/Achievements';
+import StudentPortfolio from './components/portfolio/StudentPortfolio';
+import VirtualCareerFair from './components/events/VirtualCareerFair';
+import CourseRoadmap from './components/learning/CourseRoadmap';
+import StudentDashboard from './components/dashboard/StudentDashboard';
+import ProgressAnalytics from './components/analytics/ProgressAnalytics';
+
+
+// import CourseComparison from "./pages/services/CourseComparison.jsx";
+import CourseComparisonAdmin from "./pages/admin/CourseComparisonAdmin.jsx";
+import CourseAnalytics from "./pages/admin/CourseAnalytics.jsx";
+import CourseManagement from "./pages/admin/CourseManagement.jsx";
 
 function App() {
   const location = useLocation();
@@ -137,9 +156,11 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
-          <Route path="/profile" element={
+          {/* <Route path="/profile" element={ */}
+          <Route path="/progress-tracker" element={
             <PrivateRoute>
               <Profile />
+              <ProgressTracker />
             </PrivateRoute>
           } />
           <Route path="/update-profile" element={
@@ -147,6 +168,26 @@ function App() {
               <UpdateProfile />
             </PrivateRoute>
           } />
+
+          {/* Admin Routes - Protected */}
+          <Route path="/admin/course-comparison" element={
+            <PrivateRoute>
+              <CourseComparisonAdmin />
+            </PrivateRoute>
+          } />
+          <Route path="/admin/course-analytics" element={
+            <PrivateRoute>
+              <CourseAnalytics />
+            </PrivateRoute>
+          } />
+          <Route path="/admin/course-management" element={
+            <PrivateRoute>
+              <CourseManagement />
+            </PrivateRoute>
+          } />
+
+
+
           {/* About Routes */}
           <Route path="/about" element={<About />} />
           <Route path="/about/about-company" element={<AboutCompany />} />
@@ -188,7 +229,6 @@ function App() {
           {/* <Route path="/services/career-guidance/:id" element={<CareerGuidanceDetails />} /> */}
           <Route path="/services/scholarship-details" element={<ScholarshipDetails />} />
           <Route path="/services/admission-process" element={<AdmissionProcess />} />
-          <Route path="/services/placement-stats" element={<PlacementStats />} />
           <Route path="/services/course-comparison" element={<CourseComparison />} />
           <Route path="/services/campus-life" element={<CampusLife />} />
           <Route path="/services/career-roadmap" element={<CareerRoadmap />} />
@@ -198,6 +238,9 @@ function App() {
           <Route path="services/it-tech-based-services" element={<IT_Tech_Based />} />
           <Route path="services/aca-scholarship-program" element={<Aca_Scholarship_program />} />
           <Route path="services/career-guidance-program" element={<CareerGuidanceProgram />} />
+
+
+
 
           {/* Education Routes */}
           <Route path="/education/colleges" element={<CollegeList />} />
@@ -212,6 +255,8 @@ function App() {
           <Route path="/education/admission-process" element={<AdmissionProcess />} />
           <Route path="/education/entrance-exams" element={<EntranceExams />} />
           <Route path="/education/scholarships-financial-aid" element={<ScholarshipsFinancialAid />} />
+          <Route path="/education/placement-stats" element={<PlacementStats />} />
+
 
           {/* Accommodation Routes */}
           <Route path="/accommodation/on-campus-housing" element={<OnCampusHousing />} />
@@ -222,6 +267,40 @@ function App() {
           <Route path="/accommodation/pg-hostel-details" element={<PGHostelDetails />} />
           <Route path="/accommodation/hostel-rules" element={<HostelRules />} />
           <Route path="/accommodation/campus-life" element={<CampusLife />} />
+
+
+          {/* other routes 2nd */}
+          <Route path="/virtual-campus" element={<VirtualCampus />} />
+          <Route path="/career-recommender" element={<AICareerRecommender />} />
+          <Route path="/live-support" element={<LiveSupport />} />
+          <Route path="/achievements" element={
+            <PrivateRoute>
+              <Achievements />
+            </PrivateRoute>
+          } />
+          <Route path="/portfolio" element={
+            <PrivateRoute>
+              <StudentPortfolio />
+            </PrivateRoute>
+          } />
+
+          <Route path="/virtual-career-fair" element={<VirtualCareerFair />} />
+          <Route path="/course-roadmap" element={
+            <PrivateRoute>
+              <CourseRoadmap />
+            </PrivateRoute>
+          } />
+          <Route path="/dashboard" element={
+            <PrivateRoute>
+              <StudentDashboard />
+            </PrivateRoute>
+          } />
+
+          <Route path="/analytics" element={
+            <PrivateRoute>
+              <ProgressAnalytics />
+            </PrivateRoute>
+          } />
 
 
 

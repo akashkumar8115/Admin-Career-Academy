@@ -101,9 +101,9 @@ export const footerData = {
     ],
 
     contact: {
-        address: "123 Education Street, Knowledge City, 123456",
-        email: "contact@admincareeracademy.com",
-        phone: "+91 9120325950",
+        address: "126024 ALIGANJ SECTOR (K), LUCKNOW",
+        email: "Infoonaca@gmail.com",
+        phone: "+91 912-032-5950",
         supportHours: "Monday - Saturday: 9:00 AM - 6:00 PM"
     },
 

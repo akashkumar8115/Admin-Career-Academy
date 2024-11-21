@@ -33,7 +33,7 @@ const NotFound = () => {
                     >
                         <Link 
                             to="/" 
-                            className="inline-flex items-center px-6 py-3 bg-violet-600 text-white rounded-lg hover:bg-violet-700 transition-colors mr-4"
+                            className="inline-flex items-center px-6 py-3 bg-violet-600 text-green-700 rounded-lg hover:bg-violet-700 transition-colors mr-4"
                         >
                             <IoHomeOutline className="mr-2" />
                             Back to Home

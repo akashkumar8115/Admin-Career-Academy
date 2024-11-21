@@ -1,12 +1,14 @@
 import React from 'react'
 import Hero from '../../assets/home/career-counselling.jpg'
+import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
 const HeroSection = () => {
   return (
-    <section className='w-full min-h-screen flex items-center pt-20 mb-16'>
+    <section className='w-full min-h-screen flex items-center pt-2 mb-16'>
       <div className='w-11/12 lg:w-10/12 mx-auto flex smd:flex-row flex-col justify-between items-center xmd:gap-x-16 gap-x-10 gap-y-16'>
-        <div className='flex flex-col smd:gap-y-8 gap-y-6 smd:w-[55%]'>
+        <motion.div initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }} className='flex flex-col smd:gap-y-8 gap-y-6 smd:w-[55%]'>
           <h1 className='xl:text-4xl text-3xl smd:text-left text-center font-bold xl:leading-[70px] leading-[60px] text-gray-800'>
             Transform Your Future with Expert Guidance
           </h1>
@@ -28,21 +30,46 @@ const HeroSection = () => {
               </button>
             </Link>
           </div>
-          <div className='mt-8 flex gap-8 items-center'>
-            <div className='text-center'>
-              <h3 className='text-3xl font-bold text-violet-600'>5000+</h3>
-              <p className='text-gray-600'>Students Guided</p>
-            </div>
-            <div className='text-center'>
-              <h3 className='text-3xl font-bold text-violet-600'>95%</h3>
-              <p className='text-gray-600'>Success Rate</p>
-            </div>
-            <div className='text-center'>
-              <h3 className='text-3xl font-bold text-violet-600'>50+</h3>
-              <p className='text-gray-600'>Expert Mentors</p>
+          {/* Stats Section */}
+          <div className="bg-white/10 backdrop-blur-lg py-12">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2 }}
+                >
+                  <div className="text-4xl font-bold mb-2">10000+</div>
+                  <div className="text-sm opacity-80">Students Guided</div>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4 }}
+                >
+                  <div className="text-4xl font-bold mb-2">95%</div>
+                  <div className="text-sm opacity-80">Success Rate</div>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.6 }}
+                >
+                  <div className="text-4xl font-bold mb-2">100+</div>
+                  <div className="text-sm opacity-80">Partner Companies</div>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.8 }}
+                >
+                  <div className="text-4xl font-bold mb-2">50+</div>
+                  <div className="text-sm opacity-80">Career Paths</div>
+                </motion.div>
+              </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         <div className='smd:w-[45%] relative'>
           <div className='absolute -z-10 w-full h-full bg-gradient-to-r from-violet-200 to-green-200 rounded-full blur-3xl opacity-30'></div>

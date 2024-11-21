@@ -15,7 +15,7 @@ const NewsletterSignup = () => {
                                 placeholder="Enter your email"
                                 className='w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-gray-400'
                             />
-                            <button className='w-full sm:w-auto px-6 py-2 bg-gray-300 text-black rounded-lg hover:bg-green-600 transition-colors'>
+                            <button className='w-full sm:w-auto px-6 py-2 bg-green-300 text-black rounded-lg hover:bg-green-600 hover:text-white transition-colors'>
                                 Subscribe
                             </button>
                         </form>
