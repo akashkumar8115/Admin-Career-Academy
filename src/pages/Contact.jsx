@@ -50,25 +50,25 @@ const Contact = () => {
             title: "Visit Us",
             details: [
                 "ACA Pvt. Ltd.",
-                "Sector 17, Near PU Campus",
-                "Chandigarh, 160017, India"
+                "ALIGANJ SECTOR (K),126024",
+                "LUCKNOW, UTTAR PRADESH, India"
             ]
         },
         {
             icon: <IoMail className="text-2xl" />,
             title: "Email Us",
             details: [
-                "info@acadmin.com",
-                "careers@acadmin.com",
-                "support@acadmin.com"
+                "Infoonaca@gmail.com",
+                "acapvtltd.in@gmail.com",
+                "acahiring24@gmail.com"
             ]
         },
         {
             icon: <IoCall className="text-2xl" />,
             title: "Call Us",
             details: [
-                "+91 98765 43210",
-                "+91 98765 43211",
+                "+91 9120325950",
+                "+91 9876543211",
                 "Toll Free: 1800 123 4567"
             ]
         },
@@ -87,7 +87,7 @@ const Contact = () => {
         <div className="pt-24 min-h-screen bg-gradient-to-b from-white to-violet-100 mt-28">
             <div className="w-11/12 lg:w-10/12 mx-auto pb-16">
                 {/* Header Section */}
-                <motion.div 
+                <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     className="text-center mb-16"
@@ -101,7 +101,7 @@ const Contact = () => {
                 {/* Contact Information Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
                     {contactInfo.map((info, index) => (
-                        <motion.div 
+                        <motion.div
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -130,7 +130,7 @@ const Contact = () => {
                                     <input
                                         type="text"
                                         value={formData.name}
-                                        onChange={(e) => setFormData({...formData, name: e.target.value})}
+                                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                                         className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-violet-50"
                                         required
                                         placeholder="Your name"
@@ -141,7 +141,7 @@ const Contact = () => {
                                     <input
                                         type="email"
                                         value={formData.email}
-                                        onChange={(e) => setFormData({...formData, email: e.target.value})}
+                                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                                         className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-violet-50"
                                         required
                                         placeholder="Your email"
@@ -155,7 +155,7 @@ const Contact = () => {
                                     <input
                                         type="tel"
                                         value={formData.phone}
-                                        onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                                         className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-violet-50"
                                         placeholder="Your phone number"
                                     />
@@ -165,7 +165,7 @@ const Contact = () => {
                                     <input
                                         type="text"
                                         value={formData.subject}
-                                        onChange={(e) => setFormData({...formData, subject: e.target.value})}
+                                        onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                                         className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-violet-50"
                                         required
                                         placeholder="Message subject"
@@ -177,7 +177,7 @@ const Contact = () => {
                                 <label className="block mb-2 font-medium">Message</label>
                                 <textarea
                                     value={formData.message}
-                                    onChange={(e) => setFormData({...formData, message: e.target.value})}
+                                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                                     rows="5"
                                     className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-violet-50"
                                     required
