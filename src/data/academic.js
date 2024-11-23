@@ -45,7 +45,7 @@ export const academicData = [
     {
         id: 1,
         iconComponent: GiGraduateCap,
-        title: "300+ students counselled",
+        title: "1000+ students counselled",
         color: "#ffbe6d"
     },
     {

@@ -48,6 +48,24 @@ const ScholarshipForm = () => {
         });
     };
 
+    const handleNext = () => {
+        setStep(step + 1);
+    };
+    const handlePrev = () => {
+        setStep(step - 1);
+    };
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // You can handle form submission here
+        if (!formData) {
+            // Handle form submission for step 4
+            console.log('Form submitted:', formData,'Not Accepted');
+        }
+       // Reset form data for the next step
+        // console.log(formData);
+        document.write('Form is Not Working Please Try Again Later');
+        console.log('Form submitted:', formData);
+    };
     const renderStep = () => {
         switch (step) {
             case 1:
@@ -65,40 +83,40 @@ const ScholarshipForm = () => {
                                 type="text"
                                 name="firstName"
                                 placeholder="First Name"
-                                className="input-field p-2"
+                                className="input-field p-2 border border-gray-300 rounded-md hover:border-green-500 focus:border-blue-500 focus:outline-none"
                                 onChange={handleInputChange}
                             />
                             <input
                                 type="text"
                                 name="lastName"
                                 placeholder="Last Name"
-                                className="input-field p-2"
+                                className="input-field p-2 border border-gray-300 rounded-md hover:border-green-500 focus:border-blue-500 focus:outline-none"
                                 onChange={handleInputChange}
                             />
                             <input
                                 type="email"
                                 name="email"
                                 placeholder="Email Address"
-                                className="input-field p-2"
+                                className="input-field p-2 border border-gray-300 rounded-md hover:border-green-500 focus:border-blue-500 focus:outline-none"
                                 onChange={handleInputChange}
                             />
                             <input
                                 type="tel"
                                 name="phone"
                                 placeholder="Phone Number"
-                                className="input-field p-2"
+                                className="input-field p-2 border border-gray-300 rounded-md hover:border-green-500 focus:border-blue-500 focus:outline-none"
                                 onChange={handleInputChange}
                             />
                             <input
                                 type="date"
                                 name="dob"
                                 placeholder="Date of Birth"
-                                className="input-field p-2"
+                                className="input-field p-2 border border-gray-300 rounded-md hover:border-green-500 focus:border-blue-500 focus:outline-none"
                                 onChange={handleInputChange}
                             />
                             <select
                                 name="gender"
-                                className="input-field p-2"
+                                className="input-field p-2 border border-gray-300 rounded-md hover:border-green-500 focus:border-blue-500 focus:outline-none"
                                 onChange={handleInputChange}
                             >
                                 <option value="">Select Gender</option>
@@ -108,7 +126,7 @@ const ScholarshipForm = () => {
                             </select>
                             <select
                                 name="category"
-                                className="input-field p-2"
+                                className="input-field p-2 border border-gray-300 rounded-md hover:border-green-500 focus:border-blue-500 focus:outline-none"
                                 onChange={handleInputChange}
                             >
                                 <option value="">Select Category</option>
@@ -121,7 +139,7 @@ const ScholarshipForm = () => {
                         <textarea
                             name="address"
                             placeholder="Full Address"
-                            className="input-field p-2"
+                            className="input-field p-2 border border-gray-300 rounded-md hover:border-green-500 focus:border-blue-500 focus:outline-none"
                             rows="3" cols="25"
                             onChange={handleInputChange}
                         />
@@ -141,7 +159,7 @@ const ScholarshipForm = () => {
                         <div className="grid md:grid-cols-2 gap-6">
                             <select
                                 name="currentLevel"
-                                className="input-field p-2"
+                                className="input-field p-2 border border-gray-300 rounded-md hover:border-green-500 focus:border-blue-500 focus:outline-none"
                                 onChange={handleInputChange}
                             >
                                 <option value="">Select Current Level</option>
@@ -155,12 +173,12 @@ const ScholarshipForm = () => {
                                 type="text"
                                 name="institution"
                                 placeholder="Current Institution"
-                                className="input-field p-2"
+                                className="input-field p-2 border border-gray-300 rounded-md hover:border-green-500 focus:border-blue-500 focus:outline-none"
                                 onChange={handleInputChange}
                             />
                             <select
                                 name="stream"
-                                className="input-field p-2"
+                                className="input-field p-2 border border-gray-300 rounded-md hover:border-green-500 focus:border-blue-500 focus:outline-none"
                                 onChange={handleInputChange}
                             >
                                 <option value="">Select Stream</option>
@@ -174,14 +192,14 @@ const ScholarshipForm = () => {
                                 type="number"
                                 name="previousMarks"
                                 placeholder="Previous Year Percentage"
-                                className="input-field p-2"
+                                className="input-field p-2 border border-gray-300 rounded-md hover:border-green-500 focus:border-blue-500 focus:outline-none"
                                 onChange={handleInputChange}
                             />
                         </div>
                         <textarea
                             name="achievements"
                             placeholder="Academic Achievements (competitions, olympiads, etc.)"
-                            className="input-field"
+                            className="input-field border border-gray-300 rounded-md hover:border-green-500 focus:border-blue-500 focus:outline-none p-2"
                             rows="3" cols="25"
                             onChange={handleInputChange}
                         />
@@ -206,7 +224,7 @@ const ScholarshipForm = () => {
                                     name="photo"
                                     accept="image/*"
                                     onChange={handleInputChange}
-                                    className='file-input file-input-bordered w-full max-w-xs p-2'
+                                    className='file-input file-input-bordered w-full max-w-xs p-2 border border-gray-300 rounded-md hover:border-green-500 focus:border-blue-500 focus:outline-none'
                                 />
                             </div>
                             <div className="file-upload">
@@ -216,7 +234,7 @@ const ScholarshipForm = () => {
                                     name="academicRecords"
                                     accept=".pdf,.doc,.docx"
                                     onChange={handleInputChange}
-                                    className='file-input file-input-bordered w-full max-w-xs p-2'
+                                    className='file-input file-input-bordered w-full max-w-xs p-2 border border-gray-300 rounded-md hover:border-green-500 focus:border-blue-500 focus:outline-none'
 
                                 />
                             </div>
@@ -227,7 +245,7 @@ const ScholarshipForm = () => {
                                     name="incomeProof"
                                     accept=".pdf,.doc,.docx"
                                     onChange={handleInputChange}
-                                    className='file-input file-input-bordered w-full max-w-xs p-2'
+                                    className='file-input file-input-bordered w-full max-w-xs p-2 border border-gray-300 rounded-md hover:border-green-500 focus:border-blue-500 focus:outline-none'
 
                                 />
                             </div>
@@ -249,27 +267,27 @@ const ScholarshipForm = () => {
                             <textarea
                                 name="extracurricular"
                                 placeholder="Extracurricular Activities"
-                                className="input-field p-2"
+                                className="input-field p-2 border border-gray-300 rounded-md mr-4 hover:border-green-500 focus:border-blue-500 focus:outline-none"
                                 rows="3"
                                 onChange={handleInputChange}
                             />
                             <textarea
                                 name="whyDeserving"
                                 placeholder="Why do you deserve this scholarship?"
-                                className="input-field p-2"
+                                className="input-field p-2 border border-gray-300 rounded-md mr-4 hover:border-green-500 focus:border-blue-500 focus:outline-none"
                                 rows="3"
                                 onChange={handleInputChange}
                             />
                             <textarea
                                 name="futureGoals"
                                 placeholder="Your future goals and aspirations"
-                                className="input-field p-2"
+                                className="input-field p-2 border border-gray-300 rounded-md hover:border-green-500 focus:border-blue-500 focus:outline-none"
                                 rows="3"
                                 onChange={handleInputChange}
                             />
                             <select
                                 name="familyIncome"
-                                className="input-field p-2"
+                                className="input-field p-2 border border-gray-300 rounded-md hover:border-green-500 focus:border-blue-500 focus:outline-none"
                                 onChange={handleInputChange}
                             >
                                 <option value="">Annual Family Income</option>
@@ -318,7 +336,7 @@ const ScholarshipForm = () => {
                     </div>
 
                     {/* Form Steps */}
-                    <form className="space-y-6">
+                    <form className="space-y-6" onSubmit={handleSubmit}>
                         {renderStep()}
 
                         {/* Navigation Buttons */}
@@ -327,7 +345,7 @@ const ScholarshipForm = () => {
                                 <button
                                     type="button"
                                     onClick={() => setStep(step - 1)}
-                                    className="px-6 py-2 bg-blue-500 text-black rounded-lg hover:bg-gray-300 hover:text-black border-blue-500 transition-colors duration-200"
+                                    className="px-6 py-2 bg-green-200 text-black border-black-300 rounded-lg hover:bg-green-300 hover:text-black transition-colors duration-200"
                                 >
                                     Previous
                                 </button>

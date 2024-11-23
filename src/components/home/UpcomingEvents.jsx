@@ -31,7 +31,7 @@ const UpcomingEvents = () => {
                                     <span className='text-gray-600'>{event.location}</span>
                                 </div>
                             </div>
-                            <button className='px-6 py-3 bg-violet-600 text-white rounded-lg hover:bg-violet-700 transition-colors'>
+                            <button className='px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors' >
                                 Register Now
                             </button>
                         </div>

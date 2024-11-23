@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { servicesData } from '../../data/services'
 import { careerPaths } from '../../data/careerPaths'
 import { Link } from 'react-router-dom'
-import "../styles/services.css"
+import "../../styles/services.css"
 
 const Services = () => {
   const servicesRef = useRef(null)

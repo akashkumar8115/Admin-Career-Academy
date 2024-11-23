@@ -43,7 +43,7 @@ const TermsOfService = () => {
     ]
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+        <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white pt-20">
             {/* Hero Section */}
             <motion.div
                 initial={{ opacity: 0, y: 20 }}

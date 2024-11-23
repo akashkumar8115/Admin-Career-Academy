@@ -5,7 +5,7 @@ export const upcomingEvents = [
         image: 'https://www.universityleap.com/wp-content/uploads/2022/10/career-counselling-in-Delhi.jpg',
         description: 'Join industry leaders for insights into the latest tech career opportunities and trends',
         date: '15',
-        month: 'MAR',
+        month: 'MAR/2025',
         time: '10:00 AM - 4:00 PM',
         location: 'Virtual Event',
         type: 'Summit'
@@ -16,7 +16,7 @@ export const upcomingEvents = [
         title: 'Resume Building Workshop',
         description: 'Learn how to create an impactful resume that stands out to employers',
         date: '22',
-        month: 'MAR',
+        month: 'MAR/2025',
         time: '2:00 PM - 4:00 PM',
         location: 'Online Workshop',
         type: 'Workshop'
@@ -27,7 +27,7 @@ export const upcomingEvents = [
         title: 'Interview Mastery Series',
         description: 'Master the art of interviewing with mock sessions and expert feedback',
         date: '29',
-        month: 'MAR',
+        month: 'MAR/2025',
         time: '11:00 AM - 1:00 PM',
         location: 'Hybrid Event',
         type: 'Training'

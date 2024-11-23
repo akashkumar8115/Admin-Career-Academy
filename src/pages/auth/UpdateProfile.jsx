@@ -94,13 +94,13 @@ const UpdateProfile = () => {
                             <button
                                 type="button"
                                 onClick={() => navigate('/profile')}
-                                className="px-6 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors duration-300"
+                                className="px-6 py-2 bg-green-500 text-black rounded-lg hover:bg-green-400 transition-colors duration-300"
                             >
                                 Cancel
                             </button>
                             <button
                                 type="submit"
-                                className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
+                                className="px-6 py-2 bg-green-600 text-black rounded-lg hover:bg-green-400 transition-colors duration-300"
                                 disabled={loading}
                             >
                                 {loading ? 'Updating...' : 'Update Profile'}
