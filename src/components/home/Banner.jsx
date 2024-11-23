@@ -70,7 +70,7 @@ const Banner = () => {
                                 initial={{ opacity: 0.5, scale: 0.8 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                                className="flex-none mx-6 md:w-[50vw] w-full group"
+                                className="flex-none mx-6 md:w-[48vw] w-full group"
                             >
                                 <div className='relative h-[400px] rounded-3xl overflow-hidden shadow-2xl'>
                                     <img

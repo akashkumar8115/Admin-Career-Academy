@@ -26,12 +26,13 @@ const SuccessStories = () => {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             className='bg-white rounded-xl shadow-lg overflow-hidden'
                         >
-                            <img src={story.image} alt={story.name} className='w-full h-64 object-cover' />
+                            <img src={story.image} alt={story.name} className='w-full h-65 object-cover' />
                             <div className='p-6'>
                                 <h3 className='text-xl font-bold mb-2'>{story.name}</h3>
-                                <p className='text-violet-600 mb-4'>{story.role}</p>
+                                <p className='text-violet-600 mb-4'>{story.role} at <span><b>{story.company}</b></span></p> 
                                 <p className='text-gray-600'>{story.testimony}</p>
                             </div>
+
                         </motion.div>
                     ))}
                 </div>

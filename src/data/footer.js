@@ -74,6 +74,22 @@ export const footerData = {
             id: 4,
             title: "Contact Us",
             path: "/contact-us",
+        },
+        {
+            id: 5,
+            title: "careers",
+            path: "/careers",
+            subLinks: [
+                // { title: "Career Counselling", path: "/carees/career-counselling" },
+            ]
+        },
+        {
+            id: 6,
+            title: "clients",
+            path: "/clients",
+            subLinks: [
+                
+            ]
         }
     ],
 

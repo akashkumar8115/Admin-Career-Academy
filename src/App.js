@@ -225,8 +225,8 @@ function App() {
           {/* career guidance */}
           <Route path="/services/career-guidance" element={<CareerGuidance />} />
           {/* <Route path="/services/career-guidance/:id" element={<CareerGuidanceDetails />} /> */}
-
           {/* <Route path="/services/career-guidance/:id" element={<CareerGuidanceDetails />} /> */}
+          
           <Route path="/services/scholarship-details" element={<ScholarshipDetails />} />
           <Route path="/services/admission-process" element={<AdmissionProcess />} />
           <Route path="/services/course-comparison" element={<CourseComparison />} />

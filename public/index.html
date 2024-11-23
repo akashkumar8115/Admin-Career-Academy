@@ -25,10 +25,25 @@
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
-  
+  <script>
+    // Disable right-click context menu
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+      alert('Right-click is disabled on this website.');
+    });
+
+    // Disable keyboard shortcuts for inspecting elements
+    document.addEventListener('keydown', function (e) {
+      // Prevent Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U, F12
+      if (e.ctrlKey && (e.shiftKey && (e.key === 'I' || e.key === 'J')) || e.key === 'U' || e.key === 'F12') {
+        e.preventDefault();
+        alert('Inspect element is disabled.');
+      }
+    });
+  </script>
   <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
   <script src="https://files.bpcontent.cloud/2024/11/01/19/20241101194517-QF56F142.js"></script>
-      
+
 </body>
 
 </html>

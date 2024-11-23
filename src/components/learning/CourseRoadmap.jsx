@@ -77,8 +77,8 @@ const CourseRoadmap = () => {
                                     <p className="text-gray-600 mb-4">Duration: {course.duration}</p>
                                     <button
                                         className={`w-full py-2 rounded-lg ${course.status === 'locked'
-                                                ? 'bg-gray-300 cursor-not-allowed'
-                                                : 'bg-indigo-600 text-white hover:bg-indigo-700'
+                                                ? 'bg-green-300 cursor-not-allowed'
+                                                : 'bg-green-400 text-black hover:bg-green-600'
                                             }`}
                                         disabled={course.status === 'locked'}
                                     >
