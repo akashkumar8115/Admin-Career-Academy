@@ -84,7 +84,7 @@ const Register = () => {
                         </div>
                         <button
                             type="submit"
-                            className="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 rounded-lg hover:from-blue-600 hover:to-blue-700 transition-colors duration-300"
+                            className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors duration-300"
                             disabled={loading}
                         >
                             {loading ? 'Creating Account...' : 'Create Account'}
@@ -92,7 +92,7 @@ const Register = () => {
                     </form>
                     <p className="text-center mt-6 text-gray-600">
                         Already have an account?{' '}
-                        <Link to="/login" className="text-green-600 text-sm font-semibold hover:text-blue-700">
+                        <Link to="/login" className="text-green-600 text-sm font-semibold hover:text-green-700">
                             Sign In
                         </Link>
                     </p>

@@ -84,7 +84,7 @@ const Scholarships = () => {
                                 key={idx}
                                 className={({ selected }) =>
                                     `w-full rounded-lg py-2.5 text-sm font-medium leading-5
-                  ${selected
+                ${selected
                                         ? 'bg-green-100 shadow text-blue-700'
                                         : 'text-blue-900 hover:bg-white/[0.12] hover:text-blue-800'
                                     }`

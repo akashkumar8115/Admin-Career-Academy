@@ -117,7 +117,7 @@
             ]
         },
         {
-            "id": 20,
+            "id": 5,
             "name": "Indian Institute of Technology Kharagpur",
             "location": "Kharagpur, West Bengal",
             "founded": 1951,
@@ -146,7 +146,7 @@
             ]
         },
         {
-            "id": 21,
+            "id": 6,
             "name": "Indian Institute of Technology Guwahati",
             "location": "Guwahati, Assam",
             "founded": 1994,
@@ -175,7 +175,7 @@
             ]
         },
         {
-            "id": 22,
+            "id": 7,
             "name": "Indian Institute of Technology Hyderabad",
             "location": "Hyderabad, Telangana",
             "founded": 2008,
@@ -204,7 +204,7 @@
             ]
         },
         {
-            "id": 23,
+            "id": 8,
             "name": "Indian Institute of Technology Indore",
             "location": "Indore, Madhya Pradesh",
             "founded": 2009,
@@ -233,7 +233,7 @@
             ]
         },
         {
-            "id": 24,
+            "id": 9,
             "name": "Indian Institute of Technology Mandi",
             "location": "Mandi, Himachal Pradesh",
             "founded": 2009,
@@ -262,7 +262,7 @@
             ]
         },
         {
-            "id": 25,
+            "id": 10,
             "name": "Indian Institute of Technology Jodhpur",
             "location": "Jodhpur, Rajasthan",
             "founded": 2008,
@@ -291,7 +291,7 @@
             ]
         },
         {
-            "id": 26,
+            "id": 11,
             "name": "Indian Institute of Technology Bhubaneswar",
             "location": "Bhubaneswar, Odisha",
             "founded": 2008,
@@ -320,7 +320,7 @@
             ]
         },
         {
-            "id": 27,
+            "id": 12,
             "name": "Indian Institute of Technology Patna",
             "location": "Patna, Bihar",
             "founded": 2008,
@@ -349,7 +349,7 @@
             ]
         },
         {
-            "id": 51,
+            "id": 13,
             "name": "Indian Institute of Technology Patna",
             "location": "Patna, Bihar",
             "founded": 2008,
@@ -377,7 +377,7 @@
             ]
         },
         {
-            "id": 52,
+            "id": 14,
             "name": "Indian Institute of Technology Indore",
             "location": "Indore, Madhya Pradesh",
             "founded": 2009,
@@ -405,7 +405,7 @@
             ]
         },
         {
-            "id": 53,
+            "id": 15,
             "name": "Indian Institute of Technology Mandi",
             "location": "Mandi, Himachal Pradesh",
             "founded": 2009,
@@ -432,7 +432,7 @@
             ]
         },
         {
-            "id": 54,
+            "id": 16,
             "name": "Indian Institute of Technology Ropar",
             "location": "Ropar, Punjab",
             "founded": 2008,
@@ -460,7 +460,7 @@
             ]
         },
         {
-            "id": 55,
+            "id": 17,
             "name": "Indian Institute of Technology Gandhinagar",
             "location": "Gandhinagar, Gujarat",
             "founded": 2008,
@@ -488,7 +488,7 @@
             ]
         },
         {
-            "id": 56,
+            "id": 18,
             "name": "National Institute of Technology Raipur",
             "location": "Raipur, Chhattisgarh",
             "founded": 1956,
@@ -516,7 +516,7 @@
             ]
         },
         {
-            "id": 14,
+            "id": 19,
             "name": "National Institute of Technology Tiruchirappalli",
             "location": "Tiruchirappalli, Tamil Nadu",
             "founded": 1964,
@@ -545,7 +545,7 @@
             ]
         },
         {
-            "id": 19,
+            "id": 20,
             "name": "National Institute of Technology Warangal",
             "location": "Warangal, Telangana",
             "founded": 1959,
@@ -574,7 +574,7 @@
             ]
         },
         {
-            "id": 31,
+            "id": 21,
             "name": "National Institute of Technology Calicut",
             "location": "Calicut, Kerala",
             "founded": 1961,
@@ -603,7 +603,7 @@
             ]
         },
         {
-            "id": 32,
+            "id": 22,
             "name": "National Institute of Technology Jaipur",
             "location": "Jaipur, Rajasthan",
             "founded": 1963,
@@ -632,7 +632,7 @@
             ]
         },
         {
-            "id": 15,
+            "id": 23,
             "name": "National Institute of Technology Karnataka",
             "location": "Surathkal, Karnataka",
             "founded": 1960,
@@ -661,7 +661,7 @@
             ]
         },
         {
-            "id": 17,
+            "id": 24,
             "name": "National Institute of Technology Rourkela",
             "location": "Rourkela, Odisha",
             "founded": 1961,
@@ -690,7 +690,7 @@
             ]
         },
         {
-            "id": 59,
+            "id": 25,
             "name": "National Institute of Technology Hamirpur",
             "location": "Hamirpur, Himachal Pradesh",
             "founded": 1986,
@@ -718,7 +718,7 @@
             ]
         },
         {
-            "id": 39,
+            "id": 26,
             "name": "National Institute of Technology Nagpur",
             "location": "Nagpur, Maharashtra",
             "founded": 1960,
@@ -747,7 +747,7 @@
             ]
         },
         {
-            "id": 35,
+            "id": 27,
             "name": "National Institute of Technology Surathkal",
             "location": "Surathkal, Karnataka",
             "founded": 1960,
@@ -776,7 +776,7 @@
             ]
         },
         {
-            "id": 60,
+            "id": 28,
             "name": "National Institute of Technology Kurukshetra",
             "location": "Kurukshetra, Haryana",
             "founded": 1963,
@@ -804,7 +804,7 @@
             ]
         },
         {
-            "id": 33,
+            "id": 29,
             "name": "National Institute of Technology Tiruchirappalli",
             "location": "Tiruchirappalli, Tamil Nadu",
             "founded": 1964,
@@ -833,7 +833,7 @@
             ]
         },
         {
-            "id": 34,
+            "id": 30,
             "name": "National Institute of Technology Rourkela",
             "location": "Rourkela, Odisha",
             "founded": 1961,
@@ -862,7 +862,7 @@
             ]
         },
         {
-            "id": 36,
+            "id": 31,
             "name": "National Institute of Technology Warangal",
             "location": "Warangal, Telangana",
             "founded": 1959,
@@ -891,7 +891,7 @@
             ]
         },
         {
-            "id": 37,
+            "id": 32,
             "name": "National Institute of Technology Allahabad",
             "location": "Allahabad, Uttar Pradesh",
             "founded": 1961,
@@ -920,7 +920,7 @@
             ]
         },
         {
-            "id": 38,
+            "id": 33,
             "name": "National Institute of Technology Durgapur",
             "location": "Durgapur, West Bengal",
             "founded": 1960,
@@ -949,7 +949,7 @@
             ]
         },
         {
-            "id": 40,
+            "id": 34,
             "name": "National Institute of Technology Jamshedpur",
             "location": "Jamshedpur, Jharkhand",
             "founded": 1960,
@@ -978,7 +978,7 @@
             ]
         },
         {
-            "id": 57,
+            "id": 35,
             "name": "National Institute of Technology Silchar",
             "location": "Silchar, Assam",
             "founded": 1967,
@@ -1006,7 +1006,7 @@
             ]
         },
         {
-            "id": 58,
+            "id": 36,
             "name": "National Institute of Technology Patna",
             "location": "Patna, Bihar",
             "founded": 2004,
@@ -1034,7 +1034,7 @@
             ]
         },
         {
-            "id": 16,
+            "id": 37,
             "name": "Yale University",
             "location": "New Haven, CT",
             "founded": 1701,
@@ -1063,7 +1063,7 @@
             ]
         },
         {
-            "id": 5,
+            "id": 38,
             "name": "UC Berkeley",
             "location": "Berkeley, CA",
             "founded": 1868,
@@ -1092,7 +1092,7 @@
             ]
         },
         {
-            "id": 6,
+            "id": 39,
             "name": "Princeton University",
             "location": "Princeton, NJ",
             "founded": 1746,
@@ -1121,7 +1121,7 @@
             ]
         },
         {
-            "id": 7,
+            "id": 40,
             "name": "Columbia University",
             "location": "New York, NY",
             "founded": 1754,
@@ -1150,7 +1150,7 @@
             ]
         },
         {
-            "id": 8,
+            "id": 41,
             "name": "University of Chicago",
             "location": "Chicago, IL",
             "founded": 1890,
@@ -1179,7 +1179,7 @@
             ]
         },
         {
-            "id": 9,
+            "id": 42,
             "name": "California Institute of Technology",
             "location": "Pasadena, CA",
             "founded": 1891,
@@ -1208,7 +1208,7 @@
             ]
         },
         {
-            "id": 10,
+            "id": 43,
             "name": "Johns Hopkins University",
             "location": "Baltimore, MD",
             "founded": 1876,
@@ -1237,7 +1237,7 @@
             ]
         },
         {
-            "id": 11,
+            "id": 44,
             "name": "Harvard University",
             "location": "Cambridge, MA",
             "founded": 1636,
@@ -1266,7 +1266,7 @@
             ]
         },
         {
-            "id": 12,
+            "id": 45,
             "name": "Stanford University",
             "location": "Stanford, CA",
             "founded": 1885,
@@ -1295,7 +1295,7 @@
             ]
         },
         {
-            "id": 13,
+            "id": 46,
             "name": "MIT",
             "location": "Cambridge, MA",
             "founded": 1861,
@@ -1324,7 +1324,7 @@
             ]
         },
         {
-            "id": 41,
+            "id": 47,
             "name": "Indian Institute of Information Technology Allahabad",
             "location": "Allahabad, Uttar Pradesh",
             "founded": 1999,
@@ -1352,7 +1352,7 @@
             ]
         },
         {
-            "id": 42,
+            "id": 48,
             "name": "Indian Institute of Information Technology Gwalior",
             "location": "Gwalior, Madhya Pradesh",
             "founded": 1997,
@@ -1380,7 +1380,7 @@
             ]
         },
         {
-            "id": 43,
+            "id": 49,
             "name": "Indian Institute of Information Technology Jabalpur",
             "location": "Jabalpur, Madhya Pradesh",
             "founded": 2005,
@@ -1408,7 +1408,7 @@
             ]
         },
         {
-            "id": 44,
+            "id": 50,
             "name": "Indian Institute of Information Technology Guwahati",
             "location": "Guwahati, Assam",
             "founded": 2013,
@@ -1435,7 +1435,7 @@
             ]
         },
         {
-            "id": 45,
+            "id": 51,
             "name": "Indian Institute of Information Technology Kota",
             "location": "Kota, Rajasthan",
             "founded": 2013,
@@ -1462,170 +1462,7 @@
             ]
         },
         {
-            "id": 46,
-            "name": "Indian Institute of Information Technology Vadodara",
-            "location": "Vadodara, Gujarat",
-            "founded": 2013,
-            "type": "Public-Private Partnership",
-            "tuition": 160000,
-            "acceptance_rate": 3.2,
-            "enrollment": 1200,
-            "programs": [
-                "Computer Science",
-                "Information Technology",
-                "Artificial Intelligence"
-            ],
-            "rankings": {
-                "national": 29,
-                "global": 630,
-                "research": 23
-            },
-            "facilities": [
-                "Research Labs",
-                "Central Library",
-                "Hostels",
-                "Innovation Center",
-                "Sports Complex"
-            ]
-        },
-        {
-            "id": 47,
-            "name": "Indian Institute of Information Technology Sri City",
-            "location": "Sri City, Andhra Pradesh",
-            "founded": 2013,
-            "type": "Public-Private Partnership",
-            "tuition": 170000,
-            "acceptance_rate": 2.9,
-            "enrollment": 1300,
-            "programs": [
-                "Computer Science",
-                "Electronics and Communication",
-                "Data Science"
-            ],
-            "rankings": {
-                "national": 28,
-                "global": 625,
-                "research": 24
-            },
-            "facilities": [
-                "Central Library",
-                "Research and Development Labs",
-                "Hostels",
-                "Entrepreneurship Cell",
-                "Sports Complex"
-            ]
-        },
-        {
-            "id": 48,
-            "name": "Indian Institute of Information Technology Kancheepuram",
-            "location": "Kancheepuram, Tamil Nadu",
-            "founded": 2007,
-            "type": "Public-Private Partnership",
-            "tuition": 160000,
-            "acceptance_rate": 2.3,
-            "enrollment": 1600,
-            "programs": [
-                "Computer Science",
-                "Mechanical Engineering",
-                "Electronics and Communication"
-            ],
-            "rankings": {
-                "national": 26,
-                "global": 610,
-                "research": 21
-            },
-            "facilities": [
-                "Research Labs",
-                "Library",
-                "Hostels",
-                "Innovation Center",
-                "Sports Complex"
-            ]
-        },
-        {
-            "id": 49,
-            "name": "Indian Institute of Information Technology Pune",
-            "location": "Pune, Maharashtra",
-            "founded": 2016,
-            "type": "Public-Private Partnership",
-            "tuition": 155000,
-            "acceptance_rate": 3.1,
-            "enrollment": 1000,
-            "programs": [
-                "Computer Science",
-                "Electronics and Communication",
-                "Artificial Intelligence and Data Science"
-            ],
-            "rankings": {
-                "national": 30,
-                "global": 640,
-                "research": 25
-            },
-            "facilities": [
-                "Central Library",
-                "Research Labs",
-                "Student Hostels",
-                "Sports Facilities",
-                "Innovation Hub"
-            ]
-        },
-        {
-            "id": 50,
-            "name": "Indian Institute of Information Technology Nagpur",
-            "location": "Nagpur, Maharashtra",
-            "founded": 2016,
-            "type": "Public-Private Partnership",
-            "tuition": 158000,
-            "acceptance_rate": 3.0,
-            "enrollment": 1100,
-            "programs": [
-                "Computer Science",
-                "Electronics and Communication",
-                "Machine Learning"
-            ],
-            "rankings": {
-                "national": 31,
-                "global": 650,
-                "research": 26
-            },
-            "facilities": [
-                "Research Labs",
-                "Library",
-                "Student Hostels",
-                "Sports Complex",
-                "Entrepreneurship Cell"
-            ]
-        },
-        {
-            "id": 57,
-            "name": "International Institute of Information Technology, Hyderabad",
-            "location": "Hyderabad, Telangana",
-            "founded": 1998,
-            "type": "Public",
-            "tuition": 141000,
-            "acceptance_rate": 5.6,
-            "enrollment": 1800,
-            "programs": [
-                "Computer Science",
-                "Electronics and Communication",
-                "Computational Linguistics",
-                "Artificial Intelligence"
-            ],
-            "rankings": {
-                "national": 62,
-                "global": 520,
-                "research": 15
-            },
-            "facilities": [
-                "Research Labs",
-                "Library",
-                "Sports Complex",
-                "Hostels",
-                "Entrepreneurship Center"
-            ]
-        },
-        {
-            "id": 58,
+            "id": 52,
             "name": "Indian Institute of Information Technology, Allahabad",
             "location": "Allahabad, Uttar Pradesh",
             "founded": 1999,
@@ -1652,7 +1489,7 @@
             ]
         },
         {
-            "id": 59,
+            "id": 54,
             "name": "Atal Bihari Vajpayee Indian Institute of Information Technology and Management, Gwalior",
             "location": "Gwalior, Madhya Pradesh",
             "founded": 1997,
@@ -1679,7 +1516,7 @@
             ]
         },
         {
-            "id": 60,
+            "id": 55,
             "name": "Indian Institute of Information Technology, Sri City",
             "location": "Sri City, Andhra Pradesh",
             "founded": 2013,
@@ -1704,7 +1541,7 @@
             ]
         },
         {
-            "id": 60,
+            "id": 56,
             "name": "Indian Institute of Information Technology, Vadodara",
             "location": "Vadodara, Gujarat",
             "founded": 2013,
@@ -1728,8 +1565,144 @@
                 "Sports Complex"
             ]
         },
+    
+        {
+            "id": 57,
+            "name": "Indian Institute of Information Technology Vadodara",
+            "location": "Vadodara, Gujarat",
+            "founded": 2013,
+            "type": "Public-Private Partnership",
+            "tuition": 160000,
+            "acceptance_rate": 3.2,
+            "enrollment": 1200,
+            "programs": [
+                "Computer Science",
+                "Information Technology",
+                "Artificial Intelligence"
+            ],
+            "rankings": {
+                "national": 29,
+                "global": 630,
+                "research": 23
+            },
+            "facilities": [
+                "Research Labs",
+                "Central Library",
+                "Hostels",
+                "Innovation Center",
+                "Sports Complex"
+            ]
+        },
+        {
+            "id": 58,
+            "name": "Indian Institute of Information Technology Sri City",
+            "location": "Sri City, Andhra Pradesh",
+            "founded": 2013,
+            "type": "Public-Private Partnership",
+            "tuition": 170000,
+            "acceptance_rate": 2.9,
+            "enrollment": 1300,
+            "programs": [
+                "Computer Science",
+                "Electronics and Communication",
+                "Data Science"
+            ],
+            "rankings": {
+                "national": 28,
+                "global": 625,
+                "research": 24
+            },
+            "facilities": [
+                "Central Library",
+                "Research and Development Labs",
+                "Hostels",
+                "Entrepreneurship Cell",
+                "Sports Complex"
+            ]
+        },
+        {
+            "id": 59,
+            "name": "Indian Institute of Information Technology Kancheepuram",
+            "location": "Kancheepuram, Tamil Nadu",
+            "founded": 2007,
+            "type": "Public-Private Partnership",
+            "tuition": 160000,
+            "acceptance_rate": 2.3,
+            "enrollment": 1600,
+            "programs": [
+                "Computer Science",
+                "Mechanical Engineering",
+                "Electronics and Communication"
+            ],
+            "rankings": {
+                "national": 26,
+                "global": 610,
+                "research": 21
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Hostels",
+                "Innovation Center",
+                "Sports Complex"
+            ]
+        },
+        {
+            "id": 60,
+            "name": "Indian Institute of Information Technology Pune",
+            "location": "Pune, Maharashtra",
+            "founded": 2016,
+            "type": "Public-Private Partnership",
+            "tuition": 155000,
+            "acceptance_rate": 3.1,
+            "enrollment": 1000,
+            "programs": [
+                "Computer Science",
+                "Electronics and Communication",
+                "Artificial Intelligence and Data Science"
+            ],
+            "rankings": {
+                "national": 30,
+                "global": 640,
+                "research": 25
+            },
+            "facilities": [
+                "Central Library",
+                "Research Labs",
+                "Student Hostels",
+                "Sports Facilities",
+                "Innovation Hub"
+            ]
+        },
         {
             "id": 61,
+            "name": "Indian Institute of Information Technology Nagpur",
+            "location": "Nagpur, Maharashtra",
+            "founded": 2016,
+            "type": "Public-Private Partnership",
+            "tuition": 158000,
+            "acceptance_rate": 3.0,
+            "enrollment": 1100,
+            "programs": [
+                "Computer Science",
+                "Electronics and Communication",
+                "Machine Learning"
+            ],
+            "rankings": {
+                "national": 31,
+                "global": 650,
+                "research": 26
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Student Hostels",
+                "Sports Complex",
+                "Entrepreneurship Cell"
+            ]
+        },
+        {
+            "id": 62,
             "name": "Indian Institute of Information Technology, Lucknow",
             "location": "Lucknow, Uttar Pradesh",
             "founded": 2015,
@@ -1752,6 +1725,34 @@
                 "Hostels",
                 "Sports Facilities",
                 "Incubation Center"
+            ]
+        },
+        {
+            "id": 63,
+            "name": "International Institute of Information Technology, Hyderabad",
+            "location": "Hyderabad, Telangana",
+            "founded": 1998,
+            "type": "Public",
+            "tuition": 141000,
+            "acceptance_rate": 5.6,
+            "enrollment": 1800,
+            "programs": [
+                "Computer Science",
+                "Electronics and Communication",
+                "Computational Linguistics",
+                "Artificial Intelligence"
+            ],
+            "rankings": {
+                "national": 62,
+                "global": 520,
+                "research": 15
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Sports Complex",
+                "Hostels",
+                "Entrepreneurship Center"
             ]
         }
     ]

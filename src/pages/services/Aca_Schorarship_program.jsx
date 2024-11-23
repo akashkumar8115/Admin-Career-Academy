@@ -55,9 +55,9 @@ const Aca_Schorarship_program = () => {
                         whileTap={{ scale: 0.95 }}
                         className="bg-violet-50 text-white px-8 py-3 rounded-lg font-semibold text-lg shadow-lg hover:bg-violet-600 transition-colors"
                     >
-                        <a href="#scholarship_form">
+                        <a target="_blank" href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScRowEYAyY4wAxlHndXYBndh4i57FHDtP7sesz5Ho5_KM2PTQ/formResponse?edit2=2_ABaOnufwCfxhyl1v7aK5dm57MWyxdWJUB5AMkauJRyqwpzPsDEa51x-LfgVPJACHjQ">
+                            Apply Now
                         </a>
-                        Apply Now
                     </motion.button>
                 </div>
             </motion.section>
