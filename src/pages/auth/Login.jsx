@@ -57,13 +57,13 @@ const Login = () => {
                             />
                         </div>
                         <div className="flex items-center justify-between">
-                            <Link to="/forgot-password" className="text-blue-600 hover:text-blue-700">
+                            <Link to="/forgot-password" className="text-black text-sm font-semibold hover:text-blue hover:text-blue-700">
                                 Forgot Password?
                             </Link>
                         </div>
                         <button
                             type="submit"
-                            className="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 rounded-lg hover:from-blue-600 hover:to-blue-700 transition-colors duration-300"
+                            className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors duration-300"
                             disabled={loading}
                         >
                             {loading ? 'Signing in...' : 'Sign In'}

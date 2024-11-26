@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import collegeData from '../../data/collegeData.json';
 
@@ -7,21 +7,30 @@ const CollegeList = () => {
     const [selectedType, setSelectedType] = useState('All');
     const [selectedProgram, setSelectedProgram] = useState('All');
 
+    console.log(collegeData);
+
     // Extract unique types and programs from college data
     const types = ['All', ...new Set(collegeData.colleges.map(college => college.type))];
     const programs = ['All', ...new Set(collegeData.colleges.flatMap(college => college.programs))];
 
+    
     const filteredColleges = collegeData.colleges.filter(college => {
         const matchesSearch = college.name.toLowerCase().includes(searchTerm.toLowerCase());
         const matchesType = selectedType === 'All' || college.type === selectedType;
         const matchesProgram = selectedProgram === 'All' || college.programs.includes(selectedProgram);
+        // console.log(matchesSearch);
         return matchesSearch && matchesType && matchesProgram;
     });
+    
+    useEffect(() => {
+        // filteredColleges;
+        console.log(collegeData);
+    }, [searchTerm, selectedType, selectedProgram]);
 
     return (
         <div className="pt-24 min-h-screen bg-gradient-to-b from-white to-violet-100 mt-28 pb-12">
             <div className="w-11/12 lg:w-10/12 mx-auto">
-                <motion.h1 
+                <motion.h1
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     className="text-3xl font-bold text-center mb-8"
@@ -63,7 +72,7 @@ const CollegeList = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {filteredColleges.map(college => (
-                        <motion.div 
+                        <motion.div
                             key={college.id}
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
@@ -82,7 +91,7 @@ const CollegeList = () => {
                                     <h4 className="font-medium mb-2">Programs:</h4>
                                     <div className="flex flex-wrap gap-2">
                                         {college.programs.map((program, index) => (
-                                            <span 
+                                            <span
                                                 key={index}
                                                 className="bg-violet-100 text-black-800 px-2 py-1 rounded-full text-sm"
                                             >

@@ -14,7 +14,7 @@ const ContactSection = () => {
                     >
                         <FaEnvelope className="text-3xl text-violet-50 mx-auto mb-4" />
                         <h3 className="text-xl font-bold mb-2">Email Support</h3>
-                        <p className="text-black-600">scholarship@aca.edu</p>
+                        <p className="text-black-600">Infoonaca@gmail.com</p>
                     </motion.div>
 
                     <motion.div
@@ -23,7 +23,7 @@ const ContactSection = () => {
                     >
                         <FaPhone className="text-3xl text-violet-50 mx-auto mb-4" />
                         <h3 className="text-xl font-bold mb-2">Phone Support</h3>
-                        <p className="text-black-600">+91 1234567890</p>
+                        <p className="text-black-600">+91 9120325950</p>
                     </motion.div>
 
                     <motion.div
@@ -32,7 +32,7 @@ const ContactSection = () => {
                     >
                         <FaWhatsapp className="text-3xl text-violet-50 mx-auto mb-4" />
                         <h3 className="text-xl font-bold mb-2">WhatsApp Support</h3>
-                        <p className="text-black-600">+91 9876543210</p>
+                        <p className="text-black-600">+91 9120325950</p>
                     </motion.div>
                 </div>
             </div>
