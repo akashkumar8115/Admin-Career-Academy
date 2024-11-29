@@ -10,11 +10,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   <BrowserRouter>
-      <App />
+    <App />
   </BrowserRouter>
 
 
- 
+
 );
 
 // If you want to start measuring performance in your app, pass a function
