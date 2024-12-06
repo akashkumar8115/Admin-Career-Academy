@@ -28,7 +28,7 @@ const Stats = () => {
         },
         {
             icon: <FaStar className="text-5xl" />,
-            number: 150,
+            number: 50,
             suffix: "+",
             label: "Expert Mentors",
             description: "Industry professionals providing guidance",
@@ -49,7 +49,7 @@ const Stats = () => {
         },
         {
             icon: <FaHandshake className="text-5xl" />,
-            number: 6000,
+            number: 1000,
             suffix: "+",
             label: "Successful Placements",
             description: "Career opportunities secured for students",

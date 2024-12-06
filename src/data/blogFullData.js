@@ -9,373 +9,166 @@ export const blogData = [
         id: 1,
         image: Blog1,
         tag: "Technology",
-        tags: ["AI", "Machine Learning", "Future Tech"],
         date: "01 Oct, 2024",
-        title: "The Evolution of Artificial Intelligence in 2024",
-        description: "Explore the groundbreaking developments in AI and their impact on various industries...",
+        title: "How is technology working with new things?",
+        description: "Discover how emerging technologies like AI, blockchain, and IoT are revolutionizing industries...",
         readTime: "5 min read",
-        estimatedReadTime: 5,
-        readingProgress: 0,
-        views: 234,
-        shareCount: 423,
-        featured: true,
-        publishedAt: "2024-10-01T09:00:00Z",
-        updatedAt: "2024-10-02T15:30:00Z",
-        author: [
-            {
-                name: "Dr. Rajesh Kumar",
-                bio: "Leading AI researcher with 15+ years of experience in machine learning and neural networks. Former lead scientist at DeepMind.",
-                avatar: "https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes.png",
-                position: "AI Research Director",
-                expertise: ["Artificial Intelligence", "Neural Networks", "Deep Learning"],
-                publications: 45,
-                citations: 1200,
-                socialLinks: [
-                    { name: "Twitter", link: "https://twitter.com/rajeshkumar", followers: 25000 },
-                    { name: "LinkedIn", link: "https://www.linkedin.com/in/rajeshkumar", connections: 15000 },
-                    { name: "GitHub", link: "https://github.com/rajeshkumar", repositories: 75 }
-                ]
-            }
-        ],
-        category: "Artificial Intelligence",
-        fullContent: [
-            { type: "paragraph", paragraph: "The landscape of artificial intelligence has undergone remarkable transformations in 2024..." },
-            { type: "quote", paragraph: "AI is not just about automation; it's about augmenting human capabilities..." },
-            { type: "paragraph", paragraph: "Recent breakthroughs in natural language processing have enabled AI systems to..." },
-            { type: "highlight", paragraph: "Key developments include quantum computing integration, enhanced neural networks..." }
-        ],
+        author: "Dr. Rajesh Kumar",
+        category: "Tech Trends",
+        fullContent: `
+        <p>In the rapidly evolving landscape of technology, innovations are reshaping how we live and work...</p>
+        <h2>The Rise of Artificial Intelligence</h2>
+        <p>AI is transforming industries through machine learning algorithms and neural networks...</p>
+        <h2>Blockchain Revolution</h2>
+        <p>Decentralized systems are creating new possibilities for secure transactions...</p>
+        <h2>Internet of Things (IoT)</h2>
+        <p>Connected devices are creating smart environments and improving efficiency...</p>
+      `,
         comments: [
             {
                 id: 1,
-                author: { name: "John Doe", avatar: "https://example.com/avatar-john.png", profession: "Software Engineer" },
+                author: { name: "John Doe", avatar: "/avatars/john.jpg" },
                 date: "2 days ago",
-                content: "Fascinating insights into the future of AI! The quantum computing integration aspect particularly caught my attention.",
-                likes: 156,
-                replies: [
-                    {
-                        id: 11,
-                        author: { name: "Dr. Rajesh Kumar", avatar: "https://example.com/avatar-rajesh.png" },
-                        content: "Thank you! Quantum computing indeed opens up exciting possibilities in AI optimization.",
-                        date: "1 day ago",
-                        likes: 45
-                    }
-                ]
+                content: "Great insights on emerging technologies!",
+                likes: 15
             }
-        ],
-        relatedTopics: ["Machine Learning", "Deep Learning", "Neural Networks", "Quantum Computing"],
-        resources: [
-            { type: "PDF", title: "Complete AI Research Paper", link: "https://example.com/ai-research.pdf" },
-            { type: "Video", title: "AI Demo Walkthrough", link: "https://example.com/ai-demo" }
         ]
     },
-    // Add more enhanced blog entries following similar structure
-    // Continue with more sophisticated entries...
-
     {
         id: 2,
         image: Blog2,
-        tag: "Career & AI",
-        tags: ["AI", "Job Market", "Careers"],
+        tag: "AI",
         date: "05 Oct, 2024",
         title: "The Impact of AI on the Job Market",
         description: "Explore how AI is influencing employment trends and creating new opportunities...",
         readTime: "6 min read",
-        estimatedReadTime: 6,
-        readingProgress: 0,
-        views: 874,
-        shareCount: 231,
-        featured: false,
-        publishedAt: "2024-10-05T09:00:00Z",
-        updatedAt: "2024-10-06T10:45:00Z",
-        author: [
-            {
-                name: "Priya Sharma",
-                bio: "Career consultant specializing in the tech industry. Helps professionals navigate the evolving job market with AI-driven insights.",
-                avatar: "https://example.com/avatar-priya.png",
-                position: "Career Consultant",
-                expertise: ["Career Counseling", "AI in Careers", "Future of Work"],
-                publications: 20,
-                citations: 500,
-                socialLinks: [
-                    { name: "Twitter", link: "https://twitter.com/priyasharma", followers: 12000 },
-                    { name: "LinkedIn", link: "https://www.linkedin.com/in/priyasharma", connections: 9000 }
-                ]
-            }
-        ],
+        author: "Priya Sharma",
         category: "Artificial Intelligence",
-        fullContent: [
-            { type: "paragraph", paragraph: "The increasing adoption of AI technologies is reshaping the job market. While some fear job loss, many see opportunities for growth as businesses adapt to AI-driven workflows." },
-            { type: "paragraph", paragraph: "AI-driven automation is taking over routine tasks, leading to job displacement in some areas. However, this shift also provides a chance to focus human effort on more creative and strategic work." },
-            { type: "quote", paragraph: "AI is not just about replacing jobs; it’s about augmenting human potential and creating entirely new industries and opportunities." },
-            { type: "paragraph", paragraph: "AI is also creating demand for new skills, including expertise in data science, AI ethics, and machine learning development. Upskilling and reskilling initiatives are becoming essential for employees to stay relevant." }
-        ],
+        fullContent: `
+        <p>The increasing adoption of AI technologies is reshaping the job market. While some fear job loss, many...</p>
+        <h2>Automation and Job Displacement</h2>
+        <p>AI-driven automation is taking over routine tasks, but new roles are emerging...</p>
+        <h2>AI and New Job Creation</h2>
+        <p>AI is also creating demand for new skills, including data science and AI ethics...</p>
+      `,
         comments: [
             {
                 id: 2,
-                author: {
-                    name: "Alex Smith",
-                    avatar: "/avatars/alex.jpg",
-                    profession: "HR Manager"
-                },
+                author: { name: "Alex Smith", avatar: "/avatars/alex.jpg" },
                 date: "3 days ago",
                 content: "AI will definitely change the job market, for better or worse.",
-                likes: 12,
-                replies: []
-            },
-            {
-                id: 3,
-                author: {
-                    name: "Emily Johnson",
-                    avatar: "/avatars/emily.jpg",
-                    profession: "Data Scientist"
-                },
-                date: "2 days ago",
-                content: "It’s fascinating to see how companies are leveraging AI to streamline operations. The need for AI ethics experts is also growing!",
-                likes: 35,
-                replies: [
-                    {
-                        id: 21,
-                        author: {
-                            name: "Priya Sharma",
-                            avatar: "https://example.com/avatar-priya.png"
-                        },
-                        content: "Absolutely! AI ethics is a critical area as we shape the future of work.",
-                        date: "1 day ago",
-                        likes: 15
-                    }
-                ]
+                likes: 12
             }
-        ],
-        relatedTopics: ["AI Ethics", "Future of Work", "Automation", "Upskilling"],
-        resources: [
-            { type: "PDF", title: "AI and Careers: Opportunities & Challenges", link: "https://example.com/ai-careers.pdf" },
-            { type: "Video", title: "Navigating AI-Driven Workflows", link: "https://example.com/ai-workflows" }
         ]
     },
-
-
     {
         id: 3,
         image: Blog3,
         tag: "Data Science",
-        tags: ["Python", "R", "Data Visualization"],
         date: "10 Oct, 2024",
         title: "Top Data Science Tools You Should Know",
         description: "A look at the most popular tools used in data science today...",
         readTime: "4 min read",
-        estimatedReadTime: 4,
-        readingProgress: 0,
-        views: 432,
-        shareCount: 125,
-        featured: false,
-        publishedAt: "2024-10-10T09:00:00Z",
-        updatedAt: "2024-10-11T14:00:00Z",
-        author: [
-            {
-                name: "Neha Gupta",
-                bio: "Data scientist with a passion for data visualization and predictive modeling. Mentor to aspiring data professionals.",
-                avatar: "https://example.com/avatar-neha.png",
-                position: "Senior Data Scientist",
-                expertise: ["Data Science", "Visualization", "Python & R"],
-                publications: 30,
-                citations: 600,
-                socialLinks: [
-                    { name: "LinkedIn", link: "https://linkedin.com/in/nehagupta", connections: 7000 },
-                    { name: "GitHub", link: "https://github.com/nehagupta", repositories: 50 }
-                ]
-            }
-        ],
+        author: "Neha Gupta",
         category: "Data Science",
-        fullContent: [
-            { type: "paragraph", paragraph: "Data science relies on a variety of tools that help analyze, visualize, and make predictions." },
-            { type: "highlight", paragraph: "Python and R are foundational for data science, offering libraries for data analysis and machine learning." },
-            { type: "paragraph", paragraph: "Tools like Tableau and Power BI are essential for presenting data insights to stakeholders effectively." }
-        ],
+        fullContent: `
+        <p>Data science relies on a variety of tools that help analyze, visualize, and make predictions...</p>
+        <h2>Python and R</h2>
+        <p>Python and R are foundational for data science, offering libraries for data analysis...</p>
+        <h2>Data Visualization Tools</h2>
+        <p>Tools like Tableau and Power BI are essential for presenting data insights...</p>
+      `,
         comments: [
             {
                 id: 3,
-                author: { name: "Sandra Lee", avatar: "/avatars/sandra.jpg", profession: "Data Analyst" },
+                author: { name: "Sandra Lee", avatar: "/avatars/sandra.jpg" },
                 date: "1 day ago",
                 content: "Love these tools! Tableau has changed the way I present data.",
-                likes: 18,
-                replies: []
+                likes: 18
             }
-        ],
-        relatedTopics: ["Python", "R", "Data Visualization", "AI in Data Science"],
-        resources: [
-            { type: "PDF", title: "Top Data Science Tools in 2024", link: "https://example.com/data-tools.pdf" },
-            { type: "Video", title: "Data Visualization Best Practices", link: "https://example.com/visualization-video" }
         ]
     },
     {
         id: 4,
         image: Blog4,
         tag: "Business",
-        tags: ["Digital Tools", "Small Business", "Technology"],
         date: "15 Oct, 2024",
         title: "Digital Transformation in Small Businesses",
         description: "Explore how digital transformation is essential for small businesses to thrive...",
         readTime: "7 min read",
-        estimatedReadTime: 7,
-        readingProgress: 0,
-        views: 543,
-        shareCount: 210,
-        featured: false,
-        publishedAt: "2024-10-15T09:00:00Z",
-        updatedAt: "2024-10-16T13:00:00Z",
-        author: [
-            {
-                name: "Amit Patel",
-                bio: "Business strategist helping small enterprises adopt digital technologies for competitive advantage.",
-                avatar: "https://example.com/avatar-amit.png",
-                position: "Business Consultant",
-                expertise: ["Small Business Strategy", "Digital Transformation", "Technology"],
-                publications: 15,
-                citations: 300,
-                socialLinks: [
-                    { name: "LinkedIn", link: "https://linkedin.com/in/amitpatel", connections: 8000 },
-                    { name: "Twitter", link: "https://twitter.com/amitpatel", followers: 5000 }
-                ]
-            }
-        ],
+        author: "Amit Patel",
         category: "Digital Transformation",
-        fullContent: [
-            { type: "paragraph", paragraph: "Small businesses can leverage digital tools to compete with larger corporations and streamline operations." },
-            { type: "highlight", paragraph: "From CRMs to marketing automation, digital tools improve customer engagement and efficiency." },
-            { type: "paragraph", paragraph: "However, many small businesses face barriers like cost constraints and a lack of skilled staff." }
-        ],
+        fullContent: `
+        <p>Small businesses can leverage digital tools to compete with larger corporations...</p>
+        <h2>Adopting Digital Tools</h2>
+        <p>From CRMs to marketing automation, digital tools streamline operations...</p>
+        <h2>Challenges Faced</h2>
+        <p>However, many small businesses face barriers like cost and skills shortages...</p>
+      `,
         comments: [
             {
                 id: 4,
-                author: { name: "Michael Brown", avatar: "/avatars/michael.jpg", profession: "Small Business Owner" },
+                author: { name: "Michael Brown", avatar: "/avatars/michael.jpg" },
                 date: "5 days ago",
                 content: "Digital transformation has been a game-changer for my business.",
-                likes: 20,
-                replies: []
+                likes: 20
             }
-        ],
-        relatedTopics: ["Digital Tools", "Small Business Growth", "Technology Trends"],
-        resources: [
-            { type: "PDF", title: "Digital Transformation Guide for Small Businesses", link: "https://example.com/digital-guide.pdf" },
-            { type: "Video", title: "CRMs Explained for Small Businesses", link: "https://example.com/crm-video" }
         ]
     },
     {
         id: 5,
         image: Blog5,
         tag: "Security",
-        tags: ["Cybersecurity", "Data Protection", "Threats"],
         date: "20 Oct, 2024",
         title: "Cybersecurity Essentials for 2024",
         description: "Learn the key practices to protect your business from cyber threats in 2024...",
         readTime: "9 min read",
-        estimatedReadTime: 9,
-        readingProgress: 0,
-        views: 675,
-        shareCount: 300,
-        featured: true,
-        publishedAt: "2024-10-20T09:00:00Z",
-        updatedAt: "2024-10-21T12:00:00Z",
-        author: [
-            {
-                name: "Vikram Singh",
-                bio: "Cybersecurity expert with a decade of experience in protecting businesses from evolving cyber threats.",
-                avatar: "https://example.com/avatar-vikram.png",
-                position: "Cybersecurity Consultant",
-                expertise: ["Threat Detection", "Data Protection", "Cybersecurity Strategy"],
-                publications: 50,
-                citations: 1200,
-                socialLinks: [
-                    { name: "LinkedIn", link: "https://linkedin.com/in/vikramsingh", connections: 10000 },
-                    { name: "Twitter", link: "https://twitter.com/vikramsingh", followers: 15000 }
-                ]
-            }
-        ],
+        author: "Vikram Singh",
         category: "Cybersecurity",
-        fullContent: [
-            { type: "paragraph", paragraph: "Cybersecurity is more critical than ever as cyber threats evolve and become more sophisticated." },
-            { type: "paragraph", paragraph: "Phishing, ransomware, and DDoS attacks are on the rise, impacting businesses and individuals alike." },
-            { type: "highlight", paragraph: "Implementing multi-factor authentication and data encryption can significantly enhance security measures." }
-        ],
+        fullContent: `
+        <p>Cybersecurity is more critical than ever as cyber threats evolve...</p>
+        <h2>Common Threats</h2>
+        <p>Phishing, ransomware, and DDoS attacks are on the rise, impacting businesses...</p>
+        <h2>Best Practices</h2>
+        <p>Using multi-factor authentication and data encryption can enhance security...</p>
+      `,
         comments: [
             {
                 id: 5,
-                author: { name: "Lucy Harper", avatar: "/avatars/lucy.jpg", profession: "IT Manager" },
+                author: { name: "Lucy Harper", avatar: "/avatars/lucy.jpg" },
                 date: "6 days ago",
                 content: "Cybersecurity is a must in today's digital world!",
-                likes: 22,
-                replies: []
+                likes: 22
             }
-        ],
-        relatedTopics: ["Cyber Threats", "Data Protection", "Phishing"],
-        resources: [
-            { type: "PDF", title: "2024 Cybersecurity Essentials", link: "https://example.com/cybersecurity-essentials.pdf" },
-            { type: "Video", title: "Preventing Ransomware Attacks", link: "https://example.com/ransomware-video" }
         ]
     },
-
     {
         id: 6,
         image: Blog6,
         tag: "Cloud Computing",
-        tags: ["Cloud Technology", "Trends", "Edge Computing"],
         date: "25 Oct, 2024",
         title: "Cloud Computing Trends for 2025",
         description: "A deep dive into upcoming trends in cloud technology and how businesses can prepare...",
         readTime: "10 min read",
-        estimatedReadTime: 10,
-        readingProgress: 0,
-        views: 894,
-        shareCount: 400,
-        featured: true,
-        publishedAt: "2024-10-25T09:00:00Z",
-        updatedAt: "2024-10-26T14:00:00Z",
-        author: [
-            {
-                name: "Dr. Sarah Johnson",
-                bio: "Renowned cloud computing expert helping businesses innovate with cutting-edge technology.",
-                avatar: "https://example.com/avatar-sarah.png",
-                position: "Cloud Technology Evangelist",
-                expertise: ["Cloud Computing", "Edge Computing", "Hybrid Clouds"],
-                publications: 80,
-                citations: 3000,
-                socialLinks: [
-                    { name: "LinkedIn", link: "https://linkedin.com/in/sarahjohnson", connections: 15000 },
-                    { name: "Twitter", link: "https://twitter.com/sarahjohnson", followers: 20000 }
-                ]
-            }
-        ],
+        author: "Dr. Sarah Johnson",
         category: "Cloud Technology",
-        fullContent: [
-            { type: "paragraph", paragraph: "Cloud computing is continuously evolving, with new trends like hybrid and multi-cloud gaining traction." },
-            { type: "highlight", paragraph: "Edge computing is becoming more prominent, reducing latency by bringing computation closer to data sources." },
-            { type: "paragraph", paragraph: "Many businesses are adopting hybrid clouds for flexibility and cost-efficiency." }
-        ],
+        fullContent: `
+        <p>Cloud computing is continuously evolving, with new trends like hybrid and multi-cloud...</p>
+        <h2>Hybrid Cloud Models</h2>
+        <p>Many businesses are adopting hybrid clouds for flexibility...</p>
+        <h2>Edge Computing</h2>
+        <p>With IoT, edge computing is reducing latency by bringing computation closer to data sources...</p>
+    `,
         comments: [
             {
                 id: 6,
-                author: { name: "Brian Lee", avatar: "/avatars/brian.jpg", profession: "Cloud Engineer" },
+                author: { name: "Brian Lee", avatar: "/avatars/brian.jpg" },
                 date: "1 week ago",
                 content: "Cloud computing is the future!",
-                likes: 25,
-                replies: [
-                    {
-                        id: 61,
-                        author: { name: "Dr. Sarah Johnson", avatar: "https://example.com/avatar-sarah.png" },
-                        content: "Absolutely! Edge computing will lead the way in reducing latency and improving system performance.",
-                        date: "5 days ago",
-                        likes: 15
-                    }
-                ]
+                likes: 25
             }
-        ],
-        relatedTopics: ["Edge Computing", "Hybrid Cloud", "Multi-Cloud Strategies"],
-        resources: [
-            { type: "PDF", title: "Cloud Trends 2025 Guide", link: "https://example.com/cloud-trends-guide.pdf" },
-            { type: "Video", title: "Understanding Edge Computing", link: "https://example.com/edge-computing-video" }
         ]
     },
-
 
     {
         id: 7,
@@ -386,35 +179,14 @@ export const blogData = [
         description: "Examine the benefits and challenges of adopting a microservices architecture...",
         readTime: "7 min read",
         author: "Priya Sharma",
-        estimatedReadTime: 7,
-        readingProgress: 0,
-        views: 1200,
-        shareCount: 500,
-        featured: true,
-        publishedAt: "2024-10-28T10:00:00Z",
-        updatedAt: "2024-10-28T14:00:00Z",
-        category: "Software Development",
-        tags: ["Microservices", "Architecture", "Software Development"],
-        author: [
-            {
-                name: "Priya Sharma",
-                bio: "Software Engineer with a passion for building scalable and efficient systems.",
-                avatar: "https://example.com/avatar-priya.png",
-                position: "Senior Software Engineer",
-                expertise: ["Microservices", "Software Architecture", "Full-Stack Development"],
-                publications: 50,
-                citations: 1500,
-                socialLinks: [
-                    { name: "LinkedIn", link: "https://linkedin.com/in/priyasharma", connections: 10000 },
-                    { name: "Twitter", link: "https://twitter.com/priyasharma", followers: 15000 }
-                ]
-            }
-        ],
-        fullContent: [
-            { paragraph: "Microservices architecture has gained popularity for its scalability and ability to handle complex, distributed systems effectively." },
-            { paragraph: "Flexibility and easier deployment are some of the primary advantages of adopting microservices. They allow teams to work independently on smaller, self-contained units, leading to faster development and updates." },
-            { paragraph: "However, microservices come with challenges like increased complexity, difficulty in managing distributed data, and the need for robust monitoring and debugging tools." }
-        ],
+        category: "Software Architecture",
+        fullContent: `
+            <p>Microservices architecture has gained popularity for its scalability...</p>
+            <h2>Benefits of Microservices</h2>
+            <p>Flexibility and easier deployment are some of the primary advantages...</p>
+            <h2>Challenges to Consider</h2>
+            <p>However, microservices come with challenges like complexity and data management...</p>
+          `,
         comments: [
             {
                 id: 7,
@@ -423,50 +195,8 @@ export const blogData = [
                 content: "A balanced view on microservices, thanks!",
                 likes: 10
             }
-        ],
-        relatedTopics: ["Microservices", "Software Architecture", "Distributed Systems"],
-        resources: [
-            { type: "PDF", title: "Microservices Best Practices", link: "https://example.com/microservices-best-practices.pdf" },
-            { type: "Video", title: "Microservices Architecture Explained", link: "https://example.com/microservices-architecture-video" }
-        ],
-        relatedArticles: [
-            {
-                id: 71,
-                title: "Microservices vs Monoliths: Pros and Cons",
-                description: "Compare the advantages and disadvantages of microservices and monolithic architectures.",
-                image: "https://example.com/microservices-vs-monoliths.jpg",
-                tag: "Software Development",
-                date: "2024-10-29T10:00:00Z",
-                readTime: "3 min read",
-                author: "John Doe",
-                category: "Software Development",
-                estimatedReadTime: 3,
-                readingProgress: 0,
-                views: 800,
-                shareCount: 200,
-                featured: false,
-                publishedAt: "2024-10-29T10:00:00Z",
-                updatedAt: "2024-10-29T14:00:00Z",
-                category: "Software Development",
-                tags: ["Microservices", "Monolithic Architecture", "Software Development"],
-                author: [
-                    {
-                        name: "John Doe",
-                        bio: "Software Engineer with a passion for building scalable and efficient systems.",
-                        avatar: "https://example.com/avatar-john.png",
-                        position: "Senior Software Engineer",
-                        expertise: ["Microservices", "Software Architecture", "Full-Stack Development"],
-                        publications: 50,
-                        citations: 1500,
-                        socialLinks: [
-                            { name: "LinkedIn", link: "https://linkedin.com/in/johndoe", connections: 10000 },
-                            { name: "Twitter", link: "https://twitter.com/johndoe", followers: 15000 }
-                        ]
-                    }
-                ]
-            },],
+        ]
     },
-    
     {
         id: 8,
         image: "https://community.nasscom.in/sites/default/files/styles/960_x_600/public/media/images/0x0%20%281%29.jpg?itok=PEVCtsx2",
@@ -477,34 +207,11 @@ export const blogData = [
         readTime: "5 min read",
         author: "Neha Gupta",
         category: "Career Development",
-        estimatedReadTime: 5,
-        readingProgress: 0,
-        views: 1000,
-        shareCount: 400,
-        featured: true,
-        publishedAt: "2024-10-30T10:00:00Z",
-        updatedAt: "2024-10-30T14:00:00Z",
-        tags: ["Full-Stack Development", "Tech Careers", "Software Development"],
-        author: [
-            {
-                name: "Neha Gupta",
-                bio: "Full-stack developer with a passion for creating seamless user experiences.",
-                avatar: "https://example.com/avatar-neha.png",
-                position: "Full-Stack Developer",
-                expertise: ["Full-Stack Development", "Front-End Development", "Back-End Development"],
-                publications: 30,
-                citations: 800,
-                socialLinks: [
-                    { name: "LinkedIn", link: "https://linkedin.com/in/nehagupta", connections: 8000 },
-                    { name: "Twitter", link: "https://twitter.com/nehagupta", followers: 12000 }
-                ]
-            },
-        ],
-        fullContent: [
-            { paragraph: "Full-stack development involves working on both front-end and back-end technologies, providing a comprehensive understanding of the entire application workflow." },
-            { paragraph: "Core skills for full-stack development include mastering front-end technologies such as HTML, CSS, and JavaScript, which are essential for building user interfaces." },
-            { paragraph: "On the back-end, knowledge of frameworks and languages like Node.js, Python, or Java is crucial for handling server-side logic and database interactions." }
-        ],
+        fullContent: `
+            <p>Full-stack development involves working on both front-end and back-end technologies...</p>
+            <h2>Core Skills to Master</h2>
+            <p>HTML, CSS, JavaScript for the front-end, and Node.js, Python, or Java for the back-end...</p>
+          `,
         comments: [
             {
                 id: 8,
@@ -513,17 +220,11 @@ export const blogData = [
                 content: "Very helpful tips for those starting out!",
                 likes: 17
             }
-        ],
-        relatedTopics: ["Full-Stack Development", "Software Development", "Web Development"],
-        resources: [
-            { type: "PDF", title: "Full-Stack Development Guide", link: "https://example.com/full-stack-guide.pdf" },
-            { type: "Video", title: "Full-Stack Development Tutorial", link: "https://example.com/full-stack-tutorial" }
         ]
-        
     },
     {
         id: 9,
-        image: "https://example.com/images/ai-digital-marketing.jpg", // Placeholder image added
+        image: "data:image/png;base64,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",
         tag: "Marketing",
         date: "01 Nov, 2024",
         title: "How AI is Revolutionizing Digital Marketing",
@@ -531,10 +232,11 @@ export const blogData = [
         readTime: "6 min read",
         author: "Vikram Singh",
         category: "Digital Marketing",
-        fullContent: [
-            { paragraph: "AI tools are now a key component of successful digital marketing strategies. They empower marketers to deliver personalized experiences to customers." },
-            { heading: "Personalized Marketing", paragraph: "AI enables personalized marketing by analyzing customer behavior and preferences, tailoring content to individual needs and enhancing user engagement." }
-        ],
+        fullContent: `
+            <p>AI tools are now a key component of successful digital marketing strategies...</p>
+            <h2>Personalized Marketing</h2>
+            <p>AI enables personalized marketing by analyzing customer behavior and preferences...</p>
+          `,
         comments: [
             {
                 id: 9,
@@ -548,6 +250,7 @@ export const blogData = [
     {
         id: 10,
         image: "https://fastercapital.co/i/The-Top-Startups-to-Watch-in--The-Top-Startups-to-Watch-in-2024.webp",
+
         tag: "Innovation",
         date: "05 Nov, 2024",
         title: "5G: The Future of Connectivity",
@@ -555,10 +258,11 @@ export const blogData = [
         readTime: "8 min read",
         author: "Amit Patel",
         category: "Telecommunications",
-        fullContent: [
-            { paragraph: "The rollout of 5G is set to bring faster connectivity and better network reliability, enabling a host of new technologies and services." },
-            { heading: "Advantages of 5G", paragraph: "Faster speeds, lower latency, and enhanced device connectivity are among the many benefits of 5G, paving the way for innovations like IoT and smart cities." }
-        ],
+        fullContent: `
+            <p>The rollout of 5G is set to bring faster connectivity and better network reliability...</p>
+            <h2>Advantages of 5G</h2>
+            <p>Faster speeds and lower latency are among the many benefits of 5G...</p>
+          `,
         comments: [
             {
                 id: 10,
@@ -569,8 +273,6 @@ export const blogData = [
             }
         ]
     },
-
-
     {
         id: 11,
         image: "https://artificialpaintings.com/wp-content/uploads/2024/06/1732_IoT_in_the_Smart_Home_Future_Trends_and_Innovations.webp",
@@ -649,9 +351,6 @@ export const blogData = [
             }
         ]
     },
-
-
-
     {
         id: 14,
         image: "https://d1hah6ww96mip9.cloudfront.net/layout/banners/promotions/BLOG_METADATA_COVER_IMAGES/IMG_1685420999769_a28d722aee8641eaa165b9b41cdf7d4d-1p872-w1396p0-h746p0-en_v1.jpg",

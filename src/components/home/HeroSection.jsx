@@ -20,12 +20,12 @@ const HeroSection = () => {
           </p>
           <div className='flex gap-4 smd:justify-start justify-center'>
             <Link to="/register" className=''>
-              <button className='py-4 px-8 text-lg text-white hover:text-black font-semibold transition-all duration-300 bg-violet-600 hover:bg-green-500 rounded-lg text-black shadow-lg hover:shadow-xl'>
+              <button className='py-4 px-8 text-lg font-semibold transition-all duration-300 bg-violet-600 hover:bg-green-500 rounded-lg text-black shadow-lg hover:shadow-xl'>
                 Start Your Journey
               </button>
             </Link>
             <Link to="/services" className=''>
-              <button className='py-4 px-8 text-lg font-semibold transition-all duration-300 border-2 border-violet-600 hover:border-green-500 rounded-lg text-violet-600 hover:text-green-500 shadow-lg hover:shadow-xl'>
+              <button className='py-4 px-8 text-lg font-semibold transition-all duration-300 border-2 border-violet-600 hover:border-green-500 rounded-lg text-violet-600 hover:text-green-500'>
                 Explore Services
               </button>
             </Link>
