@@ -77,7 +77,7 @@ const navlink = [
 ]
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState(null)
     const location = useLocation();
 
@@ -123,7 +123,7 @@ const Navbar = () => {
         <>
             <header className={`fixed w-full z-40 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'}`}>
                 <nav className='w-full fixed top-0 left-0 z-[9999] right-0 text-black py-2 bg-white shadow-lg'>
-                    <div className='w-11/12 lg:w-10/12 mx-auto flex justify-between items-center'>
+                    <div className='w-11/11 lg:w-10/12 mx-auto flex justify-between items-center'>
                         <div className='py-3 px-3 flex items-center justify-between'>
                             <motion.div
                                 initial={{ x: '40vw', y: '45vh', scale: 2.5 }}
@@ -140,9 +140,11 @@ const Navbar = () => {
                             </motion.div>
                         </div>
 
-                        <div className='hidden smd:flex xl:gap-x-6 xmd:gap-x-4  items-center gap-x-2'>
+                        {/* laptop view */}
+
+                        <div className='hidden smd:flex xl:gap-x-6 xmd:gap-x-4 items-center gap-x-2 flex'>
                             {navlink.map((item) => (
-                                <div key={item.id} className="relative group">
+                                <div key={item.id} className="relative group flex items-center">
                                     {item.dropdown ? (
                                         <div>
                                             <button
@@ -154,18 +156,13 @@ const Navbar = () => {
 
                                             </button>
 
-                                            <div className=' absolute z-[999] left-0 right-0 mt-4'>
-
-
-
-                                                <div className={`   w-60 overflow-hidden transition-all duration-500 ease-in-out max-h-0 group-hover:max-h-[600px] bg-white shadow-lg
-
-                                    `}>
+                                            <div className=' absolute z-[999] mt-4 items-cemter'>
+                                                <div className={`flex flex-col gap-y-2 w-60 justify-start overflow-hidden transition-all duration-500 ease-in-out max-h-0 group-hover:max-h-[600px] bg-white shadow-lg rounded-lg ${activeDropdown === item.id ? 'max-h-[600px]' : ''}`}>
                                                     {item.dropdown.map((dropItem, index) => (
                                                         <Link
                                                             key={index}
                                                             to={dropItem.path}
-                                                            className=" block px-4 py-4 hover:bg-green-100 transition-colors"
+                                                            className=" block px-2 py-4 justify-start hover:bg-green-100 transition-colors items-center gap-x-2"
                                                         >
                                                             {dropItem.title}
                                                         </Link>
@@ -175,7 +172,7 @@ const Navbar = () => {
 
                                         </div>
                                     ) : (
-                                        <Link to={item.path} className='py-1 px-3 transition-all h-full  duration-300 anime rounded-lg font-semibold'>
+                                        <Link to={item.path} className='py-1 px-3 justify-start transition-all h-full  duration-300 anime rounded-lg font-semibold'>
                                             {item.title}
                                         </Link>
                                     )}
@@ -192,21 +189,30 @@ const Navbar = () => {
                                 <RiSearchLine className="text-xl" />
                             </button>
                         </div>
-                        <div className='text-2xl smd:hidden flex'>
+
+
+                        {/* Mobile Menu Button */}
+                        <div className="text-2xl font-bold smd:hidden flex items-center justify-center">
                             {!isOpen ? (
-                                <RiMenu2Fill onClick={() => setIsOpen(true)} className='cursor-pointer' />
+                                <RiMenu2Fill
+                                    onClick={() => setIsOpen(true)}
+                                    className="cursor-pointer text-black"
+                                />
                             ) : (
-                                <IoMdClose onClick={() => setIsOpen(false)} className='cursor-pointer' />
+                                <IoMdClose
+                                    onClick={() => setIsOpen(false)}
+                                    className="cursor-pointer text-black"
+                                />
                             )}
                         </div>
 
 
 
                         {/* Mobile Menu */}
-                        <div className={`absolute top-[104px] left-0 py-12 font-semibold w-full bg-gradient-to-b from-white to-violet-100 smd:hidden flex flex-col items-center gap-y-2 shadow-xl border-t-[3px] border-violet-50
+                        <div className={`absolute top-[88px] left-0 font-semibold w-full bg-gradient-to-b from-white to-violet-100 smd:hidden flex flex-col items-center gap-y-2 shadow-xl border-t-[3px] border-violet-50
                     ${isOpen ? "translate-x-[0%]" : "translate-x-[100%]"} transition-all duration-500`}>
                             {navlink.map((item) => (
-                                <div key={item.id} className="w-10/12">
+                                <div key={item.id} className="w-10/12 text-left">
                                     {item.dropdown ? (
                                         <>
                                             <button
@@ -217,12 +223,12 @@ const Navbar = () => {
                                                 <IoIosArrowDown className={`transition-transform duration-300 ${activeDropdown === item.id ? 'rotate-180' : ''}`} />
                                             </button>
                                             {activeDropdown === item.id && (
-                                                <div className="bg-white py-2">
+                                                <div className="bg-white py-2 justify-left">
                                                     {item.dropdown.map((dropItem, index) => (
                                                         <Link
                                                             key={index}
                                                             to={dropItem.path}
-                                                            className="block px-6 py-2 hover:bg-violet-100"
+                                                            className="block px-2 py-2 hover:bg-violet-100"
                                                             onClick={() => setIsOpen(false)}
                                                         >
                                                             {dropItem.title}
@@ -234,14 +240,22 @@ const Navbar = () => {
                                     ) : (
                                         <Link
                                             to={item.path}
-                                            className="py-3 px-4 block border-b border-black-400 hover:bg-violet-100"
+                                            className="py-3 px-4 block border-b border-black-400 hover:bg-violet-100 text-left"
                                             onClick={() => setIsOpen(false)}
                                         >
                                             {item.title}
                                         </Link>
                                     )}
+
                                 </div>
                             ))}
+                            {/* Search Button */}
+                            <button
+                                onClick={() => setShowSearch(true)}
+                                className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+                            >
+                                <RiSearchLine className="text-xl" />
+                            </button>
                         </div>
                     </div>
 

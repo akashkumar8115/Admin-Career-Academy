@@ -1,21 +1,25 @@
 {
-  "name": "aca-project",
-  "version": "0.1.0",
+  "name": "frontend",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@headlessui/react": "^2.2.0",
     "@react-three/drei": "^9.117.3",
     "@react-three/fiber": "^8.17.10",
     "@tailwindcss/forms": "^0.5.9",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
-    "axios": "^1.7.7",
+    "axios": "^1.7.8",
     "chart.js": "^4.4.6",
     "emailjs": "^4.0.3",
-    "framer-motion": "^11.11.17",
+    "framer-motion": "^11.12.0",
     "fuse.js": "^7.0.0",
     "gsap": "^3.12.5",
     "react": "^18.3.1",
@@ -27,41 +31,30 @@
     "react-hot-toast": "^2.4.1",
     "react-icons": "^5.3.0",
     "react-intersection-observer": "^9.13.1",
-    "react-router-dom": "^6.27.0",
-    "react-scripts": "5.0.1",
+    "react-router-dom": "^7.0.1",
     "react-slick": "^0.30.2",
     "react-toastify": "^10.0.6",
     "react-tooltip": "^5.28.0",
+    "reactflow": "^11.11.4",
     "slick-carousel": "^1.8.1",
-    "swiper": "^11.1.14",
+    "swiper": "^11.1.15",
     "three": "^0.170.0",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "three-mesh-bvh": "^0.8.3",
+    "web-vitals": "^4.2.4"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.14"
+    "@eslint/js": "^9.15.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.15.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "globals": "^15.12.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "vite": "^6.0.1"
   }
 }

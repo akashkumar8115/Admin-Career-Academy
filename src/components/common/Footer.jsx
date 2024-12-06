@@ -9,7 +9,7 @@ const Footer = () => {
     const { company, services, quickLinks, resources, contact, legal } = footerData
 
     return (
-        <footer className="w-full bg-blur-md bg-black-200 shadow-md">
+        <footer className="w-full shadow-md bg-gray-100">
             <div className="w-11/12 lg:w-10/12 mx-auto py-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                     {/* Company Info */}

@@ -33,38 +33,23 @@ const Team = () => {
                                 key={member.id} className='rounded-lg py-8 px-8 flex flex-col gap-y-6 items-center transition-all duration-500  hover:bg-green-200 group'>
 
                                 <div className='xxl:w-[220px] xxl:h-[220px] xs:w-[180px] xs:h-[180px] w-[200px] h-[200px] '>
-
                                     <img src={member.photo} alt={member.name} className='w-full h-full object-cover rounded-md' />
-
                                 </div>
 
                                 {/* ------ info ------ */}
-
                                 <div className='flex flex-col items-center gap-y-2'>
-
                                     <h2 className='text-center xmd:text-xl text-lg font-semibold'>{member.name}</h2>
                                     <h3 className='transition-all duration-300 group-hover:text-violet-50 text-green-700 font-semibold text-center'>{member.role}</h3>
-
                                 </div>
 
                             </Link>
 
-
                         ))
                     }
 
-
-
-
-
                 </div>
 
-
-
-
-
             </div>
-
         </section>
     )
 }

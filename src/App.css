@@ -1,31 +1,41 @@
-body{
-    overflow-x: hidden;
+#root {
+  max-width: 1280px;
+  margin: 0;
+  /* padding: 2rem; */
+  text-align: center;
+  background-color: transparent;
 }
-::-webkit-scrollbar{
-    width: 2px;
+::-webkit-scrollbar {
+  width: 4px; /* Width of the scrollbar */
+  height: 12px; /* Height for horizontal scrollbar */
+}
+::-webkit-scrollbar-thumb {
+  background-color: #010101; /* Color of the scrollbar thumb */
+  border-radius: 18px; /* Rounded corners for the thumb */
+}
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Color of the scrollbar track */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: transparent;
+  /* color: #fff; */
+  overflow-x: hidden;
+  margin: 0;
 
 }
 
-.text-rad-500{
-    color: rgb(255, 15, 15);
+/* banner */
+/* Hide scrollbar */
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE */
 }
-.border-red-500{
-    color: rgb(222, 27, 27);
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
-input{
-    outline: none;
-}
-nav{
-    /* position: fixed; */
-}
-/*  */
-
-/* .lg\:py-4{
-    border: 1px solid rgb(0, 0, 0);
-    border-bottom:1px solid transparent;
-}
-
-.lg\:py-4:hover{
-    border-bottom: 1px solid rgb(0, 0, 0);
-    transition: 0.3s;
-} */

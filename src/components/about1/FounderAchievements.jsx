@@ -25,37 +25,17 @@ const FounderAchievements = () => {
     return (
         <section className="pb-16  bg-violet-100">
 
-            <div className="w-11/12 lg:w-10/12 mx-auto bg-white py-12 rounded-lg px-8 flex flex-col gap-y-6">
+            <div className="w-11/12 lg:w-10/12 mx-auto bg-white py-12 rounded-lg px-8">
                 <h2 className="text-2xl font-semibold mb-8 text-center">Founder's Achievements</h2>
 
-
-
-                <div className='flex flex-col gap-y-3'>
-                    {
-                        achievementData.map((data)=> (
-                            <div className='flex flex-row items-center gap-x-4 text-sm sm:text-base'>
-
-                                <p className='text-green-500'><FaArrowRight/></p>
-                                <p>
-                                    {data.desc}
-                                </p>
-
-
-                            </div>
-                        ))
-                    }
-                </div>
-
-                <div className='mt-6'>
-
-                    
+                <div className=''>
                     <Swiper
                         pagination={{
                             dynamicBullets: true,
                         }}
                         loop
                         autoplay={{
-                            delay: 1000,
+                            delay: 2000,
                             disableOnInteraction: false,
                         }}
                         spaceBetween={24}

@@ -1,8 +1,6 @@
 import React from 'react'
-// import { IoMdCookie } from "react-icons/io"
-import { IoMdCookie } from 'react-icons/io5';
-import { FaCookieBite } from 'react-icons/fa';
-
+// import { IoMdCookie } from 'react-icons/io';
+// import { FaCookieBite } from 'react-icons/fa'; 
 
 import { motion } from 'framer-motion'
 
@@ -61,7 +59,7 @@ const CookiePolicy = () => {
             >
                 <div className="container mx-auto px-4">
                     <div className="flex items-center justify-center mb-6">
-                        {/* <IoMdCookie className="text-6xl" /> */}
+                    {/* <IoMdCookie size={30} color="black" /> <FaCookieBite size={30} color="brown" /> */}
                     </div>
                     <h1 className="text-4xl md:text-5xl font-bold text-center mb-6">
                         Cookie Policy

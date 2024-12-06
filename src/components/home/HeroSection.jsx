@@ -20,18 +20,18 @@ const HeroSection = () => {
           </p>
           <div className='flex gap-4 smd:justify-start justify-center'>
             <Link to="/register" className=''>
-              <button className='py-4 px-8 text-lg font-semibold transition-all duration-300 bg-violet-600 hover:bg-green-500 rounded-lg text-black shadow-lg hover:shadow-xl'>
+              <button className='py-4 px-8 text-lg text-white hover:text-black font-semibold transition-all duration-300 bg-violet-600 hover:bg-green-500 rounded-lg text-black shadow-lg hover:shadow-xl'>
                 Start Your Journey
               </button>
             </Link>
             <Link to="/services" className=''>
-              <button className='py-4 px-8 text-lg font-semibold transition-all duration-300 border-2 border-violet-600 hover:border-green-500 rounded-lg text-violet-600 hover:text-green-500'>
+              <button className='py-4 px-8 text-lg font-semibold transition-all duration-300 border-2 border-violet-600 hover:border-green-500 rounded-lg text-violet-600 hover:text-green-500 shadow-lg hover:shadow-xl'>
                 Explore Services
               </button>
             </Link>
           </div>
           {/* Stats Section */}
-          <div className="bg-white/10 backdrop-blur-lg py-12">
+          {/* <div className="bg-white/10 backdrop-blur-lg py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <motion.div
@@ -68,7 +68,7 @@ const HeroSection = () => {
                 </motion.div>
               </div>
             </div>
-          </div>
+          </div> */}
         </motion.div>
 
         <div className='smd:w-[45%] relative'>

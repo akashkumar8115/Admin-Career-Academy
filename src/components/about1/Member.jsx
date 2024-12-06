@@ -43,14 +43,10 @@ const Member = () => {
 
                     </div>
 
-                    <div className={`grid 
-                      gap-x-4 gap-y-6 text-sm
-                      ${memberInfo[0].skills.length > 1 ? "xs:grid-cols-2 grid-cols-1 " : "grid-cols-1"
-                        }
-                      `}>
+                    <div className={`grid xmd:gap-x-4 gap-y-6 text-sm xmd:${memberInfo[0].skills.length > 1 ? "xs:grid-cols-2 grid-cols-2 " : "grid-cols-1"}  xmd:gap-y-4 gap-y-2  xmd:text-base text-sm font-semibold text-black-600 xmd:`}>
                         {
                             memberInfo[0].skills.map((skill) => (
-                                <p className='bg-green-100 rounded-full flex items-center justify-center text-center xmd:py-2 py-3 px-4 '>
+                                <p className='bg-green-100 rounded-full flex items-center justify-center text-center xmd:py-2 py-3 px-4'>
                                     {skill}
                                 </p>
                             ))
@@ -99,7 +95,7 @@ const Member = () => {
                                         memberInfo[0].socialLinks.map((link) => (
                                             <div className='flex gap-x-4 flex-wrap justify-center justify-items-center m-1'>
                                                 <p className='capitalize'>{link.title}: </p>
-                                                <a href={link.url} className='text-violet-50 hover:text-green-500 xs:text-base text-sm m-1'> {link.icon}</a>
+                                                {/* <a href={link.url} className='text-violet-50 hover:text-green-500 xs:text-base text-sm m-1'> {link.icon}</a> */}
                                             </div>
                                         ))
                                     }
